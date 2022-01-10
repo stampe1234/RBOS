@@ -42,10 +42,10 @@ namespace RBOS
             // lbRBOSApplName
             // 
             this.lbRBOSApplName.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRBOSApplName.Location = new System.Drawing.Point(59, 47);
+            this.lbRBOSApplName.Location = new System.Drawing.Point(66, 59);
             this.lbRBOSApplName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbRBOSApplName.Name = "lbRBOSApplName";
-            this.lbRBOSApplName.Size = new System.Drawing.Size(357, 28);
+            this.lbRBOSApplName.Size = new System.Drawing.Size(402, 35);
             this.lbRBOSApplName.TabIndex = 4;
             this.lbRBOSApplName.Text = "Retail-BOS";
             this.lbRBOSApplName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -55,21 +55,21 @@ namespace RBOS
             // 
             this.lbCopyright.AutoSize = true;
             this.lbCopyright.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCopyright.Location = new System.Drawing.Point(28, 175);
+            this.lbCopyright.Location = new System.Drawing.Point(32, 219);
             this.lbCopyright.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCopyright.Name = "lbCopyright";
-            this.lbCopyright.Size = new System.Drawing.Size(351, 22);
+            this.lbCopyright.Size = new System.Drawing.Size(319, 27);
             this.lbCopyright.TabIndex = 5;
-            this.lbCopyright.Text = "Copyrigth 2006-{0} Dansk Retail Services";
+            this.lbCopyright.Text = "Copyrigth 2021-{0} Baker Tilly";
             this.lbCopyright.Click += new System.EventHandler(this.About_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(77, 218);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 272);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(302, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(340, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -78,10 +78,10 @@ namespace RBOS
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(144, 102);
+            this.label2.Location = new System.Drawing.Point(162, 128);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 23);
+            this.label2.Size = new System.Drawing.Size(107, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "Version";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -90,10 +90,10 @@ namespace RBOS
             // txtVersion
             // 
             this.txtVersion.AutoSize = true;
-            this.txtVersion.Location = new System.Drawing.Point(247, 107);
+            this.txtVersion.Location = new System.Drawing.Point(278, 134);
             this.txtVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtVersion.Name = "txtVersion";
-            this.txtVersion.Size = new System.Drawing.Size(46, 17);
+            this.txtVersion.Size = new System.Drawing.Size(51, 20);
             this.txtVersion.TabIndex = 8;
             this.txtVersion.Text = "label3";
             this.txtVersion.Click += new System.EventHandler(this.About_Click);
@@ -101,10 +101,10 @@ namespace RBOS
             // txtUser
             // 
             this.txtUser.AutoSize = true;
-            this.txtUser.Location = new System.Drawing.Point(248, 130);
+            this.txtUser.Location = new System.Drawing.Point(279, 162);
             this.txtUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(52, 17);
+            this.txtUser.Size = new System.Drawing.Size(60, 20);
             this.txtUser.TabIndex = 10;
             this.txtUser.Text = "txtUser";
             this.txtUser.Click += new System.EventHandler(this.About_Click);
@@ -112,10 +112,10 @@ namespace RBOS
             // lbUser
             // 
             this.lbUser.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.Location = new System.Drawing.Point(59, 126);
+            this.lbUser.Location = new System.Drawing.Point(66, 158);
             this.lbUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(180, 23);
+            this.lbUser.Size = new System.Drawing.Size(202, 29);
             this.lbUser.TabIndex = 9;
             this.lbUser.Text = "[User]";
             this.lbUser.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -123,9 +123,9 @@ namespace RBOS
             // 
             // About
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 327);
+            this.ClientSize = new System.Drawing.Size(516, 409);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lbUser);
             this.Controls.Add(this.txtVersion);
@@ -135,7 +135,7 @@ namespace RBOS
             this.Controls.Add(this.lbRBOSApplName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "About";
