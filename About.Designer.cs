@@ -60,7 +60,7 @@ namespace RBOS
             this.lbCopyright.Name = "lbCopyright";
             this.lbCopyright.Size = new System.Drawing.Size(319, 27);
             this.lbCopyright.TabIndex = 5;
-            this.lbCopyright.Text = "Copyrigth 2021-{0} Baker Tilly";
+            this.lbCopyright.Text = "Copyrigth 2022-{0} Baker Tilly";
             this.lbCopyright.Click += new System.EventHandler(this.About_Click);
             // 
             // pictureBox1
