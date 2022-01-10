@@ -1,0 +1,48 @@
+28-06-2021 07:54:35: Starting application.
+28-06-2021 07:54:38: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=4501
+28-06-2021 09:03:51: RBOS har mistet forbindelsen til databasen og lukkes nu.
+
+Prøv venligst igen senere eller tjek forbindelsen til internettet.
+Kontakt support hvis fejlen bliver ved med at opstå.
+------------------------------------
+28-06-2021 09:03:51: Exception:
+Context: Application
+Message: [DBNETLIB][ConnectionWrite (send()).]General network error. Check your network documentation.
+StackTrace:
+   ved System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   ved System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   ved System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   ved System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   ved System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   ved System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   ved System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   ved System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   ved RBOS.db.GetDataTable(String sql) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\db.cs:linje 374
+   ved RBOS.db.GetConfigString(String key, String fallbackValue) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\db.cs:linje 508
+   ved RBOS.db.GetConfigString(String key) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\db.cs:linje 492
+   ved RBOS.db.GetConfigStringAsBool(String key) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\db.cs:linje 521
+   ved RBOS.ItemForm..ctor() i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\ItemForm.cs:linje 15
+   ved RBOS.MainForm.OpenMenuWindow(String id) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\MainForm.cs:linje 1099
+   ved RBOS.MainForm.treeView1_AfterSelect(Object sender, TreeViewEventArgs e) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\MainForm.cs:linje 1433
+   ved System.Windows.Forms.TreeView.OnAfterSelect(TreeViewEventArgs e)
+   ved System.Windows.Forms.TreeView.TvnSelected(NMTREEVIEW* nmtv)
+   ved System.Windows.Forms.TreeView.WmNotify(Message& m)
+   ved System.Windows.Forms.TreeView.WndProc(Message& m)
+   ved System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   ved System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   ved System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   ved System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   ved System.Windows.Forms.Control.WmNotify(Message& m)
+   ved System.Windows.Forms.Control.WndProc(Message& m)
+   ved System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   ved System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   ved System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   ved System.Windows.Forms.TreeView.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   ved System.Windows.Forms.TreeView.WndProc(Message& m)
+   ved System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   ved System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   ved System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   ved System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   ved System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   ved RBOS.MainClass.Main(String[] CmdArgs) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\MainClass.cs:linje 193
+------------------------------------

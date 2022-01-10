@@ -1,0 +1,388 @@
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.About.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.AddInfoFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BackupFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BarcodeForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BFIExportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BFIStations.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvAdjustDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvAdjustForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvCountDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvCountHeaderForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTOrderDetailForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTOrderHeaderForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTWorksheet.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTWSDetail.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BookedInvCount.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BookedInvCountReportF.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.BkdInvCountIntvFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.CashierAdmin.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.DanskeSpilReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_Discounts.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePayCurr.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportRHTForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransForbrugsvareReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportEconomicsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ForbrugsvareSearch.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ForbrugsvareRegistrering.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatDetailRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.StockCountRegistrationRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.DisktilbudSolgtRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransStockCountReportFormRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.StockCountRegistrationRBA_EraseBookedDialog.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.UnlockPrompt.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.UserLogonDBList.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.UserLogonUnlockDB.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_DETAIL_Valuta.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDetailsDETAIL.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_Depotbeholdning.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_Indbetalinger.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_OverfoerselTilSP.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_Udbetalinger.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesPackFuturePricesPrompt.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransReportFormRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SearchItemID.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteRegistrationRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteRegistrationRBAGetInitials.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SearchFormRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetDetailsRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportFVDDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportFVDFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ReserveTerminal.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportFVDHeader.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.GLAccountPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ForeignCurrency.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ManualCards.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportItemsCSVFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.InactiveItemDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.InactiveItemList.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemsDelete.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemsDeleteList.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlEmployeePopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.DateTimeDialog.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.DepositMissing.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.OnHandRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlAbsense.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlAbsenseCodes.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlClusterSites.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlEmployee.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlExportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptAbsenseFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptAvgHrsWeekFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptEmployeeFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptLentOutFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalaryDateFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalaryEmpFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalarySumFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalarySumFrmWk.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalRegFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptWithdrawFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlSalaryPeriods.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlSalaryReg.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.Administration.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlWithdraw.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.Readings.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesMarginRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtor.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtorListPF.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtorPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtorTransPF.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ManSales.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_POSSales.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_Payout.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_Payin.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_LocalCredit.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_PromptFirstDate.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ShellCards.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_BankCards.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EODOverview.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_BankDep.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.FTPAccountsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.FTPLogForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.InvCountWorkForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemSalesSumForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportRSMForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportRSMFormPL.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransReportForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdates.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdInfo.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdLines.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.LookupKolliSizeForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ManualUpdatesForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderAsDraft.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderDraftForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderDraftDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.CreditCategoryPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportRadiantForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportBHHTForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTypeCodePopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.LogonForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.MainForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderHeaderForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderReportForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.PackSizeForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ProgressForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.Properties.Resources.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ReportFormItemBasicData.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.ReportPreview.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.RSM_MSM_Imported.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesPackDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatAccounts.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatColumns.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SearchForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SiteInformationForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.Splash.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SubCategoryForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SubCategoryPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SubcatRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.Supplier.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SupplierPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.SupplierItemSearchForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.TestForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.UserAdminForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.Wash.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetHeader.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.csproj.GenerateResource.cache
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.csproj.CoreCompileInputs.cache
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.csprojAssemblyReference.cache
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\barcode.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\datetime.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\datetime_greyscale.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\detailform.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\detailform_greyscale.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\details.bmp
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\execute.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\green_checkmark.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\info.bmp
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\lookupform.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\trash.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\img\search_16.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\RBOS.exe.config
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\RBOS.exe
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\RBOS.pdb
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.CrystalReports.Engine.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\Economic.Api.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\Economic.Api.XmlSerializers.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\Indy.Sockets.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\Neodynamic.WinControls.BarcodeProfessional.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\Mono.Security.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\stdole.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\Economic.Api.xml
+C:\Data\SourceSafe\DRS\RBOS\bin\Debug RBANEW\Neodynamic.WinControls.BarcodeProfessional.xml
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.csproj.CopyComplete
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.exe
+C:\Data\SourceSafe\DRS\RBOS\obj\Debug RBANEW\RBOS.pdb
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\barcode.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\datetime.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\datetime_greyscale.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\detailform.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\detailform_greyscale.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\details.bmp
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\execute.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\green_checkmark.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\info.bmp
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\lookupform.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\trash.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\img\search_16.gif
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\RBOS.exe.config
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\RBOS.exe
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\RBOS.pdb
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\Economic.Api.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\Economic.Api.XmlSerializers.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\Indy.Sockets.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\Neodynamic.WinControls.BarcodeProfessional.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\Mono.Security.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\stdole.dll
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\Economic.Api.xml
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\bin\Debug RBANEW\Neodynamic.WinControls.BarcodeProfessional.xml
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.csprojAssemblyReference.cache
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.About.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.AddInfoFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BackupFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BarcodeForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BFIExportFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BFIStations.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvAdjustDetailsForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvAdjustForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvCountDetailsForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTInvCountHeaderForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTOrderDetailForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTOrderHeaderForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTWorksheet.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BHHTWSDetail.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BookedInvCount.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BookedInvCountReportF.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.BkdInvCountIntvFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.CashierAdmin.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.DanskeSpilReportFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_Discounts.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePayCurr.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportRHTForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransForbrugsvareReportFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportEconomicsForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ForbrugsvareSearch.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ForbrugsvareRegistrering.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatDetailRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.StockCountRegistrationRBA.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.DisktilbudSolgtRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransStockCountReportFormRBA.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.StockCountRegistrationRBA_EraseBookedDialog.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.UnlockPrompt.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.UserLogonDBList.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.UserLogonUnlockDB.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_DETAIL_Valuta.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDetailsDETAIL.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_Depotbeholdning.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_Indbetalinger.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_OverfoerselTilSP.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_SafePay_Udbetalinger.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesPackFuturePricesPrompt.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransReportFormRBA.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SearchItemID.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteRegistrationRBA.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteRegistrationRBAGetInitials.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SearchFormRBA.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetDetailsRBA.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportFVDDetails.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportFVDFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ReserveTerminal.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportFVDHeader.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.GLAccountPopup.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ForeignCurrency.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ManualCards.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportItemsCSVFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.InactiveItemDetails.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.InactiveItemList.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemsDelete.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemsDeleteList.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlEmployeePopup.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.DateTimeDialog.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.DepositMissing.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.OnHandRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlAbsense.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlAbsenseCodes.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlClusterSites.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlEmployee.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlExportFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptAbsenseFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptAvgHrsWeekFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptEmployeeFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptLentOutFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalaryDateFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalaryEmpFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalarySumFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalarySumFrmWk.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptSalRegFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlRptWithdrawFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlSalaryPeriods.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlSalaryReg.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.Administration.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PrlWithdraw.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.Readings.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesMarginRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtor.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtorListPF.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtorPopup.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDebtorTransPF.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODReportFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ManSales.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_POSSales.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_Payout.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_Payin.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_LocalCredit.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_PromptFirstDate.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_ShellCards.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_BankCards.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODDetails.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EODOverview.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.EOD_BankDep.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.FTPAccountsForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.FTPLogForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.InvCountWorkForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemSalesSumForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportRSMForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportRSMFormPL.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTransReportForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdates.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdInfo.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdLines.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemUpdRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.LookupKolliSizeForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ManualUpdatesForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderAsDraft.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderDraftForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderDraftDetailsForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.CreditCategoryPopup.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ExportRadiantForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ImportBHHTForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ItemTypeCodePopup.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.LogonForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.MainForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderDetailsForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderHeaderForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.OrderReportForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.PackSizeForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ProgressForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.Properties.Resources.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ReportFormItemBasicData.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.ReportPreview.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.RSM_MSM_Imported.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesPackDetailsForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesReportFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatAccounts.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatColumns.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SalesStatRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SearchForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SiteInformationForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.Splash.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SubCategoryForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SubCategoryPopup.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SubcatRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.Supplier.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SupplierPopup.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.SupplierItemSearchForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.TestForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.UserAdminForm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.Wash.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetDetails.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetHeader.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.WasteSheetRptFrm.resources
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.csproj.GenerateResource.cache
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.csproj.CoreCompileInputs.cache
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.csproj.CopyComplete
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.exe
+C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\obj\Debug RBANEW\RBOS.pdb

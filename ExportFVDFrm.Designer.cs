@@ -1,0 +1,427 @@
+namespace RBOS
+{
+    partial class ExportFVDFrm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExportFVDFrm));
+            this.btnClose = new System.Windows.Forms.Button();
+            this.chkItemsNotUpdatedInStations = new System.Windows.Forms.CheckBox();
+            this.lbItemsNotUpdatedInRSM = new System.Windows.Forms.Label();
+            this.txtSubCategoryStart = new System.Windows.Forms.TextBox();
+            this.lbSubCategoryFrom = new System.Windows.Forms.Label();
+            this.btnLookupSubCategoryStart = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.txtSubCategoryEnd = new System.Windows.Forms.TextBox();
+            this.lbSubCategoryTo = new System.Windows.Forms.Label();
+            this.btnLookupSubCategoryEnd = new System.Windows.Forms.Button();
+            this.txtSubCategoryDescStart = new System.Windows.Forms.TextBox();
+            this.txtSubCategoryDescEnd = new System.Windows.Forms.TextBox();
+            this.groupItem = new System.Windows.Forms.GroupBox();
+            this.btnSalesPackClear = new System.Windows.Forms.Button();
+            this.txtItemName = new System.Windows.Forms.TextBox();
+            this.lbItemName = new System.Windows.Forms.Label();
+            this.lbBarcode = new System.Windows.Forms.Label();
+            this.btnSalesPackLookup = new System.Windows.Forms.Button();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.dtChangedTimeEnd = new System.Windows.Forms.DateTimePicker();
+            this.dtChangedTimeStart = new System.Windows.Forms.DateTimePicker();
+            this.dtChangeDateEnd = new System.Windows.Forms.DateTimePicker();
+            this.dtChangeDateStart = new System.Windows.Forms.DateTimePicker();
+            this.lbChangeDateEnd = new System.Windows.Forms.Label();
+            this.lbChangeDateStart = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusMsg = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.groupItem.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Location = new System.Drawing.Point(321, 296);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "[Close]";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // chkItemsNotUpdatedInStations
+            // 
+            this.chkItemsNotUpdatedInStations.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkItemsNotUpdatedInStations.AutoSize = true;
+            this.chkItemsNotUpdatedInStations.Checked = true;
+            this.chkItemsNotUpdatedInStations.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkItemsNotUpdatedInStations.Location = new System.Drawing.Point(236, 9);
+            this.chkItemsNotUpdatedInStations.Name = "chkItemsNotUpdatedInStations";
+            this.chkItemsNotUpdatedInStations.Size = new System.Drawing.Size(15, 14);
+            this.chkItemsNotUpdatedInStations.TabIndex = 3;
+            this.chkItemsNotUpdatedInStations.UseVisualStyleBackColor = true;
+            this.chkItemsNotUpdatedInStations.CheckedChanged += new System.EventHandler(this.chkItemsNotUpdatedInRSM_CheckedChanged);
+            // 
+            // lbItemsNotUpdatedInRSM
+            // 
+            this.lbItemsNotUpdatedInRSM.AutoSize = true;
+            this.lbItemsNotUpdatedInRSM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbItemsNotUpdatedInRSM.Location = new System.Drawing.Point(12, 9);
+            this.lbItemsNotUpdatedInRSM.Name = "lbItemsNotUpdatedInRSM";
+            this.lbItemsNotUpdatedInRSM.Size = new System.Drawing.Size(179, 13);
+            this.lbItemsNotUpdatedInRSM.TabIndex = 4;
+            this.lbItemsNotUpdatedInRSM.Text = "[Items not updated in stations]";
+            // 
+            // txtSubCategoryStart
+            // 
+            this.txtSubCategoryStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSubCategoryStart.Location = new System.Drawing.Point(236, 38);
+            this.txtSubCategoryStart.Name = "txtSubCategoryStart";
+            this.txtSubCategoryStart.ReadOnly = true;
+            this.txtSubCategoryStart.Size = new System.Drawing.Size(133, 20);
+            this.txtSubCategoryStart.TabIndex = 8;
+            // 
+            // lbSubCategoryFrom
+            // 
+            this.lbSubCategoryFrom.AutoSize = true;
+            this.lbSubCategoryFrom.Location = new System.Drawing.Point(12, 41);
+            this.lbSubCategoryFrom.Name = "lbSubCategoryFrom";
+            this.lbSubCategoryFrom.Size = new System.Drawing.Size(100, 13);
+            this.lbSubCategoryFrom.TabIndex = 6;
+            this.lbSubCategoryFrom.Text = "[Sub Category from]";
+            // 
+            // btnLookupSubCategoryStart
+            // 
+            this.btnLookupSubCategoryStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLookupSubCategoryStart.ImageIndex = 2;
+            this.btnLookupSubCategoryStart.ImageList = this.imageList1;
+            this.btnLookupSubCategoryStart.Location = new System.Drawing.Point(375, 36);
+            this.btnLookupSubCategoryStart.Name = "btnLookupSubCategoryStart";
+            this.btnLookupSubCategoryStart.Size = new System.Drawing.Size(27, 23);
+            this.btnLookupSubCategoryStart.TabIndex = 7;
+            this.btnLookupSubCategoryStart.UseVisualStyleBackColor = true;
+            this.btnLookupSubCategoryStart.Click += new System.EventHandler(this.btnLookupSubCategoryFrom_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "search_16.gif");
+            this.imageList1.Images.SetKeyName(1, "trash.gif");
+            this.imageList1.Images.SetKeyName(2, "lookupform2.gif");
+            // 
+            // txtSubCategoryEnd
+            // 
+            this.txtSubCategoryEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSubCategoryEnd.Location = new System.Drawing.Point(236, 90);
+            this.txtSubCategoryEnd.Name = "txtSubCategoryEnd";
+            this.txtSubCategoryEnd.ReadOnly = true;
+            this.txtSubCategoryEnd.Size = new System.Drawing.Size(133, 20);
+            this.txtSubCategoryEnd.TabIndex = 12;
+            // 
+            // lbSubCategoryTo
+            // 
+            this.lbSubCategoryTo.AutoSize = true;
+            this.lbSubCategoryTo.Location = new System.Drawing.Point(12, 93);
+            this.lbSubCategoryTo.Name = "lbSubCategoryTo";
+            this.lbSubCategoryTo.Size = new System.Drawing.Size(89, 13);
+            this.lbSubCategoryTo.TabIndex = 10;
+            this.lbSubCategoryTo.Text = "[Sub Category to]";
+            // 
+            // btnLookupSubCategoryEnd
+            // 
+            this.btnLookupSubCategoryEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLookupSubCategoryEnd.ImageIndex = 2;
+            this.btnLookupSubCategoryEnd.ImageList = this.imageList1;
+            this.btnLookupSubCategoryEnd.Location = new System.Drawing.Point(375, 88);
+            this.btnLookupSubCategoryEnd.Name = "btnLookupSubCategoryEnd";
+            this.btnLookupSubCategoryEnd.Size = new System.Drawing.Size(27, 23);
+            this.btnLookupSubCategoryEnd.TabIndex = 11;
+            this.btnLookupSubCategoryEnd.UseVisualStyleBackColor = true;
+            this.btnLookupSubCategoryEnd.Click += new System.EventHandler(this.btnLookupSubCategoryTo_Click);
+            // 
+            // txtSubCategoryDescStart
+            // 
+            this.txtSubCategoryDescStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSubCategoryDescStart.Location = new System.Drawing.Point(236, 64);
+            this.txtSubCategoryDescStart.Name = "txtSubCategoryDescStart";
+            this.txtSubCategoryDescStart.ReadOnly = true;
+            this.txtSubCategoryDescStart.Size = new System.Drawing.Size(166, 20);
+            this.txtSubCategoryDescStart.TabIndex = 13;
+            // 
+            // txtSubCategoryDescEnd
+            // 
+            this.txtSubCategoryDescEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSubCategoryDescEnd.Location = new System.Drawing.Point(236, 116);
+            this.txtSubCategoryDescEnd.Name = "txtSubCategoryDescEnd";
+            this.txtSubCategoryDescEnd.ReadOnly = true;
+            this.txtSubCategoryDescEnd.Size = new System.Drawing.Size(166, 20);
+            this.txtSubCategoryDescEnd.TabIndex = 14;
+            // 
+            // groupItem
+            // 
+            this.groupItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupItem.Controls.Add(this.btnSalesPackClear);
+            this.groupItem.Controls.Add(this.txtItemName);
+            this.groupItem.Controls.Add(this.lbItemName);
+            this.groupItem.Controls.Add(this.lbBarcode);
+            this.groupItem.Controls.Add(this.btnSalesPackLookup);
+            this.groupItem.Controls.Add(this.txtBarcode);
+            this.groupItem.Location = new System.Drawing.Point(15, 142);
+            this.groupItem.Name = "groupItem";
+            this.groupItem.Size = new System.Drawing.Size(387, 78);
+            this.groupItem.TabIndex = 34;
+            this.groupItem.TabStop = false;
+            this.groupItem.Text = "[Item]";
+            // 
+            // btnSalesPackClear
+            // 
+            this.btnSalesPackClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalesPackClear.ImageIndex = 1;
+            this.btnSalesPackClear.ImageList = this.imageList1;
+            this.btnSalesPackClear.Location = new System.Drawing.Point(353, 17);
+            this.btnSalesPackClear.Name = "btnSalesPackClear";
+            this.btnSalesPackClear.Size = new System.Drawing.Size(28, 23);
+            this.btnSalesPackClear.TabIndex = 43;
+            this.btnSalesPackClear.UseVisualStyleBackColor = true;
+            this.btnSalesPackClear.Click += new System.EventHandler(this.btnSalesPackClear_Click);
+            // 
+            // txtItemName
+            // 
+            this.txtItemName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtItemName.Location = new System.Drawing.Point(221, 45);
+            this.txtItemName.Name = "txtItemName";
+            this.txtItemName.ReadOnly = true;
+            this.txtItemName.Size = new System.Drawing.Size(160, 20);
+            this.txtItemName.TabIndex = 42;
+            // 
+            // lbItemName
+            // 
+            this.lbItemName.AutoSize = true;
+            this.lbItemName.Location = new System.Drawing.Point(6, 48);
+            this.lbItemName.Name = "lbItemName";
+            this.lbItemName.Size = new System.Drawing.Size(64, 13);
+            this.lbItemName.TabIndex = 41;
+            this.lbItemName.Text = "[Item Name]";
+            // 
+            // lbBarcode
+            // 
+            this.lbBarcode.AutoSize = true;
+            this.lbBarcode.Location = new System.Drawing.Point(6, 22);
+            this.lbBarcode.Name = "lbBarcode";
+            this.lbBarcode.Size = new System.Drawing.Size(53, 13);
+            this.lbBarcode.TabIndex = 37;
+            this.lbBarcode.Text = "[Barcode]";
+            // 
+            // btnSalesPackLookup
+            // 
+            this.btnSalesPackLookup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalesPackLookup.ImageIndex = 0;
+            this.btnSalesPackLookup.ImageList = this.imageList1;
+            this.btnSalesPackLookup.Location = new System.Drawing.Point(319, 17);
+            this.btnSalesPackLookup.Name = "btnSalesPackLookup";
+            this.btnSalesPackLookup.Size = new System.Drawing.Size(28, 23);
+            this.btnSalesPackLookup.TabIndex = 35;
+            this.btnSalesPackLookup.UseVisualStyleBackColor = true;
+            this.btnSalesPackLookup.Click += new System.EventHandler(this.btnSalesPackLookup_Click);
+            // 
+            // txtBarcode
+            // 
+            this.txtBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBarcode.Location = new System.Drawing.Point(221, 19);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.ReadOnly = true;
+            this.txtBarcode.Size = new System.Drawing.Size(92, 20);
+            this.txtBarcode.TabIndex = 36;
+            // 
+            // dtChangedTimeEnd
+            // 
+            this.dtChangedTimeEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtChangedTimeEnd.CustomFormat = "HH:mm";
+            this.dtChangedTimeEnd.Enabled = false;
+            this.dtChangedTimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtChangedTimeEnd.Location = new System.Drawing.Point(336, 252);
+            this.dtChangedTimeEnd.Name = "dtChangedTimeEnd";
+            this.dtChangedTimeEnd.ShowUpDown = true;
+            this.dtChangedTimeEnd.Size = new System.Drawing.Size(53, 20);
+            this.dtChangedTimeEnd.TabIndex = 42;
+            // 
+            // dtChangedTimeStart
+            // 
+            this.dtChangedTimeStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtChangedTimeStart.CustomFormat = "HH:mm";
+            this.dtChangedTimeStart.Enabled = false;
+            this.dtChangedTimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtChangedTimeStart.Location = new System.Drawing.Point(336, 226);
+            this.dtChangedTimeStart.Name = "dtChangedTimeStart";
+            this.dtChangedTimeStart.ShowUpDown = true;
+            this.dtChangedTimeStart.Size = new System.Drawing.Size(53, 20);
+            this.dtChangedTimeStart.TabIndex = 40;
+            // 
+            // dtChangeDateEnd
+            // 
+            this.dtChangeDateEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtChangeDateEnd.Checked = false;
+            this.dtChangeDateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtChangeDateEnd.Location = new System.Drawing.Point(236, 252);
+            this.dtChangeDateEnd.Name = "dtChangeDateEnd";
+            this.dtChangeDateEnd.ShowCheckBox = true;
+            this.dtChangeDateEnd.Size = new System.Drawing.Size(94, 20);
+            this.dtChangeDateEnd.TabIndex = 41;
+            this.dtChangeDateEnd.ValueChanged += new System.EventHandler(this.dtChangeDateEnd_ValueChanged);
+            // 
+            // dtChangeDateStart
+            // 
+            this.dtChangeDateStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtChangeDateStart.Checked = false;
+            this.dtChangeDateStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtChangeDateStart.Location = new System.Drawing.Point(236, 226);
+            this.dtChangeDateStart.Name = "dtChangeDateStart";
+            this.dtChangeDateStart.ShowCheckBox = true;
+            this.dtChangeDateStart.Size = new System.Drawing.Size(94, 20);
+            this.dtChangeDateStart.TabIndex = 39;
+            this.dtChangeDateStart.ValueChanged += new System.EventHandler(this.dtChangeDateStart_ValueChanged);
+            // 
+            // lbChangeDateEnd
+            // 
+            this.lbChangeDateEnd.AutoSize = true;
+            this.lbChangeDateEnd.Location = new System.Drawing.Point(21, 256);
+            this.lbChangeDateEnd.Name = "lbChangeDateEnd";
+            this.lbChangeDateEnd.Size = new System.Drawing.Size(162, 13);
+            this.lbChangeDateEnd.TabIndex = 44;
+            this.lbChangeDateEnd.Text = "[Changed interval end date/time]";
+            // 
+            // lbChangeDateStart
+            // 
+            this.lbChangeDateStart.AutoSize = true;
+            this.lbChangeDateStart.Location = new System.Drawing.Point(21, 230);
+            this.lbChangeDateStart.Name = "lbChangeDateStart";
+            this.lbChangeDateStart.Size = new System.Drawing.Size(164, 13);
+            this.lbChangeDateStart.TabIndex = 43;
+            this.lbChangeDateStart.Text = "[Changed interval start date/time]";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusMsg});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 332);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(418, 22);
+            this.statusStrip1.TabIndex = 45;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // statusMsg
+            // 
+            this.statusMsg.Name = "statusMsg";
+            this.statusMsg.Size = new System.Drawing.Size(109, 17);
+            this.statusMsg.Text = "toolStripStatusLabel1";
+            // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExport.Location = new System.Drawing.Point(240, 296);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(75, 23);
+            this.btnExport.TabIndex = 48;
+            this.btnExport.Text = "[Export]";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // ExportFVDFrm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(418, 354);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.dtChangedTimeEnd);
+            this.Controls.Add(this.dtChangedTimeStart);
+            this.Controls.Add(this.dtChangeDateEnd);
+            this.Controls.Add(this.dtChangeDateStart);
+            this.Controls.Add(this.lbChangeDateEnd);
+            this.Controls.Add(this.lbChangeDateStart);
+            this.Controls.Add(this.groupItem);
+            this.Controls.Add(this.txtSubCategoryDescEnd);
+            this.Controls.Add(this.txtSubCategoryDescStart);
+            this.Controls.Add(this.txtSubCategoryEnd);
+            this.Controls.Add(this.lbSubCategoryTo);
+            this.Controls.Add(this.btnLookupSubCategoryEnd);
+            this.Controls.Add(this.txtSubCategoryStart);
+            this.Controls.Add(this.lbSubCategoryFrom);
+            this.Controls.Add(this.btnLookupSubCategoryStart);
+            this.Controls.Add(this.lbItemsNotUpdatedInRSM);
+            this.Controls.Add(this.chkItemsNotUpdatedInStations);
+            this.Controls.Add(this.btnClose);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "ExportFVDFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ExportFVDFrm";
+            this.Load += new System.EventHandler(this.ExportFVDFrm_Load);
+            this.groupItem.ResumeLayout(false);
+            this.groupItem.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.CheckBox chkItemsNotUpdatedInStations;
+        private System.Windows.Forms.Label lbItemsNotUpdatedInRSM;
+        private System.Windows.Forms.TextBox txtSubCategoryStart;
+        private System.Windows.Forms.Label lbSubCategoryFrom;
+        private System.Windows.Forms.Button btnLookupSubCategoryStart;
+        private System.Windows.Forms.TextBox txtSubCategoryEnd;
+        private System.Windows.Forms.Label lbSubCategoryTo;
+        private System.Windows.Forms.Button btnLookupSubCategoryEnd;
+        private System.Windows.Forms.TextBox txtSubCategoryDescStart;
+        private System.Windows.Forms.TextBox txtSubCategoryDescEnd;
+        private System.Windows.Forms.GroupBox groupItem;
+        private System.Windows.Forms.TextBox txtItemName;
+        private System.Windows.Forms.Label lbItemName;
+        private System.Windows.Forms.Label lbBarcode;
+        private System.Windows.Forms.Button btnSalesPackLookup;
+        private System.Windows.Forms.TextBox txtBarcode;
+        private System.Windows.Forms.Button btnSalesPackClear;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.DateTimePicker dtChangedTimeEnd;
+        private System.Windows.Forms.DateTimePicker dtChangedTimeStart;
+        private System.Windows.Forms.DateTimePicker dtChangeDateEnd;
+        private System.Windows.Forms.DateTimePicker dtChangeDateStart;
+        private System.Windows.Forms.Label lbChangeDateEnd;
+        private System.Windows.Forms.Label lbChangeDateStart;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel statusMsg;
+        private System.Windows.Forms.Button btnExport;
+    }
+}

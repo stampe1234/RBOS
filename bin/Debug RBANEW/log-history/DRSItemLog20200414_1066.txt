@@ -1,0 +1,252 @@
+Log entry timestamp: 14-04-2020 11:30:27.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31611       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:30:57.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31612       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:34:59.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31613       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:35:15.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049834
+  Vare fra FVD-fil:  31614       TOMS POSER 110 130 GR 420 STK                                   0
+  Vare fra database: 31606       TOMS POSER 110 130 GR 420 STK                              592089
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:35:26.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049833
+  Vare fra FVD-fil:  31615       FAZER MINT BAR 41 GR                                            0
+  Vare fra database: 31608       FAZER MINT BAR 41 GR                                6416453019409
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:35:44.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049832
+  Vare fra FVD-fil:  31616       SUPER FLYERS POLO DISPLAY 628 STK                               0
+  Vare fra database: 31607       SUPER FLYERS POLO DISPLAY 628 STK                          598787
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:35:56.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31617       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:36:08.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31618       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:41:11.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31619       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 11:42:06.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049833
+  Vare fra FVD-fil:  31620       FAZER MINT BAR 41 GR                                            0
+  Vare fra database: 31608       FAZER MINT BAR 41 GR                                6416453019409
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:37:19.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31621       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:37:35.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049834
+  Vare fra FVD-fil:  31622       TOMS POSER 110 130 GR 420 STK                                   0
+  Vare fra database: 31606       TOMS POSER 110 130 GR 420 STK                              592089
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:41:02.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049834
+  Vare fra FVD-fil:  31611       TOMS POSER 110 130 GR 420 STK                                   0
+  Vare fra database: 31609       TOMS POSER 110 130 GR 420 STK                              592089
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:41:13.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31612       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31606       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:41:39.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 0
+  Vare fra FVD-fil:  31612       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 25153       VITAMIN WELL UPGRADE 0.50 L FL.                     7350042717026
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:43:05.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31613       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31606       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:44:18.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31614       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31606       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:45:26.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31615       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31606       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 13:52:06.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049834
+  Vare fra FVD-fil:  31611       TOMS POSER 110 130 GR 420 STK                                   0
+  Vare fra database: 31608       TOMS POSER 110 130 GR 420 STK                              592089
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 14:30:21.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31617       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31616       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2020 14:36:32.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1049835
+  Vare fra FVD-fil:  31618       TOMS POSER 110 130 GR 420 STK 2                                 0
+  Vare fra database: 31616       TOMS POSER 110 130 GR 420 STK 2                            598626
+--------------------------------------------------------------------------------------------------
+

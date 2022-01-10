@@ -1,0 +1,3 @@
+02-12-2020 11:32:18: Starting application.
+02-12-2020 11:32:22: Provider=SQLOLEDB;Data Source=BT-480I6WOUJYBZ\TESTSQL;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=9010
+02-12-2020 11:58:03: Application ended normally

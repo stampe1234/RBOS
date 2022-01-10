@@ -1,0 +1,36 @@
+Log entry timestamp: 05-03-2020 15:02:04.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1013242
+  Vare fra FVD-fil:  31455       6 X HEINEKEN 33 CL DS                               5741000126875
+  Vare fra database: 13681       HEINEKEN 33 CL DS                                   5741000126868
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 05-03-2020 15:11:16.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1013242
+  Vare fra FVD-fil:  31455       6 X HEINEKEN 33 CL DS                               5741000126875
+  Vare fra database: 13681       HEINEKEN 33 CL DS                                   5741000126868
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 05-03-2020 15:21:10.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1024210
+  Vare fra FVD-fil:  17402       BLÅ ROYAL EXPORT 33 CL                              5741000131077
+  Vare fra database: 31446       6 X ROYAL EXPORT 33 CL DS                           5741000131084
+--------------------------------------------------------------------------------------------------
+

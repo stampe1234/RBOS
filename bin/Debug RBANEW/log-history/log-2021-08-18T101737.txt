@@ -1,0 +1,35 @@
+18-08-2021 10:14:43: Starting application.
+18-08-2021 10:14:47: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=1049
+------------------------------------
+18-08-2021 10:17:37: Exception:
+Context: Application
+Message: Samtidighedsfejl: UpdateCommand påvirkede 0 af de forventede 1 poster.
+StackTrace:
+   ved System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   ved System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   ved System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   ved System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   ved System.Data.Common.DbDataAdapter.Update(DataTable dataTable)
+   ved RBOS.ImportDataSetTableAdapters.Import_RPOS_24H_HeaderTableAdapter.Update(Import_RPOS_24H_HeaderDataTable dataTable) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\ImportDataSet.Designer.cs:linje 23687
+   ved RBOS.ImportRSMForm.ImportRSMForm_FormClosing(Object sender, FormClosingEventArgs e) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\ImportRSMForm.cs:linje 157
+   ved System.Windows.Forms.Form.OnFormClosing(FormClosingEventArgs e)
+   ved System.Windows.Forms.Form.WmClose(Message& m)
+   ved System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   ved System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, Int32 wParam, Int32 lParam)
+   ved System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   ved System.Windows.Forms.Form.Close()
+   ved RBOS.ImportRSMForm.btnClose_Click(Object sender, EventArgs e) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\ImportRSMForm.cs:linje 47
+   ved System.Windows.Forms.Control.OnClick(EventArgs e)
+   ved System.Windows.Forms.Button.OnClick(EventArgs e)
+   ved System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   ved System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   ved System.Windows.Forms.Control.WndProc(Message& m)
+   ved System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   ved System.Windows.Forms.Button.WndProc(Message& m)
+   ved System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   ved System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   ved System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   ved System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   ved System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   ved RBOS.MainClass.Main(String[] CmdArgs) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\MainClass.cs:linje 193
+------------------------------------

@@ -1,0 +1,2 @@
+18-01-2021 13:53:27: Starting application.
+18-01-2021 13:53:30: Provider=SQLOLEDB;Data Source=BT-480I6WOUJYBZ\TESTSQL;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=3137

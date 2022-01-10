@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<NAXML-MaintenanceRequest version="3.4" xmlns="http://www.naxml.org/POSBO/Vocabulary/2003-10-16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.radiantsystems.com/NAXML-Extension NAXML-PBI34RadiantExtended.xsd" xmlns:radiant="http://www.radiantsystems.com/NAXML-Extension" xmlns:xmime="http://www.w3.org/2005/05/xmlmime">
+  <TransmissionHeader>
+    <StoreLocationID>3127</StoreLocationID>
+    <VendorName>Dansk Retail Services</VendorName>
+    <VendorModelVersion>4.00.000</VendorModelVersion>
+  </TransmissionHeader>
+  <ItemListMaintenance>
+    <TableAction type="update" />
+    <RecordAction type="addchange" />
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047775</ItemListID>
+      <ItemListDescription>HEL HALV TRÆPALLE OPTÆLLING</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047775</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1037358</ItemListID>
+      <ItemListDescription>20 STK PANT A</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1037358</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>26941</ItemListID>
+      <ItemListDescription>9STKPANTA</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>26941</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>17305</ItemListID>
+      <ItemListDescription>15 DS PANT</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>17305</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>29073</ItemListID>
+      <ItemListDescription>18 pant a</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>29073</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>4</ItemListID>
+      <ItemListDescription>½ PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>4</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>22</ItemListID>
+      <ItemListDescription>10XØL PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>22</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>28</ItemListID>
+      <ItemListDescription>12XØL PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>28</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>29</ItemListID>
+      <ItemListDescription>12XPANT SALG DÅSER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>29</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>63</ItemListID>
+      <ItemListDescription>20XØL PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>63</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>67</ItemListID>
+      <ItemListDescription>24XPANT SALG DÅSER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>67</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>71</ItemListID>
+      <ItemListDescription>2X1,5L PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>71</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>83</ItemListID>
+      <ItemListDescription>3X1,5L PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>83</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>95</ItemListID>
+      <ItemListDescription>4XO,5L PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>95</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>96</ItemListID>
+      <ItemListDescription>4XØL PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>96</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>97</ItemListID>
+      <ItemListDescription>4XPANT SALG DÅSER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>97</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>121</ItemListID>
+      <ItemListDescription>6XØL PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>121</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>122</ItemListID>
+      <ItemListDescription>6XPANT SALG DÅSER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>122</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>132</ItemListID>
+      <ItemListDescription>8XØL PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>132</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1158</ItemListID>
+      <ItemListDescription>HALV OG HELPALLE TIL OPTÆLLING</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1158</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1529</ItemListID>
+      <ItemListDescription>KVARTPALLE TIL OPTÆLLING</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1529</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2059</ItemListID>
+      <ItemListDescription>PANT KASSE SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2059</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2060</ItemListID>
+      <ItemListDescription>PANT SALG 0,5 L</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2060</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2061</ItemListID>
+      <ItemListDescription>PANT SALG 1,5 L</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2061</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2062</ItemListID>
+      <ItemListDescription>PANT SALG 1,5L</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2062</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2063</ItemListID>
+      <ItemListDescription>PANT SALG DÅSER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2063</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2064</ItemListID>
+      <ItemListDescription>PANT SALG DÅSER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2064</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2065</ItemListID>
+      <ItemListDescription>PANT SALG DÅSER 100 CL</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2065</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2066</ItemListID>
+      <ItemListDescription>PANT SALG DÅSER 100CL</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2066</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2067</ItemListID>
+      <ItemListDescription>PANT SALG SPIRITUS</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2067</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2068</ItemListID>
+      <ItemListDescription>PANT SALG SPIRITUS</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2068</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2069</ItemListID>
+      <ItemListDescription>PANT SALG VAND/ØL</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2069</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>2970</ItemListID>
+      <ItemListDescription>VAND/ØL PANT SALG</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>2970</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>4482</ItemListID>
+      <ItemListDescription>PANTBON</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>4482</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>5148</ItemListID>
+      <ItemListDescription>10XDÅSEPANT</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>5148</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6701</ItemListID>
+      <ItemListDescription>1 PANT VINFLASKE KODE E</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6701</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6899</ItemListID>
+      <ItemListDescription>SPIRITUSFLASKE KODE B</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6899</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6900</ItemListID>
+      <ItemListDescription>AKVAVITFLASKE  KODE D</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6900</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6901</ItemListID>
+      <ItemListDescription>24FL.+KS KODE G PET FLASK</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6901</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6902</ItemListID>
+      <ItemListDescription>30 FL MED KASSE KODE H</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6902</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6903</ItemListID>
+      <ItemListDescription>RTD VANDFLASKE PANTKODE N</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6903</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6904</ItemListID>
+      <ItemListDescription>FLASKE PANT A     (KODE O</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6904</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6905</ItemListID>
+      <ItemListDescription>20FL.+KS KODE V PET FLASK</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6905</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6954</ItemListID>
+      <ItemListDescription>CB ØLKASSE 33CL U.FLASKER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6954</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6955</ItemListID>
+      <ItemListDescription>TB ØLKASSE 33CL U.FLASKER</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6955</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6956</ItemListID>
+      <ItemListDescription>DADEKOKASSE 50CL U.FLASKE</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6956</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6957</ItemListID>
+      <ItemListDescription>DADEKOKASSE150CL U.FLASKE</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6957</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6958</ItemListID>
+      <ItemListDescription>COLAKS. M.24 X 0,5L TOMT</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6958</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>6959</ItemListID>
+      <ItemListDescription>COLAKS. M.10X150CL TOMT</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>6959</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047716</ItemListID>
+      <ItemListDescription>PANT A</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047716</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047719</ItemListID>
+      <ItemListDescription>PANT C</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047719</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047720</ItemListID>
+      <ItemListDescription>PANT A X6</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047720</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047721</ItemListID>
+      <ItemListDescription>PANT A X9</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047721</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047722</ItemListID>
+      <ItemListDescription>PANT A X10</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047722</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047723</ItemListID>
+      <ItemListDescription>PANT A X12</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047723</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047724</ItemListID>
+      <ItemListDescription>PANT A X15</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047724</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047725</ItemListID>
+      <ItemListDescription>PANT A X18</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047725</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047726</ItemListID>
+      <ItemListDescription>PANT A X4</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047726</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047717</ItemListID>
+      <ItemListDescription>PANT B</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047717</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047727</ItemListID>
+      <ItemListDescription>PANT A X20</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047727</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047728</ItemListID>
+      <ItemListDescription>PANT A X24</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047728</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047729</ItemListID>
+      <ItemListDescription>PANT B X6</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047729</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047730</ItemListID>
+      <ItemListDescription>PANT B X4</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047730</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047731</ItemListID>
+      <ItemListDescription>PANT C X2</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047731</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047732</ItemListID>
+      <ItemListDescription>PANT C X3</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047732</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047733</ItemListID>
+      <ItemListDescription>PANT C X4</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047733</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047736</ItemListID>
+      <ItemListDescription>RETUR PANT A</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047736</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047737</ItemListID>
+      <ItemListDescription>RETUR PANT B</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047737</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047738</ItemListID>
+      <ItemListDescription>RETUR PANT C</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047738</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047773</ItemListID>
+      <ItemListDescription>KASSE MELLEMLAG OPTÆLLING</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047773</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+    <ILTDetail>
+      <RecordAction type="addchange" />
+      <ItemListID>1047774</ItemListID>
+      <ItemListDescription>KVARTPALLE OPTÆLLING</ItemListDescription>
+      <ItemListEntry>
+        <ItemCode>
+          <POSCodeFormat format="plu" />
+          <POSCode>1047774</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+      </ItemListEntry>
+    </ILTDetail>
+  </ItemListMaintenance>
+</NAXML-MaintenanceRequest>

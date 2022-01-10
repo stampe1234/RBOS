@@ -1,0 +1,36 @@
+Log entry timestamp: 14-04-2021 09:06:13.
+RBOS user: .
+RBOS exe version: 4.00.002.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1048281
+  Vare fra FVD-fil:  33905       CRISP SALAT 0,15 KG                                             0
+  Vare fra database: 31614       CRISP SALAT 0,15 KG                                 5705830915672
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2021 09:23:46.
+RBOS user: .
+RBOS exe version: 4.00.002.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1048317
+  Vare fra FVD-fil:  33906       L VINYL HANDSKE PUDDERFRI 100 STK                               0
+  Vare fra database: 31477       L VINYL HANDSKE PUDDERFRI 100 STK                   5711414001051
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 14-04-2021 09:32:31.
+RBOS user: .
+RBOS exe version: 4.00.002.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 1048317
+  Vare fra FVD-fil:  33907       L VINYL HANDSKE PUDDERFRI 100 STK                               0
+  Vare fra database: 31477       L VINYL HANDSKE PUDDERFRI 100 STK                   5711414001051
+--------------------------------------------------------------------------------------------------
+

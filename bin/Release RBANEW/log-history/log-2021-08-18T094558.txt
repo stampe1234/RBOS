@@ -1,0 +1,14 @@
+18-08-2021 09:45:51: Starting application.
+------------------------------------
+18-08-2021 09:45:58: Exception:
+Context: Application
+Message: Egenskaben ConnectionString er ikke initialiseret.
+StackTrace:
+   ved System.Data.OleDb.OleDbConnection.PermissionDemand()
+   ved System.Data.OleDb.OleDbConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   ved System.Data.OleDb.OleDbConnection.Open()
+   ved RBOS.db.Initialize()
+   ved RBOS.MainClass.Main(String[] CmdArgs)
+------------------------------------

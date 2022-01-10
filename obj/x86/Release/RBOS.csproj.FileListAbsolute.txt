@@ -1,0 +1,703 @@
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\barcode.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\datetime.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\datetime_greyscale.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\detailform.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\detailform_greyscale.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\details.bmp
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\execute.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\green_checkmark.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\info.bmp
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\lookupform.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\trash.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\img\search_16.gif
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\RBOS.exe.config
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\RBOS.exe
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\crdb_adoplus.dll
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\Economic.Api.dll
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\Economic.Api.XmlSerializers.dll
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\Indy.Sockets.dll
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\Neodynamic.WinControls.BarcodeProfessional.dll
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\Mono.Security.dll
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\Economic.Api.xml
+C:\Users\Peter\Desktop\rbostest\RBOS\bin\Release\Neodynamic.WinControls.BarcodeProfessional.xml
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.About.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.AddInfoFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BackupFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BarcodeForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BFIExportFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BFIStations.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustDetailsForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTInvCountDetailsForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTInvCountHeaderForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTOrderDetailForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTOrderHeaderForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTWorksheet.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BHHTWSDetail.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BookedInvCount.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BookedInvCountReportF.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.BkdInvCountIntvFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.CashierAdmin.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.DanskeSpilReportFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_Discounts.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_SafePayCurr.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemTransForbrugsvareReportFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ImportEconomicsForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ForbrugsvareSearch.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ForbrugsvareRegistrering.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesStatDetailRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.DisktilbudSolgtRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemTransStockCountReportFormRBA.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA_EraseBookedDialog.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_DETAIL_Valuta.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODDetailsDETAIL.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Depotbeholdning.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Indbetalinger.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_SafePay_OverfoerselTilSP.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Udbetalinger.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesPackFuturePricesPrompt.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemTransReportFormRBA.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SearchItemID.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBA.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBAGetInitials.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SearchFormRBA.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.WasteSheetDetailsRBA.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ExportFVDDetails.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ExportFVDFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_ReserveTerminal.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ExportFVDHeader.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.GLAccountPopup.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_ForeignCurrency.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_ManualCards.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ImportItemsCSVFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.InactiveItemDetails.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.InactiveItemList.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemsDelete.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemsDeleteList.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlEmployeePopup.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.DateTimeDialog.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.DepositMissing.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ExportACNFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.OnHandRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlAbsense.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlAbsenseCodes.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlClusterSites.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlEmployee.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlExportFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptAbsenseFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptAvgHrsWeekFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptEmployeeFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptLentOutFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptSalaryDateFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptSalaryEmpFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrmWk.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptSalRegFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlRptWithdrawFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlSalaryPeriods.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlSalaryReg.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.Administration.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PrlWithdraw.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.Readings.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesMarginRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODDebtor.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODDebtorListPF.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODDebtorPopup.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODDebtorTransPF.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODReportFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_ManSales.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_POSSales.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_Payout.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_Payin.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_LocalCredit.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_PromptFirstDate.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_ShellCards.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_BankCards.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODDetails.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EODOverview.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.EOD_BankDep.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.FTPAccountsForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.FTPLogForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.InvCountWorkForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemSalesSumForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ImportRSMForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ImportRSMFormPL.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemTransReportForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemUpdates.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemUpdInfo.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemUpdLines.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemUpdRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.LookupKolliSizeForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ManualUpdatesForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.OrderAsDraft.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.OrderDraftForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.OrderDraftDetailsForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.CreditCategoryPopup.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ExportRadiantForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ImportBHHTForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ItemTypeCodePopup.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.LogonForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.MainForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.OrderDetailsForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.OrderHeaderForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.OrderReportForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.PackSizeForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ProgressForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.Properties.Resources.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ReportFormItemBasicData.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.ReportPreview.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.RSM_MSM_Imported.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesPackDetailsForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesReportFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesStatAccounts.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesStatColumns.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SalesStatRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SearchForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SiteInformationForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.Splash.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SubCategoryForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SubCategoryPopup.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SubcatRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.Supplier.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SupplierPopup.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.SupplierItemSearchForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.TestForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.UserAdminForm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.Wash.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.WasteSheetDetails.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.WasteSheetHeader.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.WasteSheetRptFrm.resources
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.csproj.GenerateResource.Cache
+C:\Users\Peter\Desktop\rbostest\RBOS\obj\x86\Release\RBOS.exe
+C:\Users\Peter\Desktop\RBOS RDS\RBOS\bin\Release\RBOS.exe.config
+C:\Users\Peter\Desktop\RBOS RDS\RBOS\obj\x86\Release\RBOS.exe
+C:\Users\Peter\Desktop\RBOS RDS - Kopi\RBOS\bin\Release\RBOS.exe.config
+C:\Users\Peter\Desktop\RBOS RDS - Kopi\RBOS\obj\x86\Release\RBOS.exe
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\barcode.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\datetime.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\datetime_greyscale.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\detailform.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\detailform_greyscale.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\details.bmp
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\execute.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\green_checkmark.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\info.bmp
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\lookupform.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\trash.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\img\search_16.gif
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\RBOS.exe.config
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\RBOS.exe
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\crdb_adoplus.dll
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\Economic.Api.dll
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\Economic.Api.XmlSerializers.dll
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\Indy.Sockets.dll
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\Neodynamic.WinControls.BarcodeProfessional.dll
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\Mono.Security.dll
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\Economic.Api.xml
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\bin\Release\Neodynamic.WinControls.BarcodeProfessional.xml
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.csprojResolveAssemblyReference.cache
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.About.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.AddInfoFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BackupFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BarcodeForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BFIExportFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BFIStations.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustDetailsForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvCountDetailsForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvCountHeaderForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTOrderDetailForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTOrderHeaderForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTWorksheet.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTWSDetail.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BookedInvCount.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BookedInvCountReportF.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BkdInvCountIntvFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.CashierAdmin.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DanskeSpilReportFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_Discounts.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePayCurr.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransForbrugsvareReportFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportEconomicsForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ForbrugsvareSearch.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ForbrugsvareRegistrering.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatDetailRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DisktilbudSolgtRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransStockCountReportFormRBA.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA_EraseBookedDialog.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.UserLogonDBList.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_DETAIL_Valuta.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDetailsDETAIL.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Depotbeholdning.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Indbetalinger.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_OverfoerselTilSP.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Udbetalinger.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesPackFuturePricesPrompt.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransReportFormRBA.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SearchItemID.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBA.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBAGetInitials.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SearchFormRBA.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetDetailsRBA.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportFVDDetails.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportFVDFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ReserveTerminal.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportFVDHeader.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.GLAccountPopup.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ForeignCurrency.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ManualCards.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportItemsCSVFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.InactiveItemDetails.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.InactiveItemList.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemsDelete.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemsDeleteList.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlEmployeePopup.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DateTimeDialog.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DepositMissing.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OnHandRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlAbsense.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlAbsenseCodes.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlClusterSites.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlEmployee.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlExportFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptAbsenseFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptAvgHrsWeekFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptEmployeeFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptLentOutFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalaryDateFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalaryEmpFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrmWk.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalRegFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptWithdrawFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlSalaryPeriods.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlSalaryReg.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Administration.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlWithdraw.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Readings.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesMarginRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtor.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtorListPF.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtorPopup.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtorTransPF.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODReportFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ManSales.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_POSSales.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_Payout.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_Payin.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_LocalCredit.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_PromptFirstDate.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ShellCards.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_BankCards.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDetails.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODOverview.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_BankDep.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.FTPAccountsForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.FTPLogForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.InvCountWorkForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemSalesSumForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportRSMForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportRSMFormPL.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransReportForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdates.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdInfo.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdLines.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.LookupKolliSizeForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ManualUpdatesForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderAsDraft.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderDraftForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderDraftDetailsForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.CreditCategoryPopup.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportRadiantForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportBHHTForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTypeCodePopup.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.LogonForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.MainForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderDetailsForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderHeaderForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderReportForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PackSizeForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ProgressForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Properties.Resources.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ReportFormItemBasicData.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ReportPreview.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.RSM_MSM_Imported.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesPackDetailsForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesReportFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatAccounts.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatColumns.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SearchForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SiteInformationForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Splash.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SubCategoryForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SubCategoryPopup.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SubcatRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Supplier.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SupplierPopup.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SupplierItemSearchForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.TestForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.UserAdminForm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Wash.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetDetails.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetHeader.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetRptFrm.resources
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.csproj.GenerateResource.Cache
+C:\Users\Peter\Desktop\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.exe
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\barcode.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\datetime.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\datetime_greyscale.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\detailform.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\detailform_greyscale.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\details.bmp
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\execute.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\green_checkmark.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\info.bmp
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\lookupform.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\trash.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\img\search_16.gif
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\RBOS.exe.config
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\RBOS.exe
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\Economic.Api.dll
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\Economic.Api.XmlSerializers.dll
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\Indy.Sockets.dll
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\EnvDTE.dll
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\Mono.Security.dll
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\stdole.dll
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\bin\Release\Economic.Api.xml
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.csprojAssemblyReference.cache
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.About.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.AddInfoFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BackupFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BarcodeForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BFIExportFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BFIStations.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustDetailsForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvCountDetailsForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTInvCountHeaderForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTOrderDetailForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTOrderHeaderForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTWorksheet.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BHHTWSDetail.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BookedInvCount.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BookedInvCountReportF.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.BkdInvCountIntvFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.CashierAdmin.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DanskeSpilReportFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_Discounts.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePayCurr.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransForbrugsvareReportFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportEconomicsForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ForbrugsvareSearch.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ForbrugsvareRegistrering.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatDetailRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DisktilbudSolgtRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransStockCountReportFormRBA.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA_EraseBookedDialog.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.UnlockPrompt.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.UserLogonDBList.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.UserLogonUnlockDB.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_DETAIL_Valuta.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDetailsDETAIL.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Depotbeholdning.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Indbetalinger.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_OverfoerselTilSP.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Udbetalinger.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesPackFuturePricesPrompt.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransReportFormRBA.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SearchItemID.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBA.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBAGetInitials.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SearchFormRBA.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetDetailsRBA.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportFVDDetails.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportFVDFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ReserveTerminal.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportFVDHeader.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.GLAccountPopup.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ForeignCurrency.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ManualCards.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportItemsCSVFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.InactiveItemDetails.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.InactiveItemList.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemsDelete.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemsDeleteList.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlEmployeePopup.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DateTimeDialog.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.DepositMissing.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OnHandRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlAbsense.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlAbsenseCodes.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlClusterSites.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlEmployee.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlExportFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptAbsenseFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptAvgHrsWeekFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptEmployeeFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptLentOutFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalaryDateFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalaryEmpFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrmWk.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptSalRegFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlRptWithdrawFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlSalaryPeriods.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlSalaryReg.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Administration.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PrlWithdraw.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Readings.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesMarginRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtor.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtorListPF.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtorPopup.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDebtorTransPF.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODReportFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ManSales.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_POSSales.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_Payout.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_Payin.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_LocalCredit.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_PromptFirstDate.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_ShellCards.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_BankCards.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODDetails.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EODOverview.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.EOD_BankDep.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.FTPAccountsForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.FTPLogForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.InvCountWorkForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemSalesSumForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportRSMForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportRSMFormPL.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTransReportForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdates.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdInfo.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdLines.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemUpdRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.LookupKolliSizeForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ManualUpdatesForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderAsDraft.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderDraftForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderDraftDetailsForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.CreditCategoryPopup.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ExportRadiantForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ImportBHHTForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ItemTypeCodePopup.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.LogonForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.MainForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderDetailsForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderHeaderForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.OrderReportForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.PackSizeForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ProgressForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Properties.Resources.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ReportFormItemBasicData.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.ReportPreview.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.RSM_MSM_Imported.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesPackDetailsForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesReportFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatAccounts.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatColumns.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SalesStatRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SearchForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SiteInformationForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Splash.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SubCategoryForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SubCategoryPopup.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SubcatRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Supplier.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SupplierPopup.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.SupplierItemSearchForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.TestForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.UserAdminForm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.Wash.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetDetails.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetHeader.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.WasteSheetRptFrm.resources
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.csproj.GenerateResource.cache
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.csproj.CoreCompileInputs.cache
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.csproj.CopyComplete
+C:\Users\pni\Desktop\20190218\RBOS DO SQL\RBOS\obj\x86\Release\RBOS.exe
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\barcode.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\datetime.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\datetime_greyscale.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\detailform.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\detailform_greyscale.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\details.bmp
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\execute.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\green_checkmark.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\info.bmp
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\lookupform.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\trash.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\img\search_16.gif
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\RBOS.exe.config
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\RBOS.exe
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\Economic.Api.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\Economic.Api.XmlSerializers.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\Indy.Sockets.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\Mono.Security.dll
+C:\Data\SourceSafe\DRS\RBOS\bin\Release\Economic.Api.xml
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.About.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.AddInfoFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BackupFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BarcodeForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BFIExportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BFIStations.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTInvAdjustForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTInvCountDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTInvCountHeaderForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTOrderDetailForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTOrderHeaderForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTWorksheet.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BHHTWSDetail.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BookedInvCount.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BookedInvCountReportF.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.BkdInvCountIntvFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.CashierAdmin.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.DanskeSpilReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_Discounts.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_SafePayCurr.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemTransForbrugsvareReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ImportEconomicsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ForbrugsvareSearch.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ForbrugsvareRegistrering.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesStatDetailRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.DisktilbudSolgtRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemTransStockCountReportFormRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.StockCountRegistrationRBA_EraseBookedDialog.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.UnlockPrompt.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.UserLogonDBList.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.UserLogonUnlockDB.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_DETAIL_Valuta.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODDetailsDETAIL.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Depotbeholdning.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Indbetalinger.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_SafePay_OverfoerselTilSP.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_SafePay_Udbetalinger.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesPackFuturePricesPrompt.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemTransReportFormRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SearchItemID.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.WasteRegistrationRBAGetInitials.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SearchFormRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.WasteSheetDetailsRBA.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ExportFVDDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ExportFVDFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_ReserveTerminal.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ExportFVDHeader.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.GLAccountPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_ForeignCurrency.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_ManualCards.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ImportItemsCSVFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.InactiveItemDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.InactiveItemList.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemsDelete.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemsDeleteList.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlEmployeePopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.DateTimeDialog.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.DepositMissing.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.OnHandRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlAbsense.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlAbsenseCodes.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlClusterSites.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlEmployee.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlExportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptAbsenseFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptAvgHrsWeekFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptEmployeeFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptLentOutFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptSalaryDateFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptSalaryEmpFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptSalarySumFrmWk.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptSalRegFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlRptWithdrawFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlSalaryPeriods.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlSalaryReg.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.Administration.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PrlWithdraw.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.Readings.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesMarginRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODDebtor.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODDebtorListPF.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODDebtorPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODDebtorTransPF.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_ManSales.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_POSSales.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_Payout.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_Payin.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_LocalCredit.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_PromptFirstDate.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_ShellCards.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_BankCards.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EODOverview.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.EOD_BankDep.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.FTPAccountsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.FTPLogForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.InvCountWorkForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemSalesSumForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ImportRSMForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ImportRSMFormPL.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemTransReportForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemUpdates.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemUpdInfo.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemUpdLines.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemUpdRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.LookupKolliSizeForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ManualUpdatesForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.OrderAsDraft.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.OrderDraftForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.OrderDraftDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.CreditCategoryPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ExportRadiantForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ImportBHHTForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ItemTypeCodePopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.LogonForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.MainForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.OrderDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.OrderHeaderForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.OrderReportForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.PackSizeForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ProgressForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.Properties.Resources.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ReportFormItemBasicData.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.ReportPreview.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.RSM_MSM_Imported.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesPackDetailsForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesReportFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesStatAccounts.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesStatColumns.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SalesStatRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SearchForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SiteInformationForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.Splash.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SubCategoryForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SubCategoryPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SubcatRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.Supplier.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SupplierPopup.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.SupplierItemSearchForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.TestForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.UserAdminForm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.Wash.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.WasteSheetDetails.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.WasteSheetHeader.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.WasteSheetRptFrm.resources
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.csproj.GenerateResource.cache
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.csproj.CoreCompileInputs.cache
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.csproj.CopyComplete
+C:\Data\SourceSafe\DRS\RBOS\obj\x86\Release\RBOS.exe

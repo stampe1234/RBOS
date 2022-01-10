@@ -1,0 +1,21 @@
+29-06-2021 13:05:07: Starting application.
+29-06-2021 13:05:31: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=1069
+29-06-2021 13:05:31: RBOS har mistet forbindelsen til databasen og lukkes nu.
+
+Prøv venligst igen senere eller tjek forbindelsen til internettet.
+Kontakt support hvis fejlen bliver ved med at opstå.
+------------------------------------
+29-06-2021 13:05:31: Exception:
+Context: Application
+Message: Cannot open database "1069" requested by the login. The login failed.
+StackTrace:
+   ved System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   ved System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   ved System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   ved System.Data.OleDb.OleDbConnection.Open()
+   ved RBOS.db.Initialize() i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\db.cs:linje 183
+   ved RBOS.MainClass.Main(String[] CmdArgs) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\MainClass.cs:linje 170
+------------------------------------

@@ -1,0 +1,13 @@
+16-06-2021 15:14:41: Starting application.
+16-06-2021 15:14:49: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=1760
+------------------------------------
+16-06-2021 15:18:04: Exception:
+Context: DRS_DataGridView.ProcessDataGridViewKey
+Message: Den aktuelle tråd skal indstilles til STA-tilstand (Single Thread Apartment), før der kan foretages kald til OLE. Kontroller, at STAThreadAttribute er markeret i funktionen Main.
+StackTrace:
+   ved System.Windows.Forms.Clipboard.SetDataObject(Object data, Boolean copy, Int32 retryTimes, Int32 retryDelay)
+   ved System.Windows.Forms.DataGridView.ProcessInsertKey(Keys keyData)
+   ved System.Windows.Forms.DataGridView.ProcessDataGridViewKey(KeyEventArgs e)
+   ved DRS.Extensions.DRS_DataGridView.ProcessDataGridViewKey(KeyEventArgs e) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\extensions\DRS_DataGridView.cs:linje 92
+------------------------------------
+16-06-2021 15:27:21: Application ended normally

@@ -1,0 +1,11 @@
+27-05-2021 13:47:28: Starting application.
+27-05-2021 13:47:33: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=4580
+------------------------------------
+27-05-2021 13:48:09: Exception:
+Context: ImportRHT.ImportBHE
+Message: Objektreferencen er ikke indstillet til en forekomst af et objekt.
+StackTrace:
+   ved RBOS.ImportRHT.ImportStockregulation(DataSet dsXML) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\ImportRHT.cs:linje 476
+   ved RBOS.ImportRHT.ImportBHE(ImportRHTForm callerX) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\ImportRHT.cs:linje 168
+------------------------------------
+27-05-2021 13:56:22: Application ended normally

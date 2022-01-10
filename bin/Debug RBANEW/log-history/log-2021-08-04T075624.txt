@@ -1,0 +1,3 @@
+04-08-2021 07:55:57: Starting application.
+04-08-2021 07:56:04: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=1014
+04-08-2021 07:56:24: Application ended normally

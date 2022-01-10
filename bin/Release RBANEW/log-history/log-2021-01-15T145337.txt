@@ -1,0 +1,19 @@
+15-01-2021 14:50:41: Starting application.
+15-01-2021 14:51:55: Provider=SQLOLEDB;Data Source=BT-480I6WOUJYBZ\TESTSQL;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=3137
+------------------------------------
+15-01-2021 14:52:27: Exception:
+Context: ImportRHT.ImportBHE
+Message: Objektreferencen er ikke indstillet til en forekomst af et objekt.
+StackTrace:
+   ved RBOS.ImportRHT.ImportStockregulation(DataSet dsXML)
+   ved RBOS.ImportRHT.ImportBHE(ImportRHTForm callerX)
+------------------------------------
+------------------------------------
+15-01-2021 14:53:37: Exception:
+Context: ImportBHHT.ImportPEJ
+Message: Der er ikke tilstrækkelig systemhukommelse i ressourcepuljen 'internal' til at køre denne forespørgsel.
+StackTrace:
+   ved System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   ved System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   ved RBOS.ImportRHT.ImportPEJRHT(DateTime CountDate, Int32 RHTCountID)
+------------------------------------

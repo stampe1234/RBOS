@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BHHTExport xmlns="http://www.radiantsystems.com/BatchHHT">
+  <PurchaseOrder>
+    <PurchaseOrderId>4</PurchaseOrderId>
+    <SupplierId>4</SupplierId>
+    <OrderDate>2019-10-10T09:37:34</OrderDate>
+    <DeliveryDate>2019-10-13</DeliveryDate>
+    <PurchaseOrderItemList>
+      <SupplierId>4</SupplierId>
+      <SupplierItemId>66439</SupplierItemId>
+      <UOMId>1010</UOMId>
+      <Quantity>10.0000000000</Quantity>
+      <ItemTimestamp>2019-10-10T09:38:05</ItemTimestamp>
+    </PurchaseOrderItemList>
+    <PurchaseOrderItemList>
+      <SupplierId>4</SupplierId>
+      <SupplierItemId>66456</SupplierItemId>
+      <UOMId>1010</UOMId>
+      <Quantity>5.0000000000</Quantity>
+      <ItemTimestamp>2019-10-10T09:38:13</ItemTimestamp>
+    </PurchaseOrderItemList>
+  </PurchaseOrder>
+</BHHTExport>

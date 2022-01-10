@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<NAXML-MaintenanceRequest version="3.4" xmlns="http://www.naxml.org/POSBO/Vocabulary/2003-10-16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.radiantsystems.com/NAXML-Extension NAXML-PBI34RadiantExtended.xsd" xmlns:radiant="http://www.radiantsystems.com/NAXML-Extension" xmlns:xmime="http://www.w3.org/2005/05/xmlmime">
+  <TransmissionHeader>
+    <StoreLocationID>3127</StoreLocationID>
+    <VendorName>Dansk Retail Services</VendorName>
+    <VendorModelVersion>4.00.000</VendorModelVersion>
+  </TransmissionHeader>
+  <ItemMaintenance>
+    <TableAction type="update" />
+    <RecordAction type="addchange" />
+    <ITTDetail>
+      <RecordAction type="addchange" />
+      <ItemCode>
+        <POSCodeFormat format="plu" />
+        <POSCode>1013101</POSCode>
+        <POSCodeModifier name="Stk">1</POSCodeModifier>
+      </ItemCode>
+      <ITTData>
+        <ActiveFlag value="yes" />
+        <MerchandiseCode>201060101</MerchandiseCode>
+        <RegularSellPrice>100.00</RegularSellPrice>
+        <Description>COCA COLA 1,5L EX PANT</Description>
+        <ItemType>
+          <ItemTypeCode>1</ItemTypeCode>
+          <ItemTypeSubCode>1</ItemTypeSubCode>
+        </ItemType>
+        <LinkCode type="itemList">4</LinkCode>
+        <SellingUnits>1</SellingUnits>
+        <TaxStrategyID>1</TaxStrategyID>
+      </ITTData>
+      <radiant:ITTDetailExtension>
+        <ItemCode>
+          <POSCodeFormat format="1" />
+          <POSCode>56421</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+        <ItemCode>
+          <POSCodeFormat format="2" />
+          <POSCode>5701872206273</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+        <radiant:RawPaymentSystemsProductCode>2005</radiant:RawPaymentSystemsProductCode>
+      </radiant:ITTDetailExtension>
+    </ITTDetail>
+    <ITTDetail>
+      <RecordAction type="addchange" />
+      <ItemCode>
+        <POSCodeFormat format="plu" />
+        <POSCode>664</POSCode>
+        <POSCodeModifier name="Stk">1</POSCodeModifier>
+      </ItemCode>
+      <ITTData>
+        <ActiveFlag value="yes" />
+        <MerchandiseCode>201060101</MerchandiseCode>
+        <RegularSellPrice>10.00</RegularSellPrice>
+        <Description>COCA COLA 2X1,5L EX PANT</Description>
+        <ItemType>
+          <ItemTypeCode>1</ItemTypeCode>
+          <ItemTypeSubCode>1</ItemTypeSubCode>
+        </ItemType>
+        <LinkCode type="itemList">29</LinkCode>
+        <SellingUnits>1</SellingUnits>
+        <TaxStrategyID>1</TaxStrategyID>
+      </ITTData>
+      <radiant:ITTDetailExtension>
+        <ItemCode>
+          <POSCodeFormat format="1" />
+          <POSCode>5214</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+        <ItemCode>
+          <POSCodeFormat format="2" />
+          <POSCode>5701872206266</POSCode>
+          <POSCodeModifier name="Stk">2</POSCodeModifier>
+        </ItemCode>
+        <radiant:RawPaymentSystemsProductCode>2005</radiant:RawPaymentSystemsProductCode>
+      </radiant:ITTDetailExtension>
+    </ITTDetail>
+    <ITTDetail>
+      <RecordAction type="addchange" />
+      <ItemCode>
+        <POSCodeFormat format="plu" />
+        <POSCode>665</POSCode>
+        <POSCodeModifier name="Stk">1</POSCodeModifier>
+      </ItemCode>
+      <ITTData>
+        <ActiveFlag value="yes" />
+        <MerchandiseCode>201060101</MerchandiseCode>
+        <RegularSellPrice>100.00</RegularSellPrice>
+        <Description>COCA COLA 33CL DS EX PANT</Description>
+        <ItemType>
+          <ItemTypeCode>1</ItemTypeCode>
+          <ItemTypeSubCode>1</ItemTypeSubCode>
+        </ItemType>
+        <LinkCode type="itemList">4</LinkCode>
+        <SellingUnits>1</SellingUnits>
+        <TaxStrategyID>1</TaxStrategyID>
+      </ITTData>
+      <radiant:ITTDetailExtension>
+        <ItemCode>
+          <POSCodeFormat format="1" />
+          <POSCode>2541</POSCode>
+          <POSCodeModifier name="Stk">1</POSCodeModifier>
+        </ItemCode>
+        <ItemCode>
+          <POSCodeFormat format="2" />
+          <POSCode>5701872203005</POSCode>
+          <POSCodeModifier name="Stk">6</POSCodeModifier>
+        </ItemCode>
+        <radiant:RawPaymentSystemsProductCode>2005</radiant:RawPaymentSystemsProductCode>
+      </radiant:ITTDetailExtension>
+    </ITTDetail>
+  </ItemMaintenance>
+</NAXML-MaintenanceRequest>

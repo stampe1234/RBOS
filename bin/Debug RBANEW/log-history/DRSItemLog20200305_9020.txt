@@ -1,0 +1,36 @@
+Log entry timestamp: 05-03-2020 12:55:29.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 0
+  Vare fra FVD-fil:  5           1 STK APOSTOLADO                                    5712344122304
+  Vare fra database: 28966       CORNY MUSLI BAR CHOKO 6 P 2                         4011800420215
+  Vare fra database: 28971       FLENSTED KARTOFFELBÅDE 20                           5701150906895
+  Vare fra database: 29020       GESTUS HÜTTENSKINKE 150 G                           5701410388416
+  Vare fra database: 29029       GESTUS RØGET MØRBRAD 80 G                           5701410369743
+  Vare fra database: 29039       GALBANI MOZZ MINI BØFFEL                            8000430133172
+  Vare fra database: 29099       K.V. MUSLIBARS 3V MINIDIS                                  305377
+  Vare fra database: 29697       POMMES FRITES SURECRISP                             8710438159639
+--------------------------------------------------------------------------------------------------
+
+Log entry timestamp: 05-03-2020 12:56:53.
+RBOS user: .
+RBOS exe version: 4.00.000.
+Import af FVD-fil: ItemDataSet.ItemDataTable.OnColumnChanged (FSD_ID column.
+Varer der er blevet forhindret i at opdatere FSD_ID i databasen under FVD import,
+da det FSD_ID allerede eksisterede på en anden vare og en dublet ville opstå:
+--------------------------------------------------------------------------------------------------
+FSD_ID: 0
+  Vare fra FVD-fil:  2           0.2L KARBURATOR INJEC                               7317191048975
+  Vare fra database: 28966       CORNY MUSLI BAR CHOKO 6 P 2                         4011800420215
+  Vare fra database: 28971       FLENSTED KARTOFFELBÅDE 20                           5701150906895
+  Vare fra database: 29020       GESTUS HÜTTENSKINKE 150 G                           5701410388416
+  Vare fra database: 29029       GESTUS RØGET MØRBRAD 80 G                           5701410369743
+  Vare fra database: 29039       GALBANI MOZZ MINI BØFFEL                            8000430133172
+  Vare fra database: 29099       K.V. MUSLIBARS 3V MINIDIS                                  305377
+  Vare fra database: 29697       POMMES FRITES SURECRISP                             8710438159639
+--------------------------------------------------------------------------------------------------
+
