@@ -1,6 +1,6 @@
-27-05-2021 13:10:16: Starting application.
+16-12-2021 09:19:36: Starting application.
 ------------------------------------
-27-05-2021 13:10:19: Exception:
+16-12-2021 09:19:43: Exception:
 Context: Application
 Message: Egenskaben ConnectionString er ikke initialiseret.
 StackTrace:

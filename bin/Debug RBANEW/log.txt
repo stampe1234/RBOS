@@ -1,14 +1,3 @@
-16-12-2021 09:19:36: Starting application.
-------------------------------------
-16-12-2021 09:19:43: Exception:
-Context: Application
-Message: Egenskaben ConnectionString er ikke initialiseret.
-StackTrace:
-   ved System.Data.OleDb.OleDbConnection.PermissionDemand()
-   ved System.Data.OleDb.OleDbConnectionFactory.PermissionDemand(DbConnection outerConnection)
-   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   ved System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
-   ved System.Data.OleDb.OleDbConnection.Open()
-   ved RBOS.db.Initialize() i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\db.cs:linje 183
-   ved RBOS.MainClass.Main(String[] CmdArgs) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Data\RBOSNew\DRS\RBOS\MainClass.cs:linje 170
-------------------------------------
+10-01-2022 10:58:44: Starting application.
+10-01-2022 10:58:47: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=1760
+10-01-2022 11:00:30: Application ended normally
