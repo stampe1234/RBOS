@@ -114,7 +114,7 @@ namespace RBOS
             versionHistory.Add("4.00.001"); // Første version hvor vi har mulighed for at teste på enkelte stationer
             versionHistory.Add("4.00.002"); // 
             versionHistory.Add("4.00.003"); // test version med ændret safepay valuta
-
+            versionHistory.Add("4.00.004"); // decimaler på fuel mulighed for at slette kampangeID
             _ExePatch = "0";
             _ExePatch = "0";
 

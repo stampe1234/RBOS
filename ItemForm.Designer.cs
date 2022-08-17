@@ -96,6 +96,7 @@ namespace RBOS
             this.txtStock = new System.Windows.Forms.TextBox();
             this.lbStock = new System.Windows.Forms.Label();
             this.txtSubCategory = new System.Windows.Forms.TextBox();
+            this.txtSubCategoryDesc = new DRS.Extensions.DRS_LookupTextBox();
             this.lbLastChanged = new System.Windows.Forms.Label();
             this.lbSubCategory = new System.Windows.Forms.Label();
             this.lbLastCounted = new System.Windows.Forms.Label();
@@ -105,7 +106,17 @@ namespace RBOS
             this.chkNewShelfMarker = new System.Windows.Forms.CheckBox();
             this.bindingRelItemSalesPack = new System.Windows.Forms.BindingSource(this.components);
             this.tabOrder = new System.Windows.Forms.TabPage();
+            this.gridSupplierItem = new DRS.Extensions.DRS_DataGridView();
+            this.colSupplierNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSupplierNumberButton = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.colSeparatorSupplItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colOrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIsPrimarySupplItem = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colKollisize = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.bindingLookupKolliSize = new System.Windows.Forms.BindingSource(this.components);
+            this.colPackageCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPackageUnitCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColInActiveDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingRelSupplierItem = new System.Windows.Forms.BindingSource(this.components);
             this.txtSupplierName = new System.Windows.Forms.TextBox();
             this.tabOther = new System.Windows.Forms.TabPage();
@@ -130,6 +141,7 @@ namespace RBOS
             this.btnCreditCategory = new System.Windows.Forms.Button();
             this.chkItemTypeCode = new System.Windows.Forms.CheckBox();
             this.lbItemTypeCode = new System.Windows.Forms.Label();
+            this.txtVatRate = new DRS.Extensions.DRS_LookupTextBox();
             this.lbMOPRestriction = new System.Windows.Forms.Label();
             this.txtVatOwner = new System.Windows.Forms.TextBox();
             this.lbAgeRestriction = new System.Windows.Forms.Label();
@@ -140,6 +152,16 @@ namespace RBOS
             this.chkAgeRestriction = new System.Windows.Forms.CheckBox();
             this.chkCreditCategory = new System.Windows.Forms.CheckBox();
             this.tabItems = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new DRS.Extensions.DRS_DataGridView();
+            this.colSeparatorColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSalesUnits = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTransacTransNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTransacPostDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTransacTranType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTransacNoOff = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTransacAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTransacSPType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTransacBarcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingRelTransac = new System.Windows.Forms.BindingSource(this.components);
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -191,28 +213,6 @@ namespace RBOS
             this.colManualPrice = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.colSalesPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHasFuturePrices = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.txtSubCategoryDesc = new DRS.Extensions.DRS_LookupTextBox();
-            this.gridSupplierItem = new DRS.Extensions.DRS_DataGridView();
-            this.colSupplierNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSupplierNumberButton = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.colSeparatorSupplItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colOrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colIsPrimarySupplItem = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colKollisize = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.colPackageCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPackageUnitCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColInActiveDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtVatRate = new DRS.Extensions.DRS_LookupTextBox();
-            this.dataGridView1 = new DRS.Extensions.DRS_DataGridView();
-            this.colSeparatorColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSalesUnits = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTransacTransNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTransacPostDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTransacTranType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTransacNoOff = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTransacAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTransacSPType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTransacBarcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -239,12 +239,14 @@ namespace RBOS
             this.lbGroupPrimSP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingRelItemSalesPack)).BeginInit();
             this.tabOrder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSupplierItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingLookupKolliSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingRelSupplierItem)).BeginInit();
             this.tabOther.SuspendLayout();
             this.lbCategoryGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMOPRestriction)).BeginInit();
             this.tabItems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingRelTransac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingFilterList)).BeginInit();
             this.contextSalesPack.SuspendLayout();
@@ -256,8 +258,6 @@ namespace RBOS
             ((System.ComponentModel.ISupportInitialize)(this.bindingLookupPackType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingLookupSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPackSize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSupplierItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbItemName
@@ -626,6 +626,22 @@ namespace RBOS
             this.txtSubCategory.TabIndex = 12;
             this.txtSubCategory.TabStop = false;
             // 
+            // txtSubCategoryDesc
+            // 
+            this.txtSubCategoryDesc.Location = new System.Drawing.Point(178, 65);
+            this.txtSubCategoryDesc.LookupColumnDisplayFormat = "";
+            this.txtSubCategoryDesc.LookupColumnDisplayName = "Description";
+            this.txtSubCategoryDesc.LookupColumnValueName = "SubCategoryID";
+            this.txtSubCategoryDesc.LookupTable = this.dsItem.LookupSubCategory;
+            this.txtSubCategoryDesc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSubCategoryDesc.Name = "txtSubCategoryDesc";
+            this.txtSubCategoryDesc.ReadOnly = true;
+            this.txtSubCategoryDesc.Size = new System.Drawing.Size(247, 26);
+            this.txtSubCategoryDesc.SourceBinding = this.bindingItem;
+            this.txtSubCategoryDesc.SourceColumnName = "SubCategory";
+            this.txtSubCategoryDesc.TabIndex = 0;
+            this.txtSubCategoryDesc.TabStop = false;
+            // 
             // lbLastChanged
             // 
             this.lbLastChanged.AutoSize = true;
@@ -718,11 +734,132 @@ namespace RBOS
             this.tabOrder.Text = "[Order]";
             this.tabOrder.UseVisualStyleBackColor = true;
             // 
+            // gridSupplierItem
+            // 
+            this.gridSupplierItem.AllowUserToResizeColumns = false;
+            this.gridSupplierItem.AllowUserToResizeRows = false;
+            this.gridSupplierItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridSupplierItem.AutoGenerateColumns = false;
+            this.gridSupplierItem.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridSupplierItem.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.gridSupplierItem.ColumnHeadersHeight = 21;
+            this.gridSupplierItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.gridSupplierItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colSupplierNumber,
+            this.colSupplierNumberButton,
+            this.colSeparatorSupplItems,
+            this.colOrderingNumber,
+            this.colIsPrimarySupplItem,
+            this.colKollisize,
+            this.colPackageCost,
+            this.colPackageUnitCost,
+            this.ColInActiveDate});
+            this.gridSupplierItem.DataSource = this.bindingRelSupplierItem;
+            this.gridSupplierItem.Location = new System.Drawing.Point(9, 9);
+            this.gridSupplierItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridSupplierItem.MultiSelect = false;
+            this.gridSupplierItem.Name = "gridSupplierItem";
+            this.gridSupplierItem.RowHeadersWidth = 25;
+            this.gridSupplierItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridSupplierItem.Size = new System.Drawing.Size(906, 269);
+            this.gridSupplierItem.TabIndex = 2;
+            this.gridSupplierItem.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.gridSupplierItem_CellBeginEdit);
+            this.gridSupplierItem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSupplierItem_CellContentClick);
+            this.gridSupplierItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSupplierItem_CellEndEdit);
+            this.gridSupplierItem.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.gridSupplierItem_CellPainting);
+            this.gridSupplierItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.gridSupplierItem_CellValidating);
+            this.gridSupplierItem.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSupplierItem_RowEnter);
+            this.gridSupplierItem.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.gridSupplierItem_RowsAdded);
+            this.gridSupplierItem.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.gridSupplierItem_RowValidating);
+            this.gridSupplierItem.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.gridSupplierItem_UserDeletingRow);
+            // 
+            // colSupplierNumber
+            // 
+            this.colSupplierNumber.DataPropertyName = "SupplierNo";
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colSupplierNumber.DefaultCellStyle = dataGridViewCellStyle36;
+            this.colSupplierNumber.HeaderText = "Lev.";
+            this.colSupplierNumber.Name = "colSupplierNumber";
+            this.colSupplierNumber.Width = 30;
+            // 
+            // colSupplierNumberButton
+            // 
+            this.colSupplierNumberButton.HeaderText = "";
+            this.colSupplierNumberButton.Name = "colSupplierNumberButton";
+            this.colSupplierNumberButton.Width = 25;
+            // 
+            // colSeparatorSupplItems
+            // 
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Control;
+            this.colSeparatorSupplItems.DefaultCellStyle = dataGridViewCellStyle37;
+            this.colSeparatorSupplItems.HeaderText = "[]";
+            this.colSeparatorSupplItems.Name = "colSeparatorSupplItems";
+            this.colSeparatorSupplItems.Width = 10;
+            // 
+            // colOrderingNumber
+            // 
+            this.colOrderingNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colOrderingNumber.DataPropertyName = "OrderingNumber";
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colOrderingNumber.DefaultCellStyle = dataGridViewCellStyle38;
+            this.colOrderingNumber.HeaderText = "Bestill. nr.";
+            this.colOrderingNumber.Name = "colOrderingNumber";
+            // 
+            // colIsPrimarySupplItem
+            // 
+            this.colIsPrimarySupplItem.DataPropertyName = "IsPrimary";
+            this.colIsPrimarySupplItem.HeaderText = "P";
+            this.colIsPrimarySupplItem.Name = "colIsPrimarySupplItem";
+            this.colIsPrimarySupplItem.Width = 30;
+            // 
+            // colKollisize
+            // 
+            this.colKollisize.DataPropertyName = "KolliSize";
+            this.colKollisize.DataSource = this.bindingLookupKolliSize;
+            this.colKollisize.DisplayMember = "Description";
+            this.colKollisize.HeaderText = "Kolli";
+            this.colKollisize.Name = "colKollisize";
+            this.colKollisize.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colKollisize.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.colKollisize.ValueMember = "KolliSize";
+            this.colKollisize.Width = 80;
+            // 
             // bindingLookupKolliSize
             // 
             this.bindingLookupKolliSize.AllowNew = false;
             this.bindingLookupKolliSize.DataMember = "LookupKolliSize";
             this.bindingLookupKolliSize.DataSource = this.dsItem;
+            // 
+            // colPackageCost
+            // 
+            this.colPackageCost.DataPropertyName = "PackageCost";
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle39.Format = "N3";
+            dataGridViewCellStyle39.NullValue = null;
+            this.colPackageCost.DefaultCellStyle = dataGridViewCellStyle39;
+            this.colPackageCost.HeaderText = "K.kost";
+            this.colPackageCost.Name = "colPackageCost";
+            this.colPackageCost.Width = 60;
+            // 
+            // colPackageUnitCost
+            // 
+            this.colPackageUnitCost.DataPropertyName = "PackageUnitCost";
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle40.Format = "N3";
+            dataGridViewCellStyle40.NullValue = null;
+            this.colPackageUnitCost.DefaultCellStyle = dataGridViewCellStyle40;
+            this.colPackageUnitCost.HeaderText = "K.E.kost";
+            this.colPackageUnitCost.Name = "colPackageUnitCost";
+            this.colPackageUnitCost.Width = 60;
+            // 
+            // ColInActiveDate
+            // 
+            this.ColInActiveDate.DataPropertyName = "InActiveDate";
+            this.ColInActiveDate.HeaderText = "InActiveDate";
+            this.ColInActiveDate.Name = "ColInActiveDate";
+            this.ColInActiveDate.ReadOnly = true;
             // 
             // bindingRelSupplierItem
             // 
@@ -831,6 +968,7 @@ namespace RBOS
             this.txtKampagneID.Size = new System.Drawing.Size(82, 26);
             this.txtKampagneID.TabIndex = 24;
             this.txtKampagneID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtKampagneID.Enter += new System.EventHandler(this.txtKampagneID_Enter);
             this.txtKampagneID.Validating += new System.ComponentModel.CancelEventHandler(this.txtKampagneID_Validating);
             // 
             // lbFSD_ID
@@ -1028,6 +1166,22 @@ namespace RBOS
             this.lbItemTypeCode.TabIndex = 27;
             this.lbItemTypeCode.Text = "[Item Type Code]";
             // 
+            // txtVatRate
+            // 
+            this.txtVatRate.Location = new System.Drawing.Point(182, 58);
+            this.txtVatRate.LookupColumnDisplayFormat = "n";
+            this.txtVatRate.LookupColumnDisplayName = "TaxPct";
+            this.txtVatRate.LookupColumnValueName = "TaxID";
+            this.txtVatRate.LookupTable = this.dsItem.LookupVatRate;
+            this.txtVatRate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtVatRate.Name = "txtVatRate";
+            this.txtVatRate.ReadOnly = true;
+            this.txtVatRate.Size = new System.Drawing.Size(98, 26);
+            this.txtVatRate.SourceBinding = this.bindingItem;
+            this.txtVatRate.SourceColumnName = "VatRate";
+            this.txtVatRate.TabIndex = 20;
+            this.txtVatRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // lbMOPRestriction
             // 
             this.lbMOPRestriction.AutoSize = true;
@@ -1132,6 +1286,152 @@ namespace RBOS
             this.tabItems.TabIndex = 3;
             this.tabItems.Text = "Item records";
             this.tabItems.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeight = 21;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colSeparatorColumn,
+            this.colSalesUnits,
+            this.colTransacTransNo,
+            this.colTransacPostDate,
+            this.colTransacTranType,
+            this.colTransacNoOff,
+            this.colTransacAmount,
+            this.colTransacSPType,
+            this.colTransacBarcode});
+            this.dataGridView1.DataSource = this.bindingRelTransac;
+            this.dataGridView1.Location = new System.Drawing.Point(9, 18);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 25;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView1.RowTemplate.Height = 20;
+            this.dataGridView1.RowTemplate.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(906, 345);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // colSeparatorColumn
+            // 
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Control;
+            this.colSeparatorColumn.DefaultCellStyle = dataGridViewCellStyle41;
+            this.colSeparatorColumn.HeaderText = "[]";
+            this.colSeparatorColumn.Name = "colSeparatorColumn";
+            this.colSeparatorColumn.ReadOnly = true;
+            this.colSeparatorColumn.Width = 8;
+            // 
+            // colSalesUnits
+            // 
+            this.colSalesUnits.DataPropertyName = "NoOfSellingUnits";
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle42.Format = "N0";
+            dataGridViewCellStyle42.NullValue = null;
+            this.colSalesUnits.DefaultCellStyle = dataGridViewCellStyle42;
+            this.colSalesUnits.HeaderText = "[Salgsenh.]";
+            this.colSalesUnits.Name = "colSalesUnits";
+            this.colSalesUnits.ReadOnly = true;
+            this.colSalesUnits.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colSalesUnits.Width = 50;
+            // 
+            // colTransacTransNo
+            // 
+            this.colTransacTransNo.DataPropertyName = "TransactionNumber";
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colTransacTransNo.DefaultCellStyle = dataGridViewCellStyle43;
+            this.colTransacTransNo.HeaderText = "[TransacNo]";
+            this.colTransacTransNo.Name = "colTransacTransNo";
+            this.colTransacTransNo.ReadOnly = true;
+            this.colTransacTransNo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colTransacTransNo.Width = 50;
+            // 
+            // colTransacPostDate
+            // 
+            this.colTransacPostDate.DataPropertyName = "PostingDate";
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colTransacPostDate.DefaultCellStyle = dataGridViewCellStyle44;
+            this.colTransacPostDate.HeaderText = "[PostingDate]";
+            this.colTransacPostDate.Name = "colTransacPostDate";
+            this.colTransacPostDate.ReadOnly = true;
+            this.colTransacPostDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colTransacPostDate.Width = 70;
+            // 
+            // colTransacTranType
+            // 
+            this.colTransacTranType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTransacTranType.DataPropertyName = "TransactionType";
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.colTransacTranType.DefaultCellStyle = dataGridViewCellStyle45;
+            this.colTransacTranType.HeaderText = "[TransacType]";
+            this.colTransacTranType.Name = "colTransacTranType";
+            this.colTransacTranType.ReadOnly = true;
+            this.colTransacTranType.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // colTransacNoOff
+            // 
+            this.colTransacNoOff.DataPropertyName = "NumberOf";
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle46.Format = "N0";
+            dataGridViewCellStyle46.NullValue = null;
+            this.colTransacNoOff.DefaultCellStyle = dataGridViewCellStyle46;
+            this.colTransacNoOff.HeaderText = "[NumberOf]";
+            this.colTransacNoOff.Name = "colTransacNoOff";
+            this.colTransacNoOff.ReadOnly = true;
+            this.colTransacNoOff.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colTransacNoOff.Width = 50;
+            // 
+            // colTransacAmount
+            // 
+            this.colTransacAmount.DataPropertyName = "Amount";
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle47.Format = "N2";
+            dataGridViewCellStyle47.NullValue = null;
+            this.colTransacAmount.DefaultCellStyle = dataGridViewCellStyle47;
+            this.colTransacAmount.HeaderText = "[Amount]";
+            this.colTransacAmount.Name = "colTransacAmount";
+            this.colTransacAmount.ReadOnly = true;
+            this.colTransacAmount.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colTransacAmount.Width = 65;
+            // 
+            // colTransacSPType
+            // 
+            this.colTransacSPType.DataPropertyName = "PackTypeName";
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.colTransacSPType.DefaultCellStyle = dataGridViewCellStyle48;
+            this.colTransacSPType.HeaderText = "[SalesPack]";
+            this.colTransacSPType.Name = "colTransacSPType";
+            this.colTransacSPType.ReadOnly = true;
+            this.colTransacSPType.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colTransacSPType.Width = 50;
+            // 
+            // colTransacBarcode
+            // 
+            this.colTransacBarcode.DataPropertyName = "Barcode";
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle49.NullValue = null;
+            this.colTransacBarcode.DefaultCellStyle = dataGridViewCellStyle49;
+            this.colTransacBarcode.HeaderText = "[Barcode]";
+            this.colTransacBarcode.Name = "colTransacBarcode";
+            this.colTransacBarcode.ReadOnly = true;
+            this.colTransacBarcode.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colTransacBarcode.Width = 90;
             // 
             // bindingRelTransac
             // 
@@ -1559,8 +1859,8 @@ namespace RBOS
             // colCalcNumBarcodes
             // 
             this.colCalcNumBarcodes.DataPropertyName = "NumBarcodesCalc";
-            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
-            this.colCalcNumBarcodes.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control;
+            this.colCalcNumBarcodes.DefaultCellStyle = dataGridViewCellStyle50;
             this.colCalcNumBarcodes.HeaderText = "BN";
             this.colCalcNumBarcodes.Name = "colCalcNumBarcodes";
             this.colCalcNumBarcodes.ReadOnly = true;
@@ -1594,10 +1894,10 @@ namespace RBOS
             // colSalesPrice
             // 
             this.colSalesPrice.DataPropertyName = "SalesPrice";
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle37.Format = "N2";
-            dataGridViewCellStyle37.NullValue = null;
-            this.colSalesPrice.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle51.Format = "N2";
+            dataGridViewCellStyle51.NullValue = null;
+            this.colSalesPrice.DefaultCellStyle = dataGridViewCellStyle51;
             this.colSalesPrice.FillWeight = 104.7716F;
             this.colSalesPrice.HeaderText = "[salesprice]";
             this.colSalesPrice.Name = "colSalesPrice";
@@ -1611,305 +1911,6 @@ namespace RBOS
             this.colHasFuturePrices.Name = "colHasFuturePrices";
             this.colHasFuturePrices.ReadOnly = true;
             this.colHasFuturePrices.Width = 23;
-            // 
-            // txtSubCategoryDesc
-            // 
-            this.txtSubCategoryDesc.Location = new System.Drawing.Point(178, 65);
-            this.txtSubCategoryDesc.LookupColumnDisplayFormat = "";
-            this.txtSubCategoryDesc.LookupColumnDisplayName = "Description";
-            this.txtSubCategoryDesc.LookupColumnValueName = "SubCategoryID";
-            this.txtSubCategoryDesc.LookupTable = this.dsItem.LookupSubCategory;
-            this.txtSubCategoryDesc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtSubCategoryDesc.Name = "txtSubCategoryDesc";
-            this.txtSubCategoryDesc.ReadOnly = true;
-            this.txtSubCategoryDesc.Size = new System.Drawing.Size(247, 26);
-            this.txtSubCategoryDesc.SourceBinding = this.bindingItem;
-            this.txtSubCategoryDesc.SourceColumnName = "SubCategory";
-            this.txtSubCategoryDesc.TabIndex = 0;
-            this.txtSubCategoryDesc.TabStop = false;
-            // 
-            // gridSupplierItem
-            // 
-            this.gridSupplierItem.AllowUserToResizeColumns = false;
-            this.gridSupplierItem.AllowUserToResizeRows = false;
-            this.gridSupplierItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridSupplierItem.AutoGenerateColumns = false;
-            this.gridSupplierItem.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.gridSupplierItem.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.gridSupplierItem.ColumnHeadersHeight = 21;
-            this.gridSupplierItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.gridSupplierItem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colSupplierNumber,
-            this.colSupplierNumberButton,
-            this.colSeparatorSupplItems,
-            this.colOrderingNumber,
-            this.colIsPrimarySupplItem,
-            this.colKollisize,
-            this.colPackageCost,
-            this.colPackageUnitCost,
-            this.ColInActiveDate});
-            this.gridSupplierItem.DataSource = this.bindingRelSupplierItem;
-            this.gridSupplierItem.Location = new System.Drawing.Point(9, 9);
-            this.gridSupplierItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gridSupplierItem.MultiSelect = false;
-            this.gridSupplierItem.Name = "gridSupplierItem";
-            this.gridSupplierItem.RowHeadersWidth = 25;
-            this.gridSupplierItem.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.gridSupplierItem.Size = new System.Drawing.Size(906, 269);
-            this.gridSupplierItem.TabIndex = 2;
-            this.gridSupplierItem.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.gridSupplierItem_CellBeginEdit);
-            this.gridSupplierItem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSupplierItem_CellContentClick);
-            this.gridSupplierItem.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSupplierItem_CellEndEdit);
-            this.gridSupplierItem.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.gridSupplierItem_CellPainting);
-            this.gridSupplierItem.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.gridSupplierItem_CellValidating);
-            this.gridSupplierItem.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSupplierItem_RowEnter);
-            this.gridSupplierItem.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.gridSupplierItem_RowsAdded);
-            this.gridSupplierItem.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.gridSupplierItem_RowValidating);
-            this.gridSupplierItem.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.gridSupplierItem_UserDeletingRow);
-            // 
-            // colSupplierNumber
-            // 
-            this.colSupplierNumber.DataPropertyName = "SupplierNo";
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colSupplierNumber.DefaultCellStyle = dataGridViewCellStyle38;
-            this.colSupplierNumber.HeaderText = "Lev.";
-            this.colSupplierNumber.Name = "colSupplierNumber";
-            this.colSupplierNumber.Width = 30;
-            // 
-            // colSupplierNumberButton
-            // 
-            this.colSupplierNumberButton.HeaderText = "";
-            this.colSupplierNumberButton.Name = "colSupplierNumberButton";
-            this.colSupplierNumberButton.Width = 25;
-            // 
-            // colSeparatorSupplItems
-            // 
-            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Control;
-            this.colSeparatorSupplItems.DefaultCellStyle = dataGridViewCellStyle39;
-            this.colSeparatorSupplItems.HeaderText = "[]";
-            this.colSeparatorSupplItems.Name = "colSeparatorSupplItems";
-            this.colSeparatorSupplItems.Width = 10;
-            // 
-            // colOrderingNumber
-            // 
-            this.colOrderingNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colOrderingNumber.DataPropertyName = "OrderingNumber";
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colOrderingNumber.DefaultCellStyle = dataGridViewCellStyle40;
-            this.colOrderingNumber.HeaderText = "Bestill. nr.";
-            this.colOrderingNumber.Name = "colOrderingNumber";
-            // 
-            // colIsPrimarySupplItem
-            // 
-            this.colIsPrimarySupplItem.DataPropertyName = "IsPrimary";
-            this.colIsPrimarySupplItem.HeaderText = "P";
-            this.colIsPrimarySupplItem.Name = "colIsPrimarySupplItem";
-            this.colIsPrimarySupplItem.Width = 30;
-            // 
-            // colKollisize
-            // 
-            this.colKollisize.DataPropertyName = "KolliSize";
-            this.colKollisize.DataSource = this.bindingLookupKolliSize;
-            this.colKollisize.DisplayMember = "Description";
-            this.colKollisize.HeaderText = "Kolli";
-            this.colKollisize.Name = "colKollisize";
-            this.colKollisize.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colKollisize.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.colKollisize.ValueMember = "KolliSize";
-            this.colKollisize.Width = 80;
-            // 
-            // colPackageCost
-            // 
-            this.colPackageCost.DataPropertyName = "PackageCost";
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle41.Format = "N3";
-            dataGridViewCellStyle41.NullValue = null;
-            this.colPackageCost.DefaultCellStyle = dataGridViewCellStyle41;
-            this.colPackageCost.HeaderText = "K.kost";
-            this.colPackageCost.Name = "colPackageCost";
-            this.colPackageCost.Width = 60;
-            // 
-            // colPackageUnitCost
-            // 
-            this.colPackageUnitCost.DataPropertyName = "PackageUnitCost";
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle42.Format = "N3";
-            dataGridViewCellStyle42.NullValue = null;
-            this.colPackageUnitCost.DefaultCellStyle = dataGridViewCellStyle42;
-            this.colPackageUnitCost.HeaderText = "K.E.kost";
-            this.colPackageUnitCost.Name = "colPackageUnitCost";
-            this.colPackageUnitCost.Width = 60;
-            // 
-            // ColInActiveDate
-            // 
-            this.ColInActiveDate.DataPropertyName = "InActiveDate";
-            this.ColInActiveDate.HeaderText = "InActiveDate";
-            this.ColInActiveDate.Name = "ColInActiveDate";
-            this.ColInActiveDate.ReadOnly = true;
-            // 
-            // txtVatRate
-            // 
-            this.txtVatRate.Location = new System.Drawing.Point(182, 58);
-            this.txtVatRate.LookupColumnDisplayFormat = "n";
-            this.txtVatRate.LookupColumnDisplayName = "TaxPct";
-            this.txtVatRate.LookupColumnValueName = "TaxID";
-            this.txtVatRate.LookupTable = this.dsItem.LookupVatRate;
-            this.txtVatRate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtVatRate.Name = "txtVatRate";
-            this.txtVatRate.ReadOnly = true;
-            this.txtVatRate.Size = new System.Drawing.Size(98, 26);
-            this.txtVatRate.SourceBinding = this.bindingItem;
-            this.txtVatRate.SourceColumnName = "VatRate";
-            this.txtVatRate.TabIndex = 20;
-            this.txtVatRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeight = 21;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colSeparatorColumn,
-            this.colSalesUnits,
-            this.colTransacTransNo,
-            this.colTransacPostDate,
-            this.colTransacTranType,
-            this.colTransacNoOff,
-            this.colTransacAmount,
-            this.colTransacSPType,
-            this.colTransacBarcode});
-            this.dataGridView1.DataSource = this.bindingRelTransac;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 18);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 25;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.RowTemplate.Height = 20;
-            this.dataGridView1.RowTemplate.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(906, 345);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // colSeparatorColumn
-            // 
-            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Control;
-            this.colSeparatorColumn.DefaultCellStyle = dataGridViewCellStyle43;
-            this.colSeparatorColumn.HeaderText = "[]";
-            this.colSeparatorColumn.Name = "colSeparatorColumn";
-            this.colSeparatorColumn.ReadOnly = true;
-            this.colSeparatorColumn.Width = 8;
-            // 
-            // colSalesUnits
-            // 
-            this.colSalesUnits.DataPropertyName = "NoOfSellingUnits";
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle44.Format = "N0";
-            dataGridViewCellStyle44.NullValue = null;
-            this.colSalesUnits.DefaultCellStyle = dataGridViewCellStyle44;
-            this.colSalesUnits.HeaderText = "[Salgsenh.]";
-            this.colSalesUnits.Name = "colSalesUnits";
-            this.colSalesUnits.ReadOnly = true;
-            this.colSalesUnits.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colSalesUnits.Width = 50;
-            // 
-            // colTransacTransNo
-            // 
-            this.colTransacTransNo.DataPropertyName = "TransactionNumber";
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colTransacTransNo.DefaultCellStyle = dataGridViewCellStyle45;
-            this.colTransacTransNo.HeaderText = "[TransacNo]";
-            this.colTransacTransNo.Name = "colTransacTransNo";
-            this.colTransacTransNo.ReadOnly = true;
-            this.colTransacTransNo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colTransacTransNo.Width = 50;
-            // 
-            // colTransacPostDate
-            // 
-            this.colTransacPostDate.DataPropertyName = "PostingDate";
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colTransacPostDate.DefaultCellStyle = dataGridViewCellStyle46;
-            this.colTransacPostDate.HeaderText = "[PostingDate]";
-            this.colTransacPostDate.Name = "colTransacPostDate";
-            this.colTransacPostDate.ReadOnly = true;
-            this.colTransacPostDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colTransacPostDate.Width = 70;
-            // 
-            // colTransacTranType
-            // 
-            this.colTransacTranType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colTransacTranType.DataPropertyName = "TransactionType";
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.colTransacTranType.DefaultCellStyle = dataGridViewCellStyle47;
-            this.colTransacTranType.HeaderText = "[TransacType]";
-            this.colTransacTranType.Name = "colTransacTranType";
-            this.colTransacTranType.ReadOnly = true;
-            this.colTransacTranType.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // colTransacNoOff
-            // 
-            this.colTransacNoOff.DataPropertyName = "NumberOf";
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle48.Format = "N0";
-            dataGridViewCellStyle48.NullValue = null;
-            this.colTransacNoOff.DefaultCellStyle = dataGridViewCellStyle48;
-            this.colTransacNoOff.HeaderText = "[NumberOf]";
-            this.colTransacNoOff.Name = "colTransacNoOff";
-            this.colTransacNoOff.ReadOnly = true;
-            this.colTransacNoOff.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colTransacNoOff.Width = 50;
-            // 
-            // colTransacAmount
-            // 
-            this.colTransacAmount.DataPropertyName = "Amount";
-            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle49.Format = "N2";
-            dataGridViewCellStyle49.NullValue = null;
-            this.colTransacAmount.DefaultCellStyle = dataGridViewCellStyle49;
-            this.colTransacAmount.HeaderText = "[Amount]";
-            this.colTransacAmount.Name = "colTransacAmount";
-            this.colTransacAmount.ReadOnly = true;
-            this.colTransacAmount.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colTransacAmount.Width = 65;
-            // 
-            // colTransacSPType
-            // 
-            this.colTransacSPType.DataPropertyName = "PackTypeName";
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.colTransacSPType.DefaultCellStyle = dataGridViewCellStyle50;
-            this.colTransacSPType.HeaderText = "[SalesPack]";
-            this.colTransacSPType.Name = "colTransacSPType";
-            this.colTransacSPType.ReadOnly = true;
-            this.colTransacSPType.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colTransacSPType.Width = 50;
-            // 
-            // colTransacBarcode
-            // 
-            this.colTransacBarcode.DataPropertyName = "Barcode";
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle51.NullValue = null;
-            this.colTransacBarcode.DefaultCellStyle = dataGridViewCellStyle51;
-            this.colTransacBarcode.HeaderText = "[Barcode]";
-            this.colTransacBarcode.Name = "colTransacBarcode";
-            this.colTransacBarcode.ReadOnly = true;
-            this.colTransacBarcode.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colTransacBarcode.Width = 90;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -2209,6 +2210,7 @@ namespace RBOS
             ((System.ComponentModel.ISupportInitialize)(this.bindingRelItemSalesPack)).EndInit();
             this.tabOrder.ResumeLayout(false);
             this.tabOrder.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSupplierItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingLookupKolliSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingRelSupplierItem)).EndInit();
             this.tabOther.ResumeLayout(false);
@@ -2217,6 +2219,7 @@ namespace RBOS
             this.lbCategoryGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMOPRestriction)).EndInit();
             this.tabItems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingRelTransac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingFilterList)).EndInit();
             this.contextSalesPack.ResumeLayout(false);
@@ -2229,8 +2232,6 @@ namespace RBOS
             ((System.ComponentModel.ISupportInitialize)(this.bindingLookupPackType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingLookupSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPackSize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSupplierItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

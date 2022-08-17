@@ -37018,8 +37018,8 @@ GROUP BY EOD_Debtor.DebtorNo, EOD_Debtor.Name1, EOD_Debtor.Phone, EOD_Debtor.Add
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT BookDate, Remark, choose(TransType, - Amount, Amount, Amount) AS Amount, C" +
-                "ustomerNo, TransType\r\nFROM     EOD_LocalCred\r\nWHERE  (CustomerNo = ?) AND (BookD" +
-                "ate >= ?) AND (BookDate <= ?)";
+                "ustomerNo, TransType\r\nFROM   EOD_LocalCred\r\nWHERE (CustomerNo = ?) AND (BookDate" +
+                " >= ?) AND (BookDate <= ?)\r\nORDER BY CustomerNo, BookDate, TransType";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CustomerNo", global::System.Data.OleDb.OleDbType.Integer, 4, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CustomerNo", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("BookDate", global::System.Data.OleDb.OleDbType.DBTimeStamp, 8, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "BookDate", global::System.Data.DataRowVersion.Current, false, null));

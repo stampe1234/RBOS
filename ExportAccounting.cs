@@ -231,7 +231,7 @@ namespace RBOS
                 eodfile.WriteLine(Encrypt(
                     "1032" +
                     FormatString(row["SubCategory"], 20, Padding.PrependedZeros) +
-                    FormatNumberOf(row["NumberOf"]) +
+                    FormatNumberOf2(row["NumberOf"]) +
                     FormatAmount(row["Amount"]), ++lineno, header));
             }
 
@@ -1015,6 +1015,14 @@ namespace RBOS
             return sAmount;
         }
         #endregion
+
+        private static string FormatNumberOf2(object o)
+        {
+            double dNumberOf  = tools.object2double(o);
+            string sNumberOf = ((dNumberOf * 100)).ToString("000000000");
+            if (dNumberOf >= 0) sNumberOf = "+" + sNumberOf;
+            return sNumberOf;
+        }
 
         #region FormatNumberOf
         private static string FormatNumberOf(object o)

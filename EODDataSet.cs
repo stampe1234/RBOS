@@ -2954,7 +2954,7 @@ namespace RBOS
                 {
 
 
-
+                    //peter 20220704
 
                     db.ExecuteNonQuery(string.Format(
                         " insert into EOD_Sales " +
@@ -2967,7 +2967,8 @@ namespace RBOS
                         "'" + ItemDataSet.SubCategoryDataTable.GetSubCategoryDescription(row["MerchCode"].ToString()) + "'",
                         "NULL", // @@@ todo
                         "NULL", // @@@ todo
-                        row["SalesQuantity"],
+                        tools.decimalnumber4sql(tools.object2double(row["SalesQuantity2"])),
+
                         tools.decimalnumber4sql(tools.object2double(row["SalesAmount"]))));
                 }
 
@@ -3058,19 +3059,19 @@ namespace RBOS
                         //if (i == 1) nextLineNo = EOD_ShellCardsDataTable.GetNextLineNo(BookDate);
                         //else nextLineNo = EOD_BankCardsDataTable.GetNextLineNo(BookDate);
 
-                       
+
                         switch (i)
                         {
                             case 1:
-                                nextLineNo = EOD_ShellCardsDataTable.GetNextLineNo(BookDate); 
+                                nextLineNo = EOD_ShellCardsDataTable.GetNextLineNo(BookDate);
                                 break;
                             case 2:
                                 nextLineNo = EOD_BankCardsDataTable.GetNextLineNo(BookDate);
                                 break;
                             case 3:
-                                nextLineNo = EOD_SafePay_CurrenciesDataTable.GetSafePayCurrRowCount(BookDate) +1;
+                                nextLineNo = EOD_SafePay_CurrenciesDataTable.GetSafePayCurrRowCount(BookDate) + 1;
                                 break;
-                                
+
                         }
                         //<<pn20210728
 

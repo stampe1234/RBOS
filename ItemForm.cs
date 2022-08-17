@@ -412,8 +412,8 @@ namespace RBOS
                 txtMOPRestriction.ReadOnly = !(!chkMOPRestriction.Checked && editMode);
                 btnItemTypeCode.Enabled = (!chkItemTypeCode.Checked && editMode);
                 // txtFSD_ID.ReadOnly = !(editMode && (UserLogon.ProfileID == AdminDataSet.UserProfilesDataTable.ProfileID.drs));
-                //  txtKampagneID.ReadOnly = !(editMode && (UserLogon.ProfileID == AdminDataSet.UserProfilesDataTable.ProfileID.drs));
-
+                //txtKampagneID.ReadOnly = !(editMode && (UserLogon.ProfileID == AdminDataSet.UserProfilesDataTable.ProfileID.drs));
+                txtKampagneID.ReadOnly = !(editMode && UserLogon.EditItem() && txtKampagneID.Text != "" );  //PN20220705
                 txtFSD_ID.ReadOnly = !(editMode && UserLogon.EditItem());
                 chkRSMNeedsNewID.Visible = (editMode && UserLogon.EditItem());
 
@@ -2963,5 +2963,19 @@ namespace RBOS
             }
         }
 
+        private void txtKampagneID_Enter(object sender, EventArgs e)
+        {
+            if (!txtKampagneID.ReadOnly)
+            {
+                if (txtKampagneID.Text.Length > 0)
+                {
+                    var confirmResult = MessageBox.Show("Vil du slette KampangeID på denne vare", "", MessageBoxButtons.YesNo);  //pn20220705
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        txtKampagneID.Text = "0";
+                    }
+                }
+            }
+        }
     }
 }

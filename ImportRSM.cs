@@ -512,12 +512,13 @@ namespace RBOS
                                             // insert data
                                             cmd.CommandText = string.Format(
                                                 " insert into Import_RPOS_MCM_Details " +
-                                                " (BookDate,[LineNo],MerchCode,SalesQuantity,SalesAmount) " +
-                                                " values ({0},{1},{2},{3},{4}) ",
+                                                " (BookDate,[LineNo],MerchCode,SalesQuantity,SalesQuantity2,SalesAmount) " +
+                                                " values ({0},{1},{2},{3},{4},{5}) ",
                                                 "'" + BookDate + "'",
                                                 GetNextDetailsLineNo(BookDate, "MCM"),
                                                 "'" + MerchCode + "'",
                                                 "'" + SalesQuantityInt + "'",
+                                                 tools.decimalnumber4sql(SalesQuantity),
                                                   tools.decimalnumber4sql(SalesAmount));
                                             cmd.ExecuteNonQuery();
 
