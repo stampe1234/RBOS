@@ -115,6 +115,8 @@ namespace RBOS
             versionHistory.Add("4.00.002"); // 
             versionHistory.Add("4.00.003"); // test version med ændret safepay valuta
             versionHistory.Add("4.00.004"); // decimaler på fuel mulighed for at slette kampangeID
+            versionHistory.Add("4.00.005"); // Shell recharge
+            versionHistory.Add("4.00.006"); // Ny version af Crystal reports
             _ExePatch = "0";
             _ExePatch = "0";
 
