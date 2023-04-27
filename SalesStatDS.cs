@@ -471,7 +471,7 @@ order by columns.ColumnNo
             {
                 if (ClearBeforeFill)
                     Table.Clear();
-                
+
 
                 // get the first and last date in the month
                 EndDate = EndDate.Date;

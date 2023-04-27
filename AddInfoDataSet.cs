@@ -1,7 +1,9 @@
-﻿namespace RBOS {
-    
-    
-    public partial class AddInfoDataSet {
+﻿namespace RBOS
+{
+
+
+    public partial class AddInfoDataSet
+    {
         partial class AddInfoDataTable
         {
         }
