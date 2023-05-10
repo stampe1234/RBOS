@@ -210,62 +210,8 @@ namespace RBOS
 
                     switch (version)
                     {
-                        case "2.01.008": ok = Upd_201008(); break;
-                        case "2.01.009": ok = Upd_201009(); break;
-                        case "2.01.010": ok = Upd_201010(); break;
-                        case "2.01.011": ok = Upd_201011(); break;
-                        case "2.01.012": ok = Upd_201012(); break;
-                        case "2.01.013": ok = Upd_201013(); break;
-                        case "2.01.014": ok = Upd_201014(); break;
-                        case "2.01.015": ok = Upd_201015(); break;
-                        case "2.01.016": ok = Upd_201016(); break;
-                        case "2.01.017": ok = Upd_201017(); break;
-                        case "2.01.018": ok = Upd_201018(); break;
-                        case "2.01.019": ok = Upd_201019(); break;
-                        case "2.01.020": ok = Upd_201020(); break;
-                        case "2.01.021": ok = Upd_201021(); break;
-                        case "2.01.022": ok = Upd_201022(); break;
-                        case "2.01.023": ok = Upd_201023(); break;
-                        case "2.01.024": ok = Upd_201024(); break;
-                        case "2.01.025": ok = Upd_201025(); break;
-                        case "2.01.026": ok = Upd_201026(); break;
-                        case "2.01.027": ok = Upd_201027(); break;
-                        case "2.01.028": ok = Upd_201028(); break;
-                        case "2.01.030": ok = Upd_201030(); break;
-                        case "2.01.031": ok = Upd_201031(); break;
-                        case "2.01.034": ok = Upd_201034(); break;
-                        case "2.01.035": ok = Upd_201035(); break;
-                        case "2.01.036": ok = Upd_201036(); break;
-                        case "2.01.037": ok = Upd_201037(); break;
-                        case "2.01.038": ok = Upd_201038(); break;
-                        case "2.01.039": ok = Upd_201039(); break;
-                        case "2.01.040": ok = Upd_201040(); break;
-                        case "2.01.041": ok = Upd_201041(); break;
-                        case "2.01.042": ok = Upd_201042(); break;
-                        case "2.01.043": ok = Upd_201043(); break;
-                        case "2.01.044": ok = Upd_201044(); break;
-                        case "2.01.045": ok = Upd_201045(); break;
-                        case "2.01.046": ok = Upd_201046(); break;
-                        case "2.01.047": ok = Upd_201047(); break;
-                        case "2.01.048": ok = Upd_201048(); break;
-                        case "2.01.050": ok = Upd_201050(); break;
-                        case "2.01.051": ok = Upd_201051(); break;
-                        case "2.01.052": ok = Upd_201052(); break;
-                        case "2.01.053": ok = Upd_201053(); break;
-                      //  case "2.01.055": ok = Upd_201055(); break;
-                        case "2.01.056": ok = Upd_201056(); break;
-                        case "2.01.058": ok = Upd_201058(); break;
-                        case "2.01.060": ok = Upd_201060(); break;
-                        case "2.01.062": ok = Upd_201062(); break;
-                        case "2.01.063": ok = Upd_201063(); break;
-                        case "2.01.064": ok = Upd_201064(); break;
-                        case "2.01.065": ok = Upd_201065(); break;
-                        case "2.01.066": ok = Upd_201066(); break;
-                        case "2.01.067": ok = Upd_201067(); break;
-                        case "2.01.068": ok = Upd_201068(); break;
-                        case "2.01.069": ok = Upd_201069(); break;
-                        case "2.01.070": ok = Upd_201070(); break;
-                        case "2.01.071": ok = Upd_201071(); break;
+                        
+                      
 
                         default: ok = true; break; // no updater available = ok as nothing to do
                     }
