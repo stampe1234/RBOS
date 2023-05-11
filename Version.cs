@@ -775,28 +775,8 @@ namespace RBOS
         }
         #endregion
 
-        #region SkipInV3
-        /// <summary>
-        /// Tell v3 to skip the given patch, as it has already been done here in v2.
-        /// <param name="version">Example: "3.01.010"</param>
-        /// <param name="patch">Example: 2</param>
-        /// <param name="conn">An active connection</param>
-        /// <param name="trans">An active transaction</param>
-        /// </summary>
-        private static void SkipInV3(string version, int patch, OleDbConnection conn, OleDbTransaction trans)
-        {
-            string sql = @"
-                    insert into UpdatesApplied (VersionNo, PatchNo)
-                    values (@VersionNo, @PatchNo)
-                    ";
-            using (OleDbCommand cmd = new OleDbCommand(sql, conn, trans))
-            {
-                cmd.Parameters.Add("VersionNo", SqlDbType.NVarChar).Value = version;
-                cmd.Parameters.Add("PatchNo", SqlDbType.Int).Value = patch;
-                cmd.ExecuteNonQuery();
-            }
-        }
-        #endregion
+        
+        
 
         private static void TriggerDTVRecalculation()
         {

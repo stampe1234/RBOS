@@ -635,11 +635,24 @@ namespace RBOS
                 L2 = twMenu.Nodes[L0].Nodes[L1].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.EODReports"), "TreeMenu.EODReports", 6, 6));
                 if (db.GetConfigString("RegnskabIF_flag") == "service") // only allow salgsrapport if drs has regnskabs service on this site
                 {
+
+                    if (db.GetConfigStringAsBool("DanskeSpil.Enabled"))
+                    {
+                        twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.Item.Reports.DanskeSpil"), "TreeMenu.Item.Reports.DanskeSpil", 5, 5)); // Danske spil rapport
+                    }
+                    if (db.GetConfigStringAsBool("ShellRecharge.Enabled"))
+                    {
+                        twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.Item.Reports.ShellRecharge"), "TreeMenu.Item.Reports.ShellRecharge", 5, 5)); // Ladedata spil rapport
+                    }
+
                     twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.EOD.Reports.SalesReport"), "TreeMenu.EOD.Reports.SalesReport", 5, 5));
 #if DETAIL
                     twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.EOD.Reports.SalesStatReport"), "TreeMenu.EOD.Reports.SalesStatReportDetail", 5, 5));
                     twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.EOD.Reports.AddInfoRpt"), "TreeMenu.EOD.Reports.AddInfoRpt", 5, 5));
-#else                    
+#else
+                    //20230329
+                   
+
                     twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.EOD.Reports.SalesStatReport"), "TreeMenu.EOD.Reports.SalesStatReport", 5, 5));
 #endif
                     //twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.EOD.Reports.SalesStatReport"), "TreeMenu.EOD.Reports.SalesStatReport", 5, 5));
@@ -710,17 +723,15 @@ namespace RBOS
                 twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.Item.Reports.DisktilbudSolgt"), "TreeMenu.Item.Reports.DisktilbudSolgt", 5, 5)); // Disktilbud solgt rapport
 
 
-                if (db.GetConfigStringAsBool("DanskeSpil.Enabled"))
-                {
-                    twMenu.Nodes[L0].Nodes[L1].Nodes[L2].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.Item.Reports.DanskeSpil"), "TreeMenu.Item.Reports.DanskeSpil", 5, 5)); // Danske spil rapport
-                }
+               
+#endif
 #endif
 #endif
             }
-#endif // if !DETAIL
 
-			// build system
-             L1 = twMenu.Nodes[L0].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.System.Folder"), "TreeMenu.System.Folder", 0, 1)); // System root
+
+            // build system
+            L1 = twMenu.Nodes[L0].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.System.Folder"), "TreeMenu.System.Folder", 0, 1)); // System root
 #if DETAIL
              L2 = twMenu.Nodes[L0].Nodes[L1].Nodes.Add(CreateNode(db.GetLangString("TreeMenu.System.Sitedata.Butik"), "TreeMenu.System.Sitedata.Butik", 4, 4)); // Butik
 #else
@@ -1324,10 +1335,15 @@ namespace RBOS
                 case "TreeMenu.Item.Reports.DanskeSpil":
                     form = new DanskeSpilReportFrm();
                     break;
-			}
+                case "TreeMenu.Item.Reports.ShellRecharge":
+                    form = new LadeDataReportForm();
+                    break;
 
-			// check if form is not already open
-			if(form != null)
+
+            }
+
+            // check if form is not already open
+            if (form != null)
 			{
 				foreach(System.Windows.Forms.Form f in  this.MdiChildren)
 				{

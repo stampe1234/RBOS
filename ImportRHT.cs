@@ -61,8 +61,7 @@ namespace RBOS
             get { return importedInvAdjustW; }
         }
 
-        private int importedShelfLabel = 0;
-        private readonly char no;
+        private int importedShelfLabel = 0;  
 
         public int ImportedShelfLabel
         {

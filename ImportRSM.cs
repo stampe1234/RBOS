@@ -257,7 +257,7 @@ namespace RBOS
                         // import this ISM file (if not already imported in header)
                         if (!ImportDataSet.Import_RPOS_24H_HeaderDataTable.RecordAlreadyExists(BookDate, "ISM"))
                         {
-                            long numISMrecords = 0;
+                            
                             long numISMproblems = 0;
 
                             // traverse all ISMDetail data

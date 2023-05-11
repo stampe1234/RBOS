@@ -2724,7 +2724,7 @@ namespace RBOS
                                         }
                                         break;
                            
-                                ProgressBar.PerformStep();
+                               // ProgressBar.PerformStep();
                                 }
                             } // end loopling each line in the file
                             parser.Close();

@@ -389,7 +389,7 @@ namespace RBOS
                (tools.object2int(row["Status"]) == (int)ImportDataSet.LookupLLStatusDataTable.LLStatus.Open) &&   // check that record is not closed 
                (tools.object2bool(row["Skip"]) == false));
 
-                Enabled = Enabled;
+               
 
 
             }
@@ -506,8 +506,8 @@ namespace RBOS
                     // and we need to perform something when
                     // returning from the form.
                     item.FormClosing += new FormClosingEventHandler(ActionNewItem_ItemFormClosingEvent);
-                   double test = tools.object2double(row["SalesPrice"]);
-                    test = test;
+                    double test = tools.object2double(row["SalesPrice"]);
+                    
                     // create new item and show form to user asynchronously
                     item.CreateNewItemAsync(
                         // tools.object2int(row["ItemID"]),//20190410

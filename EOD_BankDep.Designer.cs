@@ -285,10 +285,10 @@ namespace RBOS
 
         #endregion
 
-        private DRS.Extensions.DRS_DataGridView dataGridView1;
+        //private DRS.Extensions.DRS_DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSaveClose;
         private System.Windows.Forms.Button btnCancel;
-        private RBOS.EODDataSetTableAdapters.EOD_BankDepTableAdapter adapterBankDep;
+        //private RBOS.EODDataSetTableAdapters.EOD_BankDepTableAdapter adapterBankDep;
         
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

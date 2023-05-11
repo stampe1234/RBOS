@@ -9,12 +9,7 @@ namespace RBOS
 {
     class ExportOIO
     {
-        #region Private variables
-
-        private string filenameITT = "";
-        private string filenameMCT = "";
-        private string filenameTSM = "";
-        private string filenameILT = "";
+        #region Private variables        
 
         #endregion
 

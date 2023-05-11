@@ -82,9 +82,9 @@ namespace RBOS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ImportRHTForm test = new ImportRHTForm();
+            LadeDataReportForm  test = new LadeDataReportForm();
             test.Show();
-           
+            
         }
     }
 }
