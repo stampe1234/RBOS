@@ -7,7 +7,7 @@ using System.Xml;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-
+using System.Web.UI.WebControls.Expressions;
 
 namespace RBOS
 {
@@ -693,7 +693,9 @@ namespace RBOS
                 string Arkivfolder = file.Substring(0, idx);
                 Arkivfolder = Arkivfolder + "\\Arkiv";
                 string destFile = Arkivfolder + file.Remove(0, idx);
-                destFile = destFile.Replace("\\\\", "\\"); // make sure we don't have double backslashes
+                string version =  db.GetConfigString("InstalledVersion");
+                if (version == "4.00.005") 
+                  destFile = destFile.Replace("\\\\", "\\"); // make sure we don't have double backslashes
                 if (File.Exists(destFile))
                     File.Delete(destFile); // just to be sure
                 File.Move(file, destFile);

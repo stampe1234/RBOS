@@ -262,8 +262,7 @@ namespace RBOS
         #endregion
         public bool ExportDelfi()
         {
-            //Pn20200617
-            // dan 4 filer
+           
             if (!CheckDelfiExportDirsExists())
             {
                 MessageBox.Show("Folder findes ikke");
@@ -277,9 +276,7 @@ namespace RBOS
                 // setup output path
 
                 string filename = "BT_Tfilter.dat";
-                string filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;
-                filepath = filepath.Replace("\\\\", "\\"); // make sure we don't have double backslashes
-             
+                string filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;               
                 StreamWriter writer = new StreamWriter(filepath, false);
                 foreach (DataRow row in this.BHHTWorksheet().Rows)
                 {
@@ -298,9 +295,7 @@ namespace RBOS
 
                 #region BT_TfilterLinjer.dat
                 filename = "BT_TfilterLinjer.dat";
-                filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;
-                filepath = filepath.Replace("\\\\", "\\"); // make sure we don't have double backslashes
-
+                filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;               
                 writer = new StreamWriter(filepath, false);
                 foreach (DataRow row in this.LookupCatList().Rows)
                 {
@@ -319,9 +314,7 @@ namespace RBOS
 
                 #region BT_Varegrp.dat
                 filename = "BT_Varegrp.dat";
-                filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;
-                filepath = filepath.Replace("\\\\", "\\"); // make sure we don't have double backslashes
-
+                filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;               
                 writer = new StreamWriter(filepath, false);
                 foreach (DataRow row in this.LookupSubcategory().Rows)
                 {
@@ -383,8 +376,7 @@ namespace RBOS
 
 
                 filename = "BT_Varekatalog.dat";
-                filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;
-                filepath = filepath.Replace("\\\\", "\\"); // make sure we don't have double backslashes
+                filepath = db.GetConfigString("Delfi_Export_Dir") + "\\" + filename;                
                 int AntalMedSalg = 0;
                 writer = new StreamWriter(filepath, false);
                 Regex rgx = new Regex("[^a-zA-Z0-9 - . , Æ æ Ø ø Å å]");
@@ -584,17 +576,10 @@ namespace RBOS
         #endregion
         public bool CheckDelfiExportDirsExists()
         {
-            
-           
-
-            if (!Directory.Exists(db.GetConfigString("Delfi_Export_Dir")))           
-               return (false);
+            if (!Directory.Exists(db.GetConfigString("Delfi_Export_Dir")))
+                return (false);
             else
-                return (true);
-
-
-
-
+                return (true);        
         }
 
         #region METHOD: ItemTable

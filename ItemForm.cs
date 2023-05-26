@@ -595,11 +595,14 @@ namespace RBOS
                     MessageBox.Show(db.GetLangString("ItemForm.YouCannotDeleteThisChainItem"));
                     return;
                 }
+                /*
                 else if (dsItem.Item.IsInCampaign())
                 {
                     MessageBox.Show(db.GetLangString("ItemForm.CannotDeleteItemInCampaign"));
                     return;
                 }
+                */
+                //Pn20230526
                 else
                 {
                     // build message to user. ask if delete is ok. if stock is diff. from 0, ask about that.
@@ -1479,7 +1482,7 @@ namespace RBOS
             ColInActiveDate.DisplayIndex = ++DisplayIndex;
 
 
-            if (!DOSite)
+            if (!DOSite) 
             {
                 btnDelete.Visible = false;
                 btnNew.Visible = false;
