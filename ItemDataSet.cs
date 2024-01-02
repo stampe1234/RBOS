@@ -9,6 +9,10 @@ using System.IO;
 
 namespace RBOS.ItemDataSetTableAdapters
 {
+    partial class WasteSheetDetailsTableAdapter
+    {
+    }
+
     partial class InactiveItemTableAdapter
     {
     }
@@ -274,6 +278,10 @@ namespace RBOS
     /// </summary>
     partial class ItemDataSet
     {
+        partial class WasteSheetHeaderLookupsDataTable
+        {
+        }
+
         partial class LookupKolliSizeDataTable
         {
         }
@@ -1673,17 +1681,12 @@ namespace RBOS
                     delete from WasteSheetHeader
                     where ID = {0}
                     ", ID));
-#if !RBA
+
                 db.ExecuteNonQuery(string.Format(@"
                     delete from WasteSheetDetails
                     where HeaderID = {0}
                     ", ID));
-#else
-                db.ExecuteNonQuery(string.Format(@"
-                    delete from WasteSheetDetailsRBA
-                    where HeaderID = {0}
-                    ", ID));
-#endif
+
             }
             #endregion
 
@@ -1696,8 +1699,52 @@ namespace RBOS
                     ", ID));
             }
             #endregion
+            #region UpdateRecord
+            public static void UpdateWasteSheetHeader(int HeaderID)
+            {
+
+
+                // update the record
+                db.ExecuteNonQuery(string.Format(@" Update[dbo].[WasteSheetHeader] Set[NoOffRegistrations] =
+                (select COUNT(*) from[dbo].[WasteSheetDetails] where[dbo].[WasteSheetDetails].HeaderID = WasteSheetHeader.ID
+                And[dbo].[WasteSheetDetails].Antal <> 0) Where WasteSheetHeader.ID = {0}", HeaderID));
+
+            }
+
+            public static void ClearWasteSheetHeader()
+            {
+
+
+                // update the record
+                db.ExecuteNonQuery(string.Format(@" Update[dbo].[WasteSheetHeader] Set[NoOffRegistrations] = 0"));
+
+            }
+
+            public static int ReturnAntalWasteHeader()
+            {
+                OleDbCommand cmd = new OleDbCommand("", db.Connection);
+                cmd.CommandText = string.Format(" Select COUNT(*) from [WasteSheetHeader]");
+                return (tools.object2int(cmd.ExecuteScalar()));
+            }
+            public static int ReturnSC()
+            {
+                OleDbCommand cmd = new OleDbCommand("", db.Connection);
+                cmd.CommandText = string.Format(" Select COUNT(*) from [WasteSheetHeader] Where SC = 1");
+                return (tools.object2int(cmd.ExecuteScalar()));
+            }
+            public static int ReturnWaste()
+            {
+                OleDbCommand cmd = new OleDbCommand("", db.Connection);
+                cmd.CommandText = string.Format(" Select COUNT(*) from [WasteSheetHeader] Where Waste = 1");
+                return (tools.object2int(cmd.ExecuteScalar()));
+            }
+            #endregion
         }
+
+
+
         #endregion
+
 
         #region PARTIAL CLASS: BookedInvCountDetailDataTable
 

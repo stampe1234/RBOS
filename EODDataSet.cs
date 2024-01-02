@@ -1,8 +1,7 @@
-﻿using System.Data;
-using System.Data.OleDb;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Data;
+using System.Data.OleDb;
 
 namespace RBOS.EODDataSetTableAdapters
 {
@@ -2112,6 +2111,7 @@ namespace RBOS
                         tools.object2double(row["ShellCardAmount"]) +
                         tools.object2double(row["DiscountAmount"]) +
                         tools.object2double(row["MiscCards"]) +
+                        tools.object2double(row["WoltAmount"]) + //20231222
                         tools.object2double(row["ManDankortSumB"]) +
                         tools.object2double(row["CashDiscount"]);
                 }
@@ -2123,6 +2123,7 @@ namespace RBOS
                         tools.object2double(row["ShellCardAmount"]) +
                         tools.object2double(row["DiscountAmount"]) +
                         tools.object2double(row["MiscCards"]) +
+                        tools.object2double(row["WoltAmount"]) + //20231222
                         tools.object2double(row["ManDankortSumB"]) +  //peter
                         tools.object2double(row["CashDiscount"]);
                 }
@@ -2197,6 +2198,7 @@ namespace RBOS
                         tools.object2double(row["ShellCardAmount"]) +
                         tools.object2double(row["DiscountAmount"]) +
                         tools.object2double(row["MiscCards"]) +
+                          tools.object2double(row["WoltAmount"]) + //20231222
                         tools.object2double(row["CashDiscount"]);
 
                     // TotalMisc
@@ -3153,8 +3155,41 @@ namespace RBOS
                   " and (config.IncludeCode = 'SAFEPAYDKK') ",
                   BookDate.Date)));
 
+                //>>PN20231220
+                double WoltAmount = tools.object2double(db.ExecuteScalar(string.Format(
+                    " select sum(details.Amount) " +
+                    " from Import_RPOS_MSM_Config config " +
+                    " inner join Import_RPOS_MSM_Details details " +
+                    " on config.SummaryCode = details.SummaryCode " +
+                    " and config.SubCode = details.SubCode " +
+                    " and details.Modifier = config.Modifier " +
+                    " where (details.BookDate = '{0}') " +
+                    " and (config.IncludeCode = 'WOLT') ", BookDate.Date)));
+
+                db.ExecuteNonQuery(string.Format(
+                  " update EODReconcile " +
+                  " set WoltAmount = {0} " +
+                  " where BookDate = '{1}' ",
+                  tools.decimalnumber4sql(WoltAmount), BookDate.Date));
 
 
+                int WoltQTY = tools.object2int(db.ExecuteScalar(string.Format(
+                      " select sum(details.NumberOf) " +
+                    " from Import_RPOS_MSM_Config config " +
+                    " inner join Import_RPOS_MSM_Details details " +
+                    " on config.SummaryCode = details.SummaryCode " +
+                    " and config.SubCode = details.SubCode " +
+                    " and details.Modifier = config.Modifier " +
+                    " where (details.BookDate = '{0}') " +
+                    " and (config.IncludeCode = 'WOLT') ", BookDate.Date)));
+
+                db.ExecuteNonQuery(string.Format(
+                  " update EODReconcile " +
+                  " set WoltQTY = {0} " +
+                  " where BookDate = '{1}' ",
+                  (WoltQTY), BookDate.Date));
+
+                //<<PN20231220
                 //<<PN20200814
                 // update EODReconcile with Safepayf value  //pn20190806
                 db.ExecuteNonQuery(string.Format(

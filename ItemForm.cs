@@ -1619,7 +1619,7 @@ namespace RBOS
         private void btnEdit_Click(object sender, EventArgs e)
         {
             // toggle edit mode
-            if (UserLogon.EditSalesPrice() == true)
+            if (UserLogon.EditItem() == true)
                 ToggleEdit(true);
         }
 

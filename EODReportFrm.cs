@@ -95,21 +95,10 @@ namespace RBOS
                 adapterSafePayDepotbeholdning.FillWithValutaTekstLookup(dsEOD.EOD_SafePay_Depotbeholdning, BookDate);
                 adapterSafePayValutakurser.Fill(dsEOD.EOD_SafePay_Valutakurser);
             }
-#if RBA
-            adapterReadings.Fill(dsEOD.Readings, BookDate);
-            adapterWash.Fill(dsEOD.Wash, BookDate);
-            adapterManualCards.Fill(dsEOD.EOD_ManualCards, BookDate);
-            adapterForeignCurrency.Fill(dsEOD.EOD_ForeignCurrency, BookDate);
-            adapterReserveTerminal.Fill(dsEOD.EOD_ReserveTerminal, BookDate);
-#endif
+
 
             dsEOD.EOD_DETAIL_Valuta.Clear();
-#if DETAIL
-            EODDataSetTableAdapters.EOD_DETAIL_ValutaTableAdapter adapterDETAILValuta =
-                new RBOS.EODDataSetTableAdapters.EOD_DETAIL_ValutaTableAdapter();
-            adapterDETAILValuta.Connection = db.Connection;
-            adapterDETAILValuta.Fill(dsEOD.EOD_DETAIL_Valuta, BookDate);
-#endif
+
 
             // convert NULL to 0 in header data
             if (dsEOD.EODReconcileSingle.Rows.Count > 0)
@@ -138,6 +127,7 @@ namespace RBOS
                 CorrectNull(headerRow, "Payout");
                 CorrectNull(headerRow, "CashOverUnder");
                 CorrectNull(headerRow, "DiscountAmount");
+                CorrectNull(headerRow, "WoltAmount");
 
                 if (SafePayEnabled)
                 {
@@ -151,39 +141,7 @@ namespace RBOS
                 }
             }
 
-#if RBA
-            // convert NULL to 0 in wash data
-            if (dsEOD.Wash.Rows.Count > 0)
-            {
-                DataRow washRow = dsEOD.Wash.Rows[0];
-                CorrectNull(washRow, "VaskeTaellerPrimo");
-                CorrectNull(washRow, "LuxusMedLakforsegler");
-                CorrectNull(washRow, "LuksusVask");
-                CorrectNull(washRow, "VaskA");
-                CorrectNull(washRow, "VaskB");
-                CorrectNull(washRow, "VaskC");
-                CorrectNull(washRow, "VolumenVask");
-                CorrectNull(washRow, "TeknikerVask");
-                CorrectNull(washRow, "TaellerUltimoBeregnet");
-                CorrectNull(washRow, "TaellerUltimoAflaest");
-                CorrectNull(washRow, "SamletDifference");
-            }
 
-            // convert NULL to 0 in readings data
-            if (dsEOD.Readings.Rows.Count > 0)
-            {
-                DataRow readingsRow = dsEOD.Readings.Rows[0];
-                CorrectNull(readingsRow, "MainWaterPrimo");
-                CorrectNull(readingsRow, "MainWaterReading");
-                CorrectNull(readingsRow, "MainWaterUse");
-                CorrectNull(readingsRow, "WashPrimo");
-                CorrectNull(readingsRow, "WashReading");
-                CorrectNull(readingsRow, "WashUse");
-                CorrectNull(readingsRow, "KWPrimo");
-                CorrectNull(readingsRow, "KWReading");
-                CorrectNull(readingsRow, "KWUse");
-            }
-#endif
 
             // set report params
             if (dsEOD.EODReportParams.Rows.Count > 0)
@@ -205,18 +163,9 @@ namespace RBOS
                 row["SuppressDETAILvaluta"] = dsEOD.EOD_DETAIL_Valuta.Rows.Count <= 0;
                 row["SuppressSafePay"] = !SafePayEnabled;
                 row["SuppressDiscounts"] = dsEOD.EOD_Discounts.Rows.Count <= 0;
-
-#if RBA
-                row["RBA"] = true;
-#else
                 row["RBA"] = false;
-#endif
-
-#if DETAIL
-                row["DETAIL"] = true;
-#else
                 row["DETAIL"] = false;
-#endif
+
             }
 
             // Site information
@@ -226,12 +175,7 @@ namespace RBOS
             report.Section_SalesPerGLCode.SectionFormat.EnableSuppress =
                 (!chkSalesPerGLCode.Checked || chkShortReport.Checked);
 
-            
-            // set RBA sales max date
-#if RBA
-            tools.SetReportObjectText(report, "txtSalesMaxDate",
-                EODDataSet.EOD_SalesDataTable.GetMaxSalesDate().ToString("dd-MM-yyyy"));
-#endif
+         
 
             // set report's data source
             report.SetDataSource((DataSet)dsEOD);

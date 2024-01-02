@@ -716,9 +716,12 @@ namespace RBOS
     }
 }
 
-namespace RBOS.ImportDataSetTableAdapters {
-    
-    
+namespace RBOS.ImportDataSetTableAdapters
+{
+    partial class BHHTInvCountHeaderTableAdapter
+    {
+    }
+
     public partial class ItemUpdatesTableAdapter {
     }
 }

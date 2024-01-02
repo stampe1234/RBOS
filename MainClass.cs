@@ -130,10 +130,6 @@ namespace RBOS
                 //    }
                 //}
 
-                // register Neodynamic license  //Pn20191007
-               // Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.LicenseOwner = "Dansk Retail Services-Team License";
-              //  Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.LicenseKey = "38F93C9D831723E5";
-
 
                 Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.LicenseOwner = "Dansk Retail-Standard Edition-OEM Developer License";
                 Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.LicenseKey = "423CRH6L9ME77GDP34QAJUVN5TQB33WD8WSVG9VQM62A63CZHV8Q";
@@ -142,22 +138,7 @@ namespace RBOS
                 Application.EnableVisualStyles();
 
                 
-                // check that the initial setup has been completed after installation
-                //if (!UserLogon.InitialSetupCompleted())
-                //{
-                //    InitialSetup setup = new InitialSetup();
-                //    setup.ShowDialog();
-
-                //    // check again if the initial setup has been completed, and if not, exit program
-                //    if (!UserLogon.InitialSetupCompleted())
-                //        return;
-                //}
-
-                // logon before initializing database,
-                // so we have the connection strings
-                //LogonForm l = new LogonForm();
-                //l.ShowDialog();
-
+                
                 // check that user was logged on
                 if (!UserLogon.LoggedOn)
                 {

@@ -41,12 +41,7 @@ namespace RBOS
                     row["SafePay_Indbetalinger"] = EODDataSet.EOD_SafePay_IndbetalingerDataTable.GetTotalAmount(BookDate);
                     row["SafePay_OverfoerselTilSP"] = EODDataSet.EOD_SafePay_OverfoerselTilSPDataTable.GetTotalAmount(BookDate);
                     row["SafePay_Depotbeholdning"] = EODDataSet.EOD_SafePay_DepotbeholdningDataTable.GetTotalAmount(BookDate);
-                    //row["SafePayAmountCurr"] = EODDataSet.EOD_SafePay_CurrenciesDataTable.GetTotalSafePayCurrAmount(BookDate);
-                    //pn20200730
-                    //row["SafePayAmountCurr"] = EODDataSet.EOD_SafePay_DepotbeholdningDataTable.GetTotalSafePayCurrAmountDKK(BookDate);
                     
-                
-                    //pn20200730
                 }
 
             }
@@ -324,7 +319,7 @@ namespace RBOS
             lbMiscCardAmountSP.Text = lbMiscCardAmount.Text;
             lbTotalShellSP.Text = lbTotalShell.Text;
             lblManualDepBank.Text = db.GetLangString("EODDetailsForm.lblManualDepBank");
-            lbManCardAmountSP.Text = db.GetLangString("EODDetailsForm.lbManCardAmountSP");
+            lbWoltAmount.Text = "Wolt";
             lbManCardAmount.Text = db.GetLangString("EODDetailsForm.lbManCardAmountSP");
             lbDiscountAmount.Visible = false;
             txtDiscountAmount.Visible = false;

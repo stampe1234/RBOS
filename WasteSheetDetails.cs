@@ -21,12 +21,12 @@ namespace RBOS
 
             // position grid columns
             int index = 0;
-            colItemName.DisplayIndex = index++;
-            colLookupItemButton.DisplayIndex = index++;
+            colItemName.DisplayIndex = index++;            
             colBarcode.DisplayIndex = index++;
             colPackTypeName.DisplayIndex = index++;
             colCostPriceLatest.DisplayIndex = index++;
             colSalesPrice.DisplayIndex = index++;
+            colLookupItemButton.DisplayIndex = index++;
 
             LoadData();
 
@@ -58,13 +58,18 @@ namespace RBOS
         private void SaveData()
         {
             // updates the single headerrecord loaded
+           
             bindingWasteSheetHeader.EndEdit();
-            adapterWasteSheetHeader.Update(dsItem.WasteSheetHeader);
+            adapterWasteSheetHeader.Update(dsItem.WasteSheetHeader);                       
+           
 
             // updates the detail records
             grid.EndEdit();
-            bindingWasteSheetDetails.EndEdit();
+            bindingWasteSheetDetails.EndEdit();            
             adapterWasteSheetDetails.Update(dsItem.WasteSheetDetails);
+            ItemDataSet.WasteSheetHeaderDataTable.UpdateWasteSheetHeader(HeaderID);
+            
+
         }
 
         private void WasteSheetDetails_Load(object sender, EventArgs e)
@@ -78,6 +83,7 @@ namespace RBOS
 
         private void btnSaveAndClose_Click(object sender, EventArgs e)
         {
+            
             SaveData();
             this.DialogResult = DialogResult.OK;
             Close();
@@ -85,6 +91,7 @@ namespace RBOS
 
         private void grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+           
             if (e.RowIndex >= 0)
             {
                 if (e.ColumnIndex == colLookupItemButton.Index)
@@ -123,6 +130,61 @@ namespace RBOS
         private void grid_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
             ImageButtonRender.OnCellPainting(e, colLookupItemButton.Index, ImageButtonRender.Images.Search);
+        }
+
+
+    
+        
+
+        private void cBoxWaste_CheckedChanged(object sender, EventArgs e)
+        {
+           
+             
+           
+        }
+
+        private void cBoxStockCount_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void cBoxWaste_Click(object sender, EventArgs e)
+        {
+            if (cBoxWaste.Checked)
+            {
+                cBoxStockCount.Checked = false;
+            }
+            else
+            { cBoxStockCount.Checked = true; }
+
+        }
+
+        private void cBoxStockCount_Click(object sender, EventArgs e)
+        {
+            if (cBoxStockCount.Checked)
+            { cBoxWaste.Checked = false; }
+            else { cBoxStockCount.Checked = true; }
+
+        }
+
+        private void grid_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                if (e.ColumnIndex == colAntal.Index)
+                {
+
+                    if (bindingWasteSheetDetails.Current == null) return;
+                    DataRowView row = (DataRowView)bindingWasteSheetDetails.Current;
+                    row["DatoTid"] = System.DateTime.Now;                                  
+
+                    grid.EndEdit();
+                    bindingWasteSheetDetails.EndEdit();
+                    grid.Refresh();
+                   
+                }
+            }
+
         }
     }
 }

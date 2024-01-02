@@ -81,10 +81,15 @@ namespace RBOS
         {
             byte dirCount = 0;
             lastError = "";
+            string test = db.GetConfigString("Delfi_Import_Dir");
+            test = test.Replace("\\\\\\", "\\\\");      
 
-            if (!Directory.Exists(db.GetConfigString("Delfi_Import_Dir")))
+
+            // if (!Directory.Exists(db.GetConfigString("Delfi_Import_Dir")))
+            if (!Directory.Exists(test))
             {
                 lastError += db.GetConfigString("Delfi_Import_Dir") + "\n";
+               
                 ++dirCount;
             }
 
@@ -692,10 +697,7 @@ namespace RBOS
 
                 string Arkivfolder = file.Substring(0, idx);
                 Arkivfolder = Arkivfolder + "\\Arkiv";
-                string destFile = Arkivfolder + file.Remove(0, idx);
-                string version =  db.GetConfigString("InstalledVersion");
-                if (version == "4.00.005") 
-                  destFile = destFile.Replace("\\\\", "\\"); // make sure we don't have double backslashes
+                string destFile = Arkivfolder + file.Remove(0, idx);               
                 if (File.Exists(destFile))
                     File.Delete(destFile); // just to be sure
                 File.Move(file, destFile);
@@ -774,7 +776,8 @@ namespace RBOS
 
             // get import dir
             string importDir = GetRHTImportDir();
-
+            //pn20230802
+            importDir = importDir.Replace("\\\\\\", "\\\\");
             List<string> RHTFileList = new List<string>();
 
             string[] SubFolderArray = { db.GetConfigString("Delfi_Hyldemark_Dir"), db.GetConfigString("Delfi_LagerOpt_Dir"), db.GetConfigString("Delfi_Nedskrivn_Dir"), db.GetConfigString("Delfi_StockReg_Dir") };

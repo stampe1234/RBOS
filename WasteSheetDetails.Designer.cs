@@ -43,6 +43,8 @@ namespace RBOS
             this.adapterWasteSheetDetails = new RBOS.ItemDataSetTableAdapters.WasteSheetDetailsTableAdapter();
             this.adapterWasteSheetDetailsLookups = new RBOS.ItemDataSetTableAdapters.WasteSheetDetailsLookupsTableAdapter();
             this.adapterWasteSheetHeader = new RBOS.ItemDataSetTableAdapters.WasteSheetHeaderTableAdapter();
+            this.cBoxWaste = new System.Windows.Forms.CheckBox();
+            this.cBoxStockCount = new System.Windows.Forms.CheckBox();
             this.grid = new DRS.Extensions.DRS_DataGridView();
             this.colLookupItemButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.colPackTypeName = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -50,6 +52,7 @@ namespace RBOS
             this.colItemName = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.colSalesPrice = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.colBarcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAntal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetDetailsLookups)).BeginInit();
@@ -60,9 +63,10 @@ namespace RBOS
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(451, 346);
+            this.btnCancel.Location = new System.Drawing.Point(676, 532);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(112, 35);
             this.btnCancel.TabIndex = 0;
             this.btnCancel.Text = "[Annuller]";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -71,9 +75,10 @@ namespace RBOS
             // btnSaveAndClose
             // 
             this.btnSaveAndClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveAndClose.Location = new System.Drawing.Point(340, 346);
+            this.btnSaveAndClose.Location = new System.Drawing.Point(510, 532);
+            this.btnSaveAndClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSaveAndClose.Name = "btnSaveAndClose";
-            this.btnSaveAndClose.Size = new System.Drawing.Size(105, 23);
+            this.btnSaveAndClose.Size = new System.Drawing.Size(158, 35);
             this.btnSaveAndClose.TabIndex = 1;
             this.btnSaveAndClose.Text = "[Gem og luk]";
             this.btnSaveAndClose.UseVisualStyleBackColor = true;
@@ -82,19 +87,21 @@ namespace RBOS
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(12, 15);
+            this.lbName.Location = new System.Drawing.Point(18, 23);
+            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(39, 13);
+            this.lbName.Size = new System.Drawing.Size(53, 20);
             this.lbName.TabIndex = 2;
             this.lbName.Text = "[Navn]";
             // 
             // txtName
             // 
             this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingWasteSheetHeader, "Name", true));
-            this.txtName.Location = new System.Drawing.Point(70, 12);
+            this.txtName.Location = new System.Drawing.Point(105, 18);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.MaxLength = 20;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(209, 20);
+            this.txtName.Size = new System.Drawing.Size(312, 26);
             this.txtName.TabIndex = 3;
             // 
             // bindingWasteSheetHeader
@@ -129,13 +136,39 @@ namespace RBOS
             // 
             this.adapterWasteSheetHeader.ClearBeforeFill = true;
             // 
+            // cBoxWaste
+            // 
+            this.cBoxWaste.AutoSize = true;
+            this.cBoxWaste.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bindingWasteSheetHeader, "Waste", true));
+            this.cBoxWaste.Location = new System.Drawing.Point(424, 18);
+            this.cBoxWaste.Name = "cBoxWaste";
+            this.cBoxWaste.Size = new System.Drawing.Size(112, 24);
+            this.cBoxWaste.TabIndex = 5;
+            this.cBoxWaste.Text = "Afskrivning";
+            this.cBoxWaste.UseVisualStyleBackColor = true;
+            this.cBoxWaste.CheckedChanged += new System.EventHandler(this.cBoxWaste_CheckedChanged);
+            this.cBoxWaste.Click += new System.EventHandler(this.cBoxWaste_Click);
+            // 
+            // cBoxStockCount
+            // 
+            this.cBoxStockCount.AutoSize = true;
+            this.cBoxStockCount.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bindingWasteSheetHeader, "SC", true));
+            this.cBoxStockCount.Location = new System.Drawing.Point(542, 18);
+            this.cBoxStockCount.Name = "cBoxStockCount";
+            this.cBoxStockCount.Size = new System.Drawing.Size(103, 24);
+            this.cBoxStockCount.TabIndex = 6;
+            this.cBoxStockCount.Text = "Optælling";
+            this.cBoxStockCount.UseVisualStyleBackColor = true;
+            this.cBoxStockCount.CheckedChanged += new System.EventHandler(this.cBoxStockCount_CheckedChanged);
+            this.cBoxStockCount.Click += new System.EventHandler(this.cBoxStockCount_Click);
+            // 
             // grid
             // 
             this.grid.AllowUserToResizeColumns = false;
             this.grid.AllowUserToResizeRows = false;
-            this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grid.AutoGenerateColumns = false;
             this.grid.BackgroundColor = System.Drawing.SystemColors.Control;
             this.grid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -146,24 +179,29 @@ namespace RBOS
             this.colCostPriceLatest,
             this.colItemName,
             this.colSalesPrice,
-            this.colBarcode});
+            this.colBarcode,
+            this.colAntal});
             this.grid.DataSource = this.bindingWasteSheetDetails;
-            this.grid.Location = new System.Drawing.Point(12, 38);
+            this.grid.Location = new System.Drawing.Point(13, 57);
+            this.grid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grid.MultiSelect = false;
             this.grid.Name = "grid";
             this.grid.RowHeadersVisible = false;
             this.grid.RowHeadersWidth = 25;
             this.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid.Size = new System.Drawing.Size(514, 302);
+            this.grid.Size = new System.Drawing.Size(771, 465);
             this.grid.TabIndex = 4;
-            this.grid.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.grid_CellPainting);
             this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
+            this.grid.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.grid_CellPainting);
+            this.grid.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellValueChanged);
             // 
             // colLookupItemButton
             // 
             this.colLookupItemButton.HeaderText = "";
+            this.colLookupItemButton.MinimumWidth = 8;
             this.colLookupItemButton.Name = "colLookupItemButton";
+            this.colLookupItemButton.Visible = false;
             this.colLookupItemButton.Width = 25;
             // 
             // colPackTypeName
@@ -173,6 +211,7 @@ namespace RBOS
             this.colPackTypeName.DisplayMember = "PackTypeName";
             this.colPackTypeName.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.colPackTypeName.HeaderText = "PackType";
+            this.colPackTypeName.MinimumWidth = 8;
             this.colPackTypeName.Name = "colPackTypeName";
             this.colPackTypeName.ReadOnly = true;
             this.colPackTypeName.ValueMember = "Barcode";
@@ -189,6 +228,7 @@ namespace RBOS
             this.colCostPriceLatest.DisplayMember = "CostPriceLatest";
             this.colCostPriceLatest.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.colCostPriceLatest.HeaderText = "CostPrice";
+            this.colCostPriceLatest.MinimumWidth = 8;
             this.colCostPriceLatest.Name = "colCostPriceLatest";
             this.colCostPriceLatest.ReadOnly = true;
             this.colCostPriceLatest.ValueMember = "Barcode";
@@ -202,6 +242,7 @@ namespace RBOS
             this.colItemName.DisplayMember = "ItemName";
             this.colItemName.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.colItemName.HeaderText = "ItemName";
+            this.colItemName.MinimumWidth = 8;
             this.colItemName.Name = "colItemName";
             this.colItemName.ReadOnly = true;
             this.colItemName.ValueMember = "Barcode";
@@ -217,6 +258,7 @@ namespace RBOS
             this.colSalesPrice.DisplayMember = "SalesPrice";
             this.colSalesPrice.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.colSalesPrice.HeaderText = "SalesPrice";
+            this.colSalesPrice.MinimumWidth = 8;
             this.colSalesPrice.Name = "colSalesPrice";
             this.colSalesPrice.ReadOnly = true;
             this.colSalesPrice.ValueMember = "Barcode";
@@ -226,14 +268,25 @@ namespace RBOS
             // 
             this.colBarcode.DataPropertyName = "Barcode";
             this.colBarcode.HeaderText = "Barcode";
+            this.colBarcode.MinimumWidth = 8;
             this.colBarcode.Name = "colBarcode";
-            this.colBarcode.ReadOnly = true;
+            this.colBarcode.Width = 150;
+            // 
+            // colAntal
+            // 
+            this.colAntal.DataPropertyName = "Antal";
+            this.colAntal.HeaderText = "Antal";
+            this.colAntal.MinimumWidth = 8;
+            this.colAntal.Name = "colAntal";
+            this.colAntal.Width = 50;
             // 
             // WasteSheetDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 381);
+            this.ClientSize = new System.Drawing.Size(807, 586);
+            this.Controls.Add(this.cBoxStockCount);
+            this.Controls.Add(this.cBoxWaste);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbName);
@@ -241,6 +294,7 @@ namespace RBOS
             this.Controls.Add(this.btnCancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "WasteSheetDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -269,12 +323,15 @@ namespace RBOS
         private System.Windows.Forms.BindingSource bindingWasteSheetDetailsLookups;
         private System.Windows.Forms.BindingSource bindingWasteSheetHeader;
         private RBOS.ItemDataSetTableAdapters.WasteSheetHeaderTableAdapter adapterWasteSheetHeader;
+        private RBOS.ItemDataSetTableAdapters.WasteSheetDetailsLookupsTableAdapter adapterWasteSheetDetailsLookups;
         private System.Windows.Forms.DataGridViewButtonColumn colLookupItemButton;
         private System.Windows.Forms.DataGridViewComboBoxColumn colPackTypeName;
         private System.Windows.Forms.DataGridViewComboBoxColumn colCostPriceLatest;
         private System.Windows.Forms.DataGridViewComboBoxColumn colItemName;
         private System.Windows.Forms.DataGridViewComboBoxColumn colSalesPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn colBarcode;
-        private RBOS.ItemDataSetTableAdapters.WasteSheetDetailsLookupsTableAdapter adapterWasteSheetDetailsLookups;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAntal;
+        private System.Windows.Forms.CheckBox cBoxWaste;
+        private System.Windows.Forms.CheckBox cBoxStockCount;
     }
 }

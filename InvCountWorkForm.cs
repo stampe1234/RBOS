@@ -465,7 +465,17 @@ namespace RBOS
             string filter = string.Format("SubCategory = '{0}'", SubCategoryID);
             foreach (DataRow row in dsItem.InvCountWork.Select(filter))
             {
-                if ((row.RowState != DataRowState.Deleted) && (row.RowState != DataRowState.Detached))
+                //>>Pn20230615
+                int t1 = tools.object2int(row["CountBHHT"]);           
+                int t2 = tools.object2int(row["SalesPEJ"]);            
+                int t3 = tools.object2int(row["ManCorrect"]);
+
+
+
+                //if ((row.RowState != DataRowState.Deleted) && (row.RowState != DataRowState.Detached))
+                //<<PN20230615
+                if ((row.RowState != DataRowState.Deleted) && (row.RowState != DataRowState.Detached)  &&
+                    ((t1 != 0) || (t2 != 0) || (t3 != 0) ))
                 {
                     // get InvCountWork values for all imports
                     int ItemID = tools.object2int(row["ItemID"]);
@@ -568,8 +578,10 @@ namespace RBOS
 
                     // when done booking all data for the row,
                     // delete the record from InvCountWork
-                    row.Delete();
+                    row.Delete();//Pn20230615
                 }
+                else  row.Delete();//Pn20230615
+
             }
 
             // save booked and now deleted records to disk
