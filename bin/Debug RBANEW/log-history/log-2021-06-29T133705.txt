@@ -1,4 +1,0 @@
-29-06-2021 13:06:30: Starting application.
-29-06-2021 13:06:32: låst
-29-06-2021 13:06:32: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=1069
-29-06-2021 13:37:05: Application ended normally

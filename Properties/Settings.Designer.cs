@@ -12,7 +12,7 @@ namespace RBOS.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,6 +20,28 @@ namespace RBOS.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=PNI-T14;Integrated Security=SSPI;Initial Catalog=9" +
+            "999")]
+        public string RBOS20ConnectionString {
+            get {
+                return ((string)(this["RBOS20ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLOLEDB.1;Data Source=PNI-T14;Password=Drs123#789;User ID=DRSLogon;Init" +
+            "ial Catalog=DRSLogon")]
+        public string RBOSInitConnectionString {
+            get {
+                return ((string)(this["RBOSInitConnectionString"]));
             }
         }
         
@@ -37,33 +59,11 @@ namespace RBOS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=PNI-T14;Integrated Security=SSPI;Initial Catalog=1" +
-            "448")]
-        public string RBOS20ConnectionString {
-            get {
-                return ((string)(this["RBOS20ConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLOLEDB.1;Data Source=PNI-T14;Password=Drs123#789;User ID=DRSLogon;Init" +
             "ial Catalog=DRSLogon")]
         public string RBOSConnectionStringOLEDB {
             get {
                 return ((string)(this["RBOSConnectionStringOLEDB"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLOLEDB.1;Data Source=PNI-T14;Password=Drs123#789;User ID=DRSLogon;Init" +
-            "ial Catalog=DRSLogon")]
-        public string RBOSInitConnectionString {
-            get {
-                return ((string)(this["RBOSInitConnectionString"]));
             }
         }
     }

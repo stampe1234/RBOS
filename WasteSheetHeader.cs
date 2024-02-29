@@ -123,15 +123,7 @@ namespace RBOS
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            //check at der er åbent døgn 
-
-
-            //DataRow row = EODDataSet.EODReconcileDataTable.GetCurrentOpenDay();
-            //if (row == null)
-            //{
-            //    MessageBox.Show("Der er ikke nogen åben Rbos dag, åben venligst først");
-            //}
-            //else
+            
                 OpenDetail(false);
         }
 
@@ -188,12 +180,13 @@ namespace RBOS
                 if (db.GetDataTable(sql).Rows.Count != 1)
                 {
                     MessageBox.Show("intet åbent døgn");
-                }
-
+                    return;
+                }               
                 // attempt to get the latest BookDate (if any)
                 object oLastDate = db.ExecuteScalar(" select max(BookDate) from EODReconcile ");
                 BookDate = tools.object2datetime(oLastDate);
                 BookData(1, BookDate);
+                
             }
             ItemDataSet.WasteSheetHeaderDataTable.ClearWasteSheetHeader();
 
@@ -215,6 +208,7 @@ namespace RBOS
             DateTime PostingDate;
             string CmdTekstSelect = "";
             string CmdTekstUpdate = "Update [dbo].[WasteSheetDetails] Set Antal = 0";
+            string CmdTekstUpdate2 = "Update [WasteSheetHeader] Set SC=null ,Waste= null , Book=null";
 
 
             if (type == 1)  //afskrivning
@@ -281,6 +275,7 @@ namespace RBOS
             }
             //Nulstil antal i alle wastesheet details
             db.ExecuteNonQuery(CmdTekstUpdate);
+            db.ExecuteNonQuery(CmdTekstUpdate2);
         }
 
         private void BookSC()
@@ -291,6 +286,7 @@ namespace RBOS
             DateTime PostingDate;
             string CmdTekstSelect = "";
             string CmdTekstUpdate = "Update [dbo].[WasteSheetDetails] Set Antal = 0";
+            string CmdTekstUpdate2 = "Update [WasteSheetHeader] Set SC=null ,Waste= null , Book=null";
 
 
             // load detail data
@@ -354,6 +350,7 @@ namespace RBOS
             }
             //Nulstil antal i alle wastesheet details
             db.ExecuteNonQuery(CmdTekstUpdate);
+            db.ExecuteNonQuery(CmdTekstUpdate2);
         }
 
         private void BuildNewInvCountWorkData(int BHHTCountID, DateTime BHHTCountDate)
@@ -594,7 +591,7 @@ namespace RBOS
 
             // refresh the GUI representation of data
 
-            adapterInvCountWork.Connection = db.Connection;
+            adapterInvCountWork.Connection = db.Connection; 
             adapterInvCountWork.Fill(dsItem.InvCountWork);
            
             Approve(BHHTCountID, BHHTCountDate, SubCategory);
@@ -758,11 +755,8 @@ namespace RBOS
 
             }
 
-            // save booked and now deleted records to disk
-            
-
-            
-            
+            // save booked and now deleted records to disk                 
+            SaveData();
 
             // when no more work records, remove related data
             // from BHHTInvCountHeader/Details and close work window

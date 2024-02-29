@@ -1,0 +1,2 @@
+12-01-2024 07:02:00: Starting application.
+12-01-2024 07:02:00: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=9999

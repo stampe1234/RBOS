@@ -26,8 +26,11 @@ namespace RBOS
             colPackTypeName.DisplayIndex = index++;
             colCostPriceLatest.DisplayIndex = index++;
             colSalesPrice.DisplayIndex = index++;
-            colLookupItemButton.DisplayIndex = index++;
-
+            colAntal.DisplayIndex = index++;
+            colAntal.ReadOnly = false;
+            
+            //colLookupItemButton.DisplayIndex = index++;
+     
             LoadData();
 
             // localization
@@ -83,10 +86,15 @@ namespace RBOS
 
         private void btnSaveAndClose_Click(object sender, EventArgs e)
         {
-            
-            SaveData();
-            this.DialogResult = DialogResult.OK;
-            Close();
+
+            if ((!cBoxWaste.Checked) & (!cBoxStockCount.Checked))
+                MessageBox.Show("Vælg optælling eller Afskrivning");
+            else
+            {
+                SaveData();
+                this.DialogResult = DialogResult.OK;
+                Close();
+            }
         }
 
         private void grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -184,6 +192,11 @@ namespace RBOS
                    
                 }
             }
+
+        }
+
+        private void bindingWasteSheetDetails_CurrentChanged(object sender, EventArgs e)
+        {
 
         }
     }

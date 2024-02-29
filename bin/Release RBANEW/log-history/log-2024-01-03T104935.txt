@@ -1,0 +1,15 @@
+03-01-2024 10:49:14: Starting application.
+03-01-2024 10:49:14: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=9999
+------------------------------------
+03-01-2024 10:49:35: Exception:
+Context: Application
+Message: Netværksstien blev ikke fundet.
+
+StackTrace:
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.Directory.InternalCreateDirectory(String fullPath, String path, Object dirSecurityObj, Boolean checkHost)
+   ved System.IO.Directory.InternalCreateDirectoryHelper(String path, Boolean checkHost)
+   ved RBOS.Version.CheckForAndCreateDirectories()
+   ved RBOS.Version.VersionUpdater()
+   ved RBOS.MainClass.Main(String[] CmdArgs)
+------------------------------------

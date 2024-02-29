@@ -31,6 +31,7 @@ namespace RBOS
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WasteSheetDetails));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSaveAndClose = new System.Windows.Forms.Button();
@@ -63,7 +64,7 @@ namespace RBOS
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(676, 532);
+            this.btnCancel.Location = new System.Drawing.Point(884, 532);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(112, 35);
@@ -75,7 +76,7 @@ namespace RBOS
             // btnSaveAndClose
             // 
             this.btnSaveAndClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveAndClose.Location = new System.Drawing.Point(510, 532);
+            this.btnSaveAndClose.Location = new System.Drawing.Point(718, 532);
             this.btnSaveAndClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSaveAndClose.Name = "btnSaveAndClose";
             this.btnSaveAndClose.Size = new System.Drawing.Size(158, 35);
@@ -87,7 +88,7 @@ namespace RBOS
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(18, 23);
+            this.lbName.Location = new System.Drawing.Point(18, 22);
             this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(53, 20);
@@ -101,6 +102,7 @@ namespace RBOS
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.MaxLength = 20;
             this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(312, 26);
             this.txtName.TabIndex = 3;
             // 
@@ -123,6 +125,7 @@ namespace RBOS
             // 
             this.bindingWasteSheetDetails.DataMember = "WasteSheetDetails";
             this.bindingWasteSheetDetails.DataSource = this.dsItem;
+            this.bindingWasteSheetDetails.CurrentChanged += new System.EventHandler(this.bindingWasteSheetDetails_CurrentChanged);
             // 
             // adapterWasteSheetDetails
             // 
@@ -141,6 +144,7 @@ namespace RBOS
             this.cBoxWaste.AutoSize = true;
             this.cBoxWaste.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bindingWasteSheetHeader, "Waste", true));
             this.cBoxWaste.Location = new System.Drawing.Point(424, 18);
+            this.cBoxWaste.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxWaste.Name = "cBoxWaste";
             this.cBoxWaste.Size = new System.Drawing.Size(112, 24);
             this.cBoxWaste.TabIndex = 5;
@@ -154,6 +158,7 @@ namespace RBOS
             this.cBoxStockCount.AutoSize = true;
             this.cBoxStockCount.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bindingWasteSheetHeader, "SC", true));
             this.cBoxStockCount.Location = new System.Drawing.Point(542, 18);
+            this.cBoxStockCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxStockCount.Name = "cBoxStockCount";
             this.cBoxStockCount.Size = new System.Drawing.Size(103, 24);
             this.cBoxStockCount.TabIndex = 6;
@@ -182,7 +187,7 @@ namespace RBOS
             this.colBarcode,
             this.colAntal});
             this.grid.DataSource = this.bindingWasteSheetDetails;
-            this.grid.Location = new System.Drawing.Point(13, 57);
+            this.grid.Location = new System.Drawing.Point(19, 54);
             this.grid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grid.MultiSelect = false;
             this.grid.Name = "grid";
@@ -190,7 +195,7 @@ namespace RBOS
             this.grid.RowHeadersWidth = 25;
             this.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid.Size = new System.Drawing.Size(771, 465);
+            this.grid.Size = new System.Drawing.Size(983, 465);
             this.grid.TabIndex = 4;
             this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
             this.grid.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.grid_CellPainting);
@@ -215,6 +220,7 @@ namespace RBOS
             this.colPackTypeName.Name = "colPackTypeName";
             this.colPackTypeName.ReadOnly = true;
             this.colPackTypeName.ValueMember = "Barcode";
+            this.colPackTypeName.Visible = false;
             this.colPackTypeName.Width = 70;
             // 
             // colCostPriceLatest
@@ -270,21 +276,26 @@ namespace RBOS
             this.colBarcode.HeaderText = "Barcode";
             this.colBarcode.MinimumWidth = 8;
             this.colBarcode.Name = "colBarcode";
+            this.colBarcode.ReadOnly = true;
+            this.colBarcode.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.colBarcode.Width = 150;
             // 
             // colAntal
             // 
             this.colAntal.DataPropertyName = "Antal";
+            dataGridViewCellStyle3.NullValue = null;
+            this.colAntal.DefaultCellStyle = dataGridViewCellStyle3;
             this.colAntal.HeaderText = "Antal";
             this.colAntal.MinimumWidth = 8;
             this.colAntal.Name = "colAntal";
+            this.colAntal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.colAntal.Width = 50;
             // 
             // WasteSheetDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 586);
+            this.ClientSize = new System.Drawing.Size(1015, 586);
             this.Controls.Add(this.cBoxStockCount);
             this.Controls.Add(this.cBoxWaste);
             this.Controls.Add(this.grid);
@@ -324,6 +335,8 @@ namespace RBOS
         private System.Windows.Forms.BindingSource bindingWasteSheetHeader;
         private RBOS.ItemDataSetTableAdapters.WasteSheetHeaderTableAdapter adapterWasteSheetHeader;
         private RBOS.ItemDataSetTableAdapters.WasteSheetDetailsLookupsTableAdapter adapterWasteSheetDetailsLookups;
+        private System.Windows.Forms.CheckBox cBoxWaste;
+        private System.Windows.Forms.CheckBox cBoxStockCount;
         private System.Windows.Forms.DataGridViewButtonColumn colLookupItemButton;
         private System.Windows.Forms.DataGridViewComboBoxColumn colPackTypeName;
         private System.Windows.Forms.DataGridViewComboBoxColumn colCostPriceLatest;
@@ -331,7 +344,5 @@ namespace RBOS
         private System.Windows.Forms.DataGridViewComboBoxColumn colSalesPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn colBarcode;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAntal;
-        private System.Windows.Forms.CheckBox cBoxWaste;
-        private System.Windows.Forms.CheckBox cBoxStockCount;
     }
 }

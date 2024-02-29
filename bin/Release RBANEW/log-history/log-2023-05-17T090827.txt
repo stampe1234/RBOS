@@ -1,0 +1,10 @@
+17-05-2023 09:07:47: Starting application.
+17-05-2023 09:07:51: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=9010
+------------------------------------
+17-05-2023 09:08:27: Exception:
+Context: ImportRHT.ImportBHE
+Message: Objektreferencen er ikke indstillet til en forekomst af et objekt.
+StackTrace:
+   ved RBOS.ImportRHT.ImportStockregulation(DataSet dsXML)
+   ved RBOS.ImportRHT.ImportBHE(ImportRHTForm callerX)
+------------------------------------

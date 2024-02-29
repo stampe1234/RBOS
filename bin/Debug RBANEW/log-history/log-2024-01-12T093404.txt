@@ -1,0 +1,24 @@
+12-01-2024 09:33:52: Starting application.
+12-01-2024 09:33:52: Provider=SQLOLEDB;Data Source=PNI-T14;Persist Security Info=True;Password=123;User ID=pni;Initial Catalog=9999
+------------------------------------
+12-01-2024 09:34:04: Exception:
+Context: Application
+Message: ReadOnly skal være angivet til True for en DataGridView-kolonne, der er bundet til et skrivebeskyttet felt.
+StackTrace:
+   ved System.Windows.Forms.DataGridViewColumn.set_ReadOnly(Boolean value)
+   ved RBOS.WasteSheetDetails..ctor(Int32 HeaderID) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Projects\RBOS\RBOS\WasteSheetDetails.cs:linje 30
+   ved RBOS.WasteSheetHeader.OpenDetail(Boolean CreateNew) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Projects\RBOS\RBOS\WasteSheetHeader.cs:linje 63
+   ved RBOS.WasteSheetHeader.btnEdit_Click(Object sender, EventArgs e) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Projects\RBOS\RBOS\WasteSheetHeader.cs:linje 127
+   ved System.Windows.Forms.Control.OnClick(EventArgs e)
+   ved System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   ved System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   ved System.Windows.Forms.Control.WndProc(Message& m)
+   ved System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   ved System.Windows.Forms.Button.WndProc(Message& m)
+   ved System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   ved System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   ved System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   ved System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   ved System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   ved RBOS.MainClass.Main(String[] CmdArgs) i C:\Users\PNI\OneDrive - BAKER TILLY DENMARK GODKENDT REVISIONSPARTNERSELSKAB\Projects\RBOS\RBOS\MainClass.cs:linje 174
+------------------------------------

@@ -46,10 +46,10 @@ namespace RBOS
                 ReportType = "AfskrivningsArk";
             }
 
-            if ((tools.object2int(row["SC"]) != 1) & (tools.object2int(row["Waste"]) != 1))
-            {
-                MessageBox.Show("Vælg enten Optælling eller Afskrivning");
-            }
+            //if ((tools.object2int(row["SC"]) != 1) & (tools.object2int(row["Waste"]) != 1))
+            //{
+            //    MessageBox.Show("Vælg enten Optælling eller Afskrivning");
+            //}
 
 
         }
