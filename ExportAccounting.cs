@@ -67,7 +67,8 @@ namespace RBOS
             eodfile.WriteLine("1014" + Encrypt(FormatAmount(rowEODReconcile["ShellCardAmount"]), ++lineno, header));
             eodfile.WriteLine("1015" + Encrypt(FormatAmount(rowEODReconcile["DiscountAmount"]), ++lineno, header));
             eodfile.WriteLine("1016" + Encrypt(FormatAmount(rowEODReconcile["MiscCards"]), ++lineno, header));
-            eodfile.WriteLine("1018" + Encrypt(FormatAmount(rowEODReconcile["ManDankortSumB"]), ++lineno, header));
+            //eodfile.WriteLine("1018" + Encrypt(FormatAmount(rowEODReconcile["ManDankortSumB"]), ++lineno, header)); 20240404
+            eodfile.WriteLine("1018" + Encrypt(FormatAmount(rowEODReconcile["WoltAmount"]), ++lineno, header));
             eodfile.WriteLine("1020" + Encrypt(FormatAmount(rowEODReconcile["CashDiscount"]), ++lineno, header));
             eodfile.WriteLine("1022" + Encrypt(FormatAmount(rowEODReconcile["DriveOffTotal"]), ++lineno, header));
             eodfile.WriteLine("1024" + Encrypt(FormatAmount(rowEODReconcile["LocalCredit"]), ++lineno, header));

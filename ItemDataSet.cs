@@ -9,7 +9,34 @@ using System.IO;
 
 namespace RBOS.ItemDataSetTableAdapters
 {
-    partial class WasteSheetDetailsTableAdapter
+    partial class WasteSheetDetailsLocalLookupsTableAdapter
+    {
+    }
+
+    partial class WasteSheetReportLocalTableAdapter
+    {
+    }
+
+    partial class WasteSheetReportTableAdapter
+    {
+    }
+
+    partial class WasteSheetHeaderLocalTableAdapter
+    {
+        public static int CreateNewRecord()
+        {
+            db.ExecuteNonQuery(@"
+                    insert into WasteSheetHeaderLocal
+                    (Name) values ('')
+                    ");
+            return tools.object2int(db.ExecuteScalar(string.Format(@"
+                    select max(ID) from WasteSheetHeaderLocal
+                    "))
+                );
+        }
+    }
+
+    partial class WasteSheetDetailsLocalTableAdapter
     {
     }
 
@@ -278,7 +305,69 @@ namespace RBOS
     /// </summary>
     partial class ItemDataSet
     {
-        partial class WasteSheetHeaderLookupsDataTable
+        partial class WasteSheetReportDataTable
+        {
+        }
+
+        partial class WasteSheetHeaderLocalDataTable
+        {
+
+
+
+            public static int CreateNewRecord()
+            {
+                db.ExecuteNonQuery(@"
+                    insert into WasteSheetHeaderLocal
+                    (Name) values ('')
+                    ");
+                return tools.object2int(db.ExecuteScalar(string.Format(@"
+                    select max(ID) from WasteSheetHeaderLocal
+                    ")));
+            }
+            #region DeleteRecord
+            /// <summary>
+            /// Deletes the header record in WasteSheetHeader table
+            /// and any related detail records in WasteSheetDetails table.
+            /// </summary>
+            /// <param name="ID"></param>
+            public static void DeleteRecord(int ID)
+            {
+                db.ExecuteNonQuery(string.Format(@"
+                    delete from WasteSheetHeaderLocal
+                    where ID = {0}
+                    ", ID));
+
+                db.ExecuteNonQuery(string.Format(@"
+                    delete from WasteSheetDetailsLocal
+                    where HeaderID = {0}
+                    ", ID));
+
+            }
+            #endregion
+            public static void UpdateWasteSheetHeaderLocal(int HeaderID)
+            {
+
+
+                // update the record
+                db.ExecuteNonQuery(string.Format(@" Update[dbo].[WasteSheetHeaderLocal] Set[NoOffRegistrations] =
+                (select COUNT(*) from[dbo].[WasteSheetDetailsLocal] where[dbo].[WasteSheetDetailsLocal].HeaderID = WasteSheetHeaderLocal.ID
+               ) Where WasteSheetHeaderLocal.ID = {0}", HeaderID));
+
+            }
+            #region GetRecord
+            public static DataRow GetRecord(int ID)
+            {
+                return db.GetDataRow(string.Format(@"
+                    select * from WasteSheetHeaderLocal
+                    where ID = {0}
+                    ", ID));
+            }
+            #endregion
+
+
+        }
+
+        partial class WasteSheetHeaderLocalLookupsDataTable
         {
         }
 
@@ -306,8 +395,48 @@ namespace RBOS
 
         }
 
-        partial class DataTable1DataTable
+        partial class WasteSheetDetailsLocalDataTable
         {
+            #region GetNextLineNo
+            /// <summary>
+            /// Returns the next lineno for the currently loaded waste sheet.
+            /// </summary>
+            public int GetNextLineNo()
+            {
+                int MaxLineNo = 0;
+                foreach (DataRow row in this.Rows)
+                {
+                    if ((row.RowState != DataRowState.Deleted) &&
+                        (row.RowState != DataRowState.Detached))
+                    {
+                        int LineNo = tools.object2int(row["LineNo"]);
+                        if (LineNo > MaxLineNo)
+                            MaxLineNo = LineNo;
+                    }
+                }
+                return (MaxLineNo + 1);
+            }
+            #endregion
+
+
+
+            #region ItemAlreadySelected
+            public bool ItemAlreadySelected(int ItemID)
+            {
+                foreach (DataRow row in this.Rows)
+                {
+                    if ((row.RowState != DataRowState.Deleted) &&
+                        (row.RowState != DataRowState.Detached))
+                    {
+                        int dbItemID = ItemDataTable.GetItemIDFromBarcode(tools.object2double(row["Barcode"]));
+                        if (dbItemID == ItemID)
+                            return true;
+                    }
+                }
+                return false;
+            }
+            #endregion
+
         }
 
         partial class LookupBarcodeNameDataTable

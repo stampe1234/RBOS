@@ -31369,7 +31369,11 @@ WHERE        (( BookDate  = ?) AND ( [LINENO] = ?) AND ((? = 1 AND  MOPCode  IS 
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TmpAmt4Descr", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TmpAmt4Descr", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO `EODReconcile` (`BookDate`, `Closed`, `RSMDataImported`, `BankDepAmount`, `BankCardAmount`, `ShellCardAmount`, `DiscountAmount`, `MiscCards`, `ManDankortSumB`, `CashDiscount`, `DriveOffTotal`, `LocalCredit`, `LocalCreditPayin`, `ForeignCurrency`, `POSSales`, `ManualSales`, `Payin`, `Payout`, `CashOverUnder`, `ApprovedBy`, `TotalBank`, `TotalShell`, `TotalMisc`, `TotalSales`, `TotalABC`, `TotalD`, `NumberOfWashSold`, `ReserveTerminal`, `SafePay_OverfoerselTilSP`, `SafePay_Udbetalinger`, `SafePay_Indbetalinger`, `SafePay_ByttepengeOptalt`, `SafePay_TilfoertByttepengeFraLomis`, `SafePay_BeloebTilfoertDobbelt`, `SafePay_Depotbeholdning`, `MoentDaglig`, `MoentBank`, `SafePayAmountCurr`, `SafePayAmount`, `TotalSafePay`, `ManBankDep`, `OPTPrepayAmount`, `TmpAmt1`, `TmpAmt2`, `TmpAmt3`, `TmpAmt4`, `TmpAmtTotal`, `TmpAmt1Descr`, `TmpAmt2Descr`, `TmpAmt3Descr`, `TmpAmt4Descr`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO ` EODReconcile ` (` BookDate `, ` Closed `, ` RSMDataImported `, ` BankDepAmount `, ` BankCardAmount `, ` ShellCardAmount `, ` DiscountAmount `, ` MiscCards `, ` ManDankortSumB `, ` CashDiscount `, ` DriveOffTotal `, ` LocalCredit `, ` LocalCreditPayin `, ` ForeignCurrency `, 
+             ` POSSales `, ` ManualSales `, ` Payin `, ` Payout `, ` CashOverUnder `, ` ApprovedBy `, ` TotalBank `, ` TotalShell `, ` TotalMisc `, ` TotalSales `, ` TotalABC `, ` TotalD `, ` NumberOfWashSold `, ` ReserveTerminal `, ` SafePay_OverfoerselTilSP `, ` SafePay_Udbetalinger `, 
+             ` SafePay_Indbetalinger `, ` SafePay_ByttepengeOptalt `, ` SafePay_TilfoertByttepengeFraLomis `, ` SafePay_BeloebTilfoertDobbelt `, ` SafePay_Depotbeholdning `, ` MoentDaglig `, ` MoentBank `, ` SafePayAmountCurr `, ` SafePayAmount `, ` TotalSafePay `, ` ManBankDep `, 
+             ` OPTPrepayAmount `, ` TmpAmt1 `, ` TmpAmt2 `, ` TmpAmt3 `, ` TmpAmt4 `, ` TmpAmtTotal `, ` TmpAmt1Descr `, ` TmpAmt2Descr `, ` TmpAmt3Descr `, ` TmpAmt4Descr `)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("BookDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "BookDate", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Closed", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Closed", global::System.Data.DataRowVersion.Current, false, null));
@@ -31422,77 +31426,73 @@ WHERE        (( BookDate  = ?) AND ( [LINENO] = ?) AND ((? = 1 AND  MOPCode  IS 
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TmpAmt2Descr", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TmpAmt2Descr", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TmpAmt3Descr", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TmpAmt3Descr", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TmpAmt4Descr", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TmpAmt4Descr", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("WoltAmount", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "WoltAmount", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [EODReconcile]\r\nSET          [BookDate] = ?, [Closed] = ?, [RSMDataImporte" +
-                "d] = ?, [BankDepAmount] = ?, [BankCardAmount] = ?, [ShellCardAmount] = ?, [Disco" +
-                "untAmount] = ?, [MiscCards] = ?, [ManDankortSumB] = ?, [CashDiscount] = ?, [Driv" +
-                "eOffTotal] = ?, \r\n                  [LocalCredit] = ?, [LocalCreditPayin] = ?, [" +
-                "ForeignCurrency] = ?, [POSSales] = ?, [ManualSales ] = ?, [Payin] = ?, [Payout] " +
-                "= ?, [CashOverUnder] = ?, [ApprovedBy] = ?, [TotalBank] = ?, [TotalShell] = ?, [" +
-                "TotalMisc] = ?, \r\n                  [TotalSales] = ?, [TotalABC] = ?, [TotalD] =" +
-                " ?, [NumberOfWashSold] = ?, [ReserveTerminal] = ?, [SafePay_OverfoerselTilSP] = " +
-                "?, [SafePay_Udbetalinger] = ?, [SafePay_Indbetalinger] = ?, [SafePay_ByttepengeO" +
-                "ptalt] = ?, \r\n                  [SafePay_TilfoertByttepengeFraLomis] = ?, [SafeP" +
-                "ay_BeloebTilfoertDobbelt] = ?, [SafePay_Depotbeholdning] = ?, [MoentDaglig] = ?," +
-                " [MoentBank] = ?, [SafePayAmountCurr] = ?, [SafePayAmount] = ?, [TotalSafePay] =" +
-                " ?, \r\n                  [ManBankDep] = ?, [OPTPrepayAmount] = ?, [TmpAmt1] = ?, " +
-                "[TmpAmt2] = ?, [TmpAmt3] = ?, [TmpAmt4] = ?, [TmpAmtTotal] = ?, [TmpAmt1Descr] =" +
-                " ?, [TmpAmt2Descr] = ?, [TmpAmt3Descr] = ?, [TmpAmt4Descr] = ?\r\nWHERE  (([BookDa" +
-                "te] = ?) AND ((? = 1 AND [Closed] IS NULL) OR\r\n                  ([Closed] = ?))" +
-                " AND ((? = 1 AND [RSMDataImported] IS NULL) OR\r\n                  ([RSMDataImpor" +
-                "ted] = ?)) AND ((? = 1 AND [BankDepAmount] IS NULL) OR\r\n                  ([Bank" +
-                "DepAmount] = ?)) AND ((? = 1 AND [BankCardAmount] IS NULL) OR\r\n                 " +
-                " ([BankCardAmount] = ?)) AND ((? = 1 AND ShellCardAmount IS NULL) OR\r\n          " +
-                "        (ShellCardAmount = ?)) AND ((? = 1 AND DiscountAmount  IS NULL) OR\r\n    " +
-                "              ( DiscountAmount  = ?)) AND ((? = 1 AND  MiscCards  IS NULL) OR\r\n " +
-                "                 ( MiscCards  = ?)) AND ((? = 1 AND  ManDankortSumB  IS NULL) OR" +
-                "\r\n                  ( ManDankortSumB  = ?)) AND ((? = 1 AND  CashDiscount  IS NU" +
-                "LL) OR\r\n                  ( CashDiscount  = ?)) AND ((? = 1 AND  DriveOffTotal  " +
-                "IS NULL) OR\r\n                  ( DriveOffTotal  = ?)) AND ((? = 1 AND  LocalCred" +
-                "it  IS NULL) OR\r\n                  ( LocalCredit  = ?)) AND ((? = 1 AND  LocalCr" +
-                "editPayin  IS NULL) OR\r\n                  ( LocalCreditPayin  = ?)) AND ((? = 1 " +
-                "AND  ForeignCurrency  IS NULL) OR\r\n                  ( ForeignCurrency  = ?)) AN" +
-                "D ((? = 1 AND  POSSales  IS NULL) OR\r\n                  ( POSSales  = ?)) AND ((" +
-                "? = 1 AND  ManualSales  IS NULL) OR\r\n                  ( ManualSales  = ?)) AND " +
-                "((? = 1 AND  Payin  IS NULL) OR\r\n                  ( Payin  = ?)) AND ((? = 1 AN" +
-                "D  Payout  IS NULL) OR\r\n                  ( Payout  = ?)) AND ((? = 1 AND  CashO" +
-                "verUnder  IS NULL) OR\r\n                  ( CashOverUnder  = ?)) AND ((? = 1 AND " +
-                " ApprovedBy  IS NULL) OR\r\n                  ( ApprovedBy  = ?)) AND ((? = 1 AND " +
-                " TotalBank  IS NULL) OR\r\n                  ( TotalBank  = ?)) AND ((? = 1 AND  T" +
-                "otalShell  IS NULL) OR\r\n                  ( TotalShell  = ?)) AND ((? = 1 AND  T" +
-                "otalMisc  IS NULL) OR\r\n                  ( TotalMisc  = ?)) AND ((? = 1 AND  Tot" +
-                "alSales  IS NULL) OR\r\n                  ( TotalSales  = ?)) AND ((? = 1 AND  Tot" +
-                "alABC  IS NULL) OR\r\n                  ( TotalABC  = ?)) AND ((? = 1 AND  TotalD " +
-                " IS NULL) OR\r\n                  ( TotalD  = ?)) AND ((? = 1 AND  NumberOfWashSol" +
-                "d  IS NULL) OR\r\n                  ( NumberOfWashSold  = ?)) AND ((? = 1 AND  Res" +
-                "erveTerminal  IS NULL) OR\r\n                  ( ReserveTerminal  = ?)) AND ((? = " +
-                "1 AND  SafePay_OverfoerselTilSP  IS NULL) OR\r\n                  ( SafePay_Overfo" +
-                "erselTilSP  = ?)) AND ((? = 1 AND  SafePay_Udbetalinger  IS NULL) OR\r\n          " +
-                "        ( SafePay_Udbetalinger  = ?)) AND ((? = 1 AND  SafePay_Indbetalinger  IS" +
-                " NULL) OR\r\n                  ( SafePay_Indbetalinger  = ?)) AND ((? = 1 AND  Saf" +
-                "ePay_ByttepengeOptalt  IS NULL) OR\r\n                  ( SafePay_ByttepengeOptalt" +
-                "  = ?)) AND ((? = 1 AND  SafePay_TilfoertByttepengeFraLomis  IS NULL) OR\r\n      " +
-                "            ( SafePay_TilfoertByttepengeFraLomis  = ?)) AND ((? = 1 AND  SafePay" +
-                "_BeloebTilfoertDobbelt  IS NULL) OR\r\n                  ( SafePay_BeloebTilfoertD" +
-                "obbelt  = ?)) AND ((? = 1 AND  SafePay_Depotbeholdning  IS NULL) OR\r\n           " +
-                "       ( SafePay_Depotbeholdning  = ?)) AND ((? = 1 AND  MoentDaglig  IS NULL) O" +
-                "R\r\n                  ( MoentDaglig  = ?)) AND ((? = 1 AND  MoentBank  IS NULL) O" +
-                "R\r\n                  ( MoentBank  = ?)) AND ((? = 1 AND  SafePayAmountCurr  IS N" +
-                "ULL) OR\r\n                  ( SafePayAmountCurr  = ?)) AND ((? = 1 AND  SafePayAm" +
-                "ount  IS NULL) OR\r\n                  ( SafePayAmount  = ?)) AND ((? = 1 AND  Tot" +
-                "alSafePay  IS NULL) OR\r\n                  ( TotalSafePay  = ?)) AND ((? = 1 AND " +
-                " ManBankDep  IS NULL) OR\r\n                  ( ManBankDep  = ?)) AND ((? = 1 AND " +
-                " OPTPrepayAmount  IS NULL) OR\r\n                  ( OPTPrepayAmount  = ?)) AND ((" +
-                "? = 1 AND  TmpAmt1  IS NULL) OR\r\n                  ( TmpAmt1  = ?)) AND ((? = 1 " +
-                "AND  TmpAmt2  IS NULL) OR\r\n                  ( TmpAmt2  = ?)) AND ((? = 1 AND  T" +
-                "mpAmt3  IS NULL) OR\r\n                  ( TmpAmt3  = ?)) AND ((? = 1 AND  TmpAmt4" +
-                "  IS NULL) OR\r\n                  ( TmpAmt4  = ?)) AND ((? = 1 AND  TmpAmtTotal  " +
-                "IS NULL) OR\r\n                  ( TmpAmtTotal  = ?)) AND ((? = 1 AND  TmpAmt1Desc" +
-                "r  IS NULL) OR\r\n                  ( TmpAmt1Descr  = ?)) AND ((? = 1 AND  TmpAmt2" +
-                "Descr  IS NULL) OR\r\n                  ( TmpAmt2Descr  = ?)) AND ((? = 1 AND  Tmp" +
-                "Amt3Descr  IS NULL) OR\r\n                  ( TmpAmt3Descr  = ?)) AND ((? = 1 AND " +
-                " TmpAmt4Descr  IS NULL) OR\r\n                  ( TmpAmt4Descr  = ?))) ";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [EODReconcile]\r\nSET       [BookDate] = ?, [Closed] = ?, [RSMDataImported] " +
+                "= ?, [BankDepAmount] = ?, [BankCardAmount] = ?, [ShellCardAmount] = ?, [Discount" +
+                "Amount] = ?, [MiscCards] = ?, [ManDankortSumB] = ?, [CashDiscount] = ?, [DriveOf" +
+                "fTotal] = ?, [LocalCredit] = ?, [LocalCreditPayin] = ?, \r\n             [ForeignC" +
+                "urrency] = ?, [POSSales] = ?, [ManualSales ] = ?, [Payin] = ?, [Payout] = ?, [Ca" +
+                "shOverUnder] = ?, [ApprovedBy] = ?, [TotalBank] = ?, [TotalShell] = ?, [TotalMis" +
+                "c] = ?, [TotalSales] = ?, [TotalABC] = ?, [TotalD] = ?, [NumberOfWashSold] = ?, " +
+                "[ReserveTerminal] = ?, \r\n             [SafePay_OverfoerselTilSP] = ?, [SafePay_U" +
+                "dbetalinger] = ?, [SafePay_Indbetalinger] = ?, [SafePay_ByttepengeOptalt] = ?, [" +
+                "SafePay_TilfoertByttepengeFraLomis] = ?, [SafePay_BeloebTilfoertDobbelt] = ?, [S" +
+                "afePay_Depotbeholdning] = ?, [MoentDaglig] = ?, [MoentBank] = ?, \r\n             " +
+                "[SafePayAmountCurr] = ?, [SafePayAmount] = ?, [TotalSafePay] = ?, [ManBankDep] =" +
+                " ?, [OPTPrepayAmount] = ?, [TmpAmt1] = ?, [TmpAmt2] = ?, [TmpAmt3] = ?, [TmpAmt4" +
+                "] = ?, [TmpAmtTotal] = ?, [TmpAmt1Descr] = ?, [TmpAmt2Descr] = ?, [TmpAmt3Descr]" +
+                " = ?, \r\n             [TmpAmt4Descr] = ?\r\nWHERE (([BookDate] = ?) AND ((? = 1 AND" +
+                " [Closed] IS NULL) OR\r\n             ([Closed] = ?)) AND ((? = 1 AND [RSMDataImpo" +
+                "rted] IS NULL) OR\r\n             ([RSMDataImported] = ?)) AND ((? = 1 AND [BankDe" +
+                "pAmount] IS NULL) OR\r\n             ([BankDepAmount] = ?)) AND ((? = 1 AND [BankC" +
+                "ardAmount] IS NULL) OR\r\n             ([BankCardAmount] = ?)) AND ((? = 1 AND She" +
+                "llCardAmount IS NULL) OR\r\n             (ShellCardAmount = ?)) AND ((? = 1 AND Di" +
+                "scountAmount IS NULL) OR\r\n             (DiscountAmount = ?)) AND ((? = 1 AND Mis" +
+                "cCards IS NULL) OR\r\n             (MiscCards = ?)) AND ((? = 1 AND ManDankortSumB" +
+                " IS NULL) OR\r\n             (ManDankortSumB = ?)) AND ((? = 1 AND CashDiscount IS" +
+                " NULL) OR\r\n             (CashDiscount = ?)) AND ((? = 1 AND DriveOffTotal IS NUL" +
+                "L) OR\r\n             (DriveOffTotal = ?)) AND ((? = 1 AND LocalCredit IS NULL) OR" +
+                "\r\n             (LocalCredit = ?)) AND ((? = 1 AND LocalCreditPayin IS NULL) OR\r\n" +
+                "             (LocalCreditPayin = ?)) AND ((? = 1 AND ForeignCurrency IS NULL) OR" +
+                "\r\n             (ForeignCurrency = ?)) AND ((? = 1 AND POSSales IS NULL) OR\r\n    " +
+                "         (POSSales = ?)) AND ((? = 1 AND ManualSales IS NULL) OR\r\n             (" +
+                "ManualSales = ?)) AND ((? = 1 AND Payin IS NULL) OR\r\n             (Payin = ?)) A" +
+                "ND ((? = 1 AND Payout IS NULL) OR\r\n             (Payout = ?)) AND ((? = 1 AND Ca" +
+                "shOverUnder IS NULL) OR\r\n             (CashOverUnder = ?)) AND ((? = 1 AND Appro" +
+                "vedBy IS NULL) OR\r\n             (ApprovedBy = ?)) AND ((? = 1 AND TotalBank IS N" +
+                "ULL) OR\r\n             (TotalBank = ?)) AND ((? = 1 AND TotalShell IS NULL) OR\r\n " +
+                "            (TotalShell = ?)) AND ((? = 1 AND TotalMisc IS NULL) OR\r\n           " +
+                "  (TotalMisc = ?)) AND ((? = 1 AND TotalSales IS NULL) OR\r\n             (TotalSa" +
+                "les = ?)) AND ((? = 1 AND TotalABC IS NULL) OR\r\n             (TotalABC = ?)) AND" +
+                " ((? = 1 AND TotalD IS NULL) OR\r\n             (TotalD = ?)) AND ((? = 1 AND Numb" +
+                "erOfWashSold IS NULL) OR\r\n             (NumberOfWashSold = ?)) AND ((? = 1 AND R" +
+                "eserveTerminal IS NULL) OR\r\n             (ReserveTerminal = ?)) AND ((? = 1 AND " +
+                "SafePay_OverfoerselTilSP IS NULL) OR\r\n             (SafePay_OverfoerselTilSP = ?" +
+                ")) AND ((? = 1 AND SafePay_Udbetalinger IS NULL) OR\r\n             (SafePay_Udbet" +
+                "alinger = ?)) AND ((? = 1 AND SafePay_Indbetalinger IS NULL) OR\r\n             (S" +
+                "afePay_Indbetalinger = ?)) AND ((? = 1 AND SafePay_ByttepengeOptalt IS NULL) OR\r" +
+                "\n             (SafePay_ByttepengeOptalt = ?)) AND ((? = 1 AND SafePay_TilfoertBy" +
+                "ttepengeFraLomis IS NULL) OR\r\n             (SafePay_TilfoertByttepengeFraLomis =" +
+                " ?)) AND ((? = 1 AND SafePay_BeloebTilfoertDobbelt IS NULL) OR\r\n             (Sa" +
+                "fePay_BeloebTilfoertDobbelt = ?)) AND ((? = 1 AND SafePay_Depotbeholdning IS NUL" +
+                "L) OR\r\n             (SafePay_Depotbeholdning = ?)) AND ((? = 1 AND MoentDaglig I" +
+                "S NULL) OR\r\n             (MoentDaglig = ?)) AND ((? = 1 AND MoentBank IS NULL) O" +
+                "R\r\n             (MoentBank = ?)) AND ((? = 1 AND SafePayAmountCurr IS NULL) OR\r\n" +
+                "             (SafePayAmountCurr = ?)) AND ((? = 1 AND SafePayAmount IS NULL) OR\r" +
+                "\n             (SafePayAmount = ?)) AND ((? = 1 AND TotalSafePay IS NULL) OR\r\n   " +
+                "          (TotalSafePay = ?)) AND ((? = 1 AND ManBankDep IS NULL) OR\r\n          " +
+                "   (ManBankDep = ?)) AND ((? = 1 AND OPTPrepayAmount IS NULL) OR\r\n             (" +
+                "OPTPrepayAmount = ?)) AND ((? = 1 AND TmpAmt1 IS NULL) OR\r\n             (TmpAmt1" +
+                " = ?)) AND ((? = 1 AND TmpAmt2 IS NULL) OR\r\n             (TmpAmt2 = ?)) AND ((? " +
+                "= 1 AND TmpAmt3 IS NULL) OR\r\n             (TmpAmt3 = ?)) AND ((? = 1 AND TmpAmt4" +
+                " IS NULL) OR\r\n             (TmpAmt4 = ?)) AND ((? = 1 AND TmpAmtTotal IS NULL) O" +
+                "R\r\n             (TmpAmtTotal = ?)) AND ((? = 1 AND TmpAmt1Descr IS NULL) OR\r\n   " +
+                "          (TmpAmt1Descr = ?)) AND ((? = 1 AND TmpAmt2Descr IS NULL) OR\r\n        " +
+                "     (TmpAmt2Descr = ?)) AND ((? = 1 AND TmpAmt3Descr IS NULL) OR\r\n             " +
+                "(TmpAmt3Descr = ?)) AND ((? = 1 AND TmpAmt4Descr IS NULL) OR\r\n             (TmpA" +
+                "mt4Descr = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("BookDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "BookDate", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Closed", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Closed", global::System.Data.DataRowVersion.Current, false, null));
@@ -32242,7 +32242,8 @@ WHERE  (BookDate = ?)";
                     string TmpAmt1Descr, 
                     string TmpAmt2Descr, 
                     string TmpAmt3Descr, 
-                    string TmpAmt4Descr) {
+                    string TmpAmt4Descr, 
+                    global::System.Nullable<double> WoltAmount) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(BookDate));
             this.Adapter.InsertCommand.Parameters[1].Value = ((bool)(Closed));
             this.Adapter.InsertCommand.Parameters[2].Value = ((bool)(RSMDataImported));
@@ -32533,6 +32534,12 @@ WHERE  (BookDate = ?)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[50].Value = ((string)(TmpAmt4Descr));
+            }
+            if ((WoltAmount.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[51].Value = ((double)(WoltAmount.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[51].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

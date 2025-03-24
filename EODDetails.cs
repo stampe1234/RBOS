@@ -55,8 +55,10 @@ namespace RBOS
         private void SaveData()
         {
             bindingReconcileSingle.EndEdit();
+            EODDataSet.EODReconcileSingleDataTable.UpdateWolt(BookDate, tools.object2double(txtManCardAmountSP.Text));
             adapterReconcileSingle.Update(dsEOD.EODReconcileSingle);
             EODDataSet.EODReconcileExDataTable.InsertOrUpdateRecord(BookDate, tools.object2int(txtCustomerCountDO.Text));
+           
         }
 
         private void Approve()
@@ -204,7 +206,8 @@ namespace RBOS
 
             // close (approve) the EOD
             row["Closed"] = 1;
-           // row["BookDate"] = "11-09-2018 00:00:00";
+            // row["BookDate"] = "11-09-2018 00:00:00";
+            EODDataSet.EODReconcileSingleDataTable.UpdateWolt(BookDate, tools.object2double(txtManCardAmountSP.Text)); //pn20240403
             bindingReconcileSingle.EndEdit();
             adapterReconcileSingle.Update(dsEOD.EODReconcileSingle);
 
@@ -328,14 +331,8 @@ namespace RBOS
            // lOptprepayreserveterminal.Visible = false;
           //  txtOPTprepayreserveterminal.Visible = false;
 
-#if RBA
-            tabControl1.TabPages.Remove(tabBankOgShell);
-            tabControl1.TabPages.Remove(tabDivOgSalg);
-            tabControl1.TabPages.Remove(tabOpgoerelse);
-            btnReImport.Visible = false;
-#else
+
             tabControl1.TabPages.Remove(tabDailyRBA);
-#endif
             if (!db.GetConfigStringAsBool("SafePay.Enabled"))
             {
                 // SafePay is not enabled
@@ -780,31 +777,7 @@ namespace RBOS
 
 
 
-        //>>pn20200803
-        //private void btnSafePayCurrAmount_Click(object sender, EventArgs e)
-        //{
-        //    if (bindingReconcileSingle.Current == null) return;
-        //    DataRowView row = (DataRowView)bindingReconcileSingle.Current;
-
-        //    EOD_SafePayCurr SafePayCurr = new EOD_SafePayCurr(BookDate);
-        //    if (SafePayCurr.ShowDialog() == DialogResult.OK)
-        //    {
-        //        //row["SafePayAmountCurr"] = EODDataSet.EOD_SafePay_DepotbeholdningDataTable.GetTotalSafePayCurrAmountDKK(BookDate);
-        //        //row["SafePayAmountCurr"] =  EODDataSet.EOD_SafePay_DepotbeholdningDataTable.GetTotalSafePayCurrAmountDKK(BookDate);
-        //        bindingReconcileSingle.EndEdit();
-        //    }
-
-        //    dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate);
-
-        //}
-
-        //private void txtSafePayCurrAmount_TextChanged(object sender, EventArgs e)
-        //{
-        //    //txtSafePayCurrCount.Text = EODDataSet.EOD_SafePay_CurrenciesDataTable.GetSafePayCurrRowCount(BookDate).ToString();
-        //    //txtSafePayCurrCount.Text = EODDataSet.EOD_SafePay_DepotbeholdningDataTable.GetRowCountValuta(BookDate).ToString();
-        //}
-
-        //<<pn20200803         
+       
 
         private void txtMiscCardAmountSP_Leave(object sender, EventArgs e)
         {
@@ -813,7 +786,7 @@ namespace RBOS
         }
 
         private void txtManCardAmountSP_Leave(object sender, EventArgs e)
-        {
+        {            
             bindingReconcileSingle.EndEdit();
             dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate);
         }

@@ -5,6 +5,11 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBOS", "RBOS.csproj", "{2A133E84-D1F9-4675-9867-CB66BCDE0AFD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1291FEDB-0F5F-4A66-91D7-5A539622FE4D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Data\20240315\Details\WasteSheetDetailsLocal.cs = ..\..\..\..\..\..\Data\20240315\Details\WasteSheetDetailsLocal.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug RBANEW|Any CPU = Debug RBANEW|Any CPU

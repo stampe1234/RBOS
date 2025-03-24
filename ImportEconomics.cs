@@ -25,6 +25,7 @@ namespace RBOS
         /// <param name="SenesteDatoHentet">Sæt til DateTime.MinValue hvis alle data skal hentes.</param>
         public int ImportDebitor(DateTime SenesteDatoHentet)
         {
+            /*
             int i = 0;
             SenesteDatoHentet = SenesteDatoHentet.Date;
 
@@ -112,7 +113,8 @@ namespace RBOS
 
                 }
                 else return (0);
-            
+            */
+            return (0);
           
             
         }

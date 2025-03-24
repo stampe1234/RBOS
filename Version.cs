@@ -41,7 +41,7 @@ namespace RBOS
             /// expanded for every new version we send out.
             versionHistory = new List<string>();
 
-            versionHistory.Add("4.00.008"); // Ny version af Crystal reports + missed update
+            versionHistory.Add("4.00.010"); // Ny afskrivning
             _ExePatch = "0";
             _ExePatch = "0";
 

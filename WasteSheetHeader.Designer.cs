@@ -37,24 +37,24 @@ namespace RBOS
             this.Waste = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Book = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
-            this.grid = new DRS.Extensions.DRS_DataGridView();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNumDetailRecords = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.bindingWasteSheetLookups = new System.Windows.Forms.BindingSource(this.components);
             this.dsItem = new RBOS.ItemDataSet();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingWasteSheetHeader = new System.Windows.Forms.BindingSource(this.components);
-            this.NoOffRegistrations = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBook = new System.Windows.Forms.Button();
             this.adapterWasteSheetHeader = new RBOS.ItemDataSetTableAdapters.WasteSheetHeaderTableAdapter();
             this.adapterWasteSheetLookups = new RBOS.ItemDataSetTableAdapters.WasteSheetHeaderLookupsTableAdapter();
             this.adapterInvCountWork = new RBOS.ItemDataSetTableAdapters.InvCountWorkTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
+            this.grid = new DRS.Extensions.DRS_DataGridView();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNumDetailRecords = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NoOffRegistrations = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetLookups)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetHeader)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReport
@@ -136,6 +136,44 @@ namespace RBOS
             this.button1.Text = "Bogfør";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // bindingWasteSheetLookups
+            // 
+            this.bindingWasteSheetLookups.DataMember = "WasteSheetHeaderLookups";
+            this.bindingWasteSheetLookups.DataSource = this.dsItem;
+            // 
+            // dsItem
+            // 
+            this.dsItem.DataSetName = "ItemDataSet";
+            this.dsItem.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingWasteSheetHeader
+            // 
+            this.bindingWasteSheetHeader.DataMember = "WasteSheetHeader";
+            this.bindingWasteSheetHeader.DataSource = this.dsItem;
+            // 
+            // btnBook
+            // 
+            this.btnBook.Location = new System.Drawing.Point(261, 400);
+            this.btnBook.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(84, 32);
+            this.btnBook.TabIndex = 7;
+            this.btnBook.Text = "Bogfør";
+            this.btnBook.UseVisualStyleBackColor = true;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
+            // 
+            // adapterWasteSheetHeader
+            // 
+            this.adapterWasteSheetHeader.ClearBeforeFill = true;
+            // 
+            // adapterWasteSheetLookups
+            // 
+            this.adapterWasteSheetLookups.ClearBeforeFill = true;
+            // 
+            // adapterInvCountWork
+            // 
+            this.adapterInvCountWork.ClearBeforeFill = true;
+            // 
             // grid
             // 
             this.grid.AllowUserToAddRows = false;
@@ -193,16 +231,6 @@ namespace RBOS
             this.colNumDetailRecords.ValueMember = "HeaderID";
             this.colNumDetailRecords.Width = 60;
             // 
-            // bindingWasteSheetLookups
-            // 
-            this.bindingWasteSheetLookups.DataMember = "WasteSheetHeaderLookups";
-            this.bindingWasteSheetLookups.DataSource = this.dsItem;
-            // 
-            // dsItem
-            // 
-            this.dsItem.DataSetName = "ItemDataSet";
-            this.dsItem.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dataGridViewCheckBoxColumn1
             // 
             this.dataGridViewCheckBoxColumn1.DataPropertyName = "SC";
@@ -233,11 +261,6 @@ namespace RBOS
             this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.dataGridViewTextBoxColumn1.Width = 60;
             // 
-            // bindingWasteSheetHeader
-            // 
-            this.bindingWasteSheetHeader.DataMember = "WasteSheetHeader";
-            this.bindingWasteSheetHeader.DataSource = this.dsItem;
-            // 
             // NoOffRegistrations
             // 
             this.NoOffRegistrations.DataPropertyName = "NoOffRegistrations";
@@ -245,29 +268,6 @@ namespace RBOS
             this.NoOffRegistrations.MinimumWidth = 6;
             this.NoOffRegistrations.Name = "NoOffRegistrations";
             this.NoOffRegistrations.Width = 125;
-            // 
-            // btnBook
-            // 
-            this.btnBook.Location = new System.Drawing.Point(261, 400);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(84, 32);
-            this.btnBook.TabIndex = 7;
-            this.btnBook.Text = "Bogfør";
-            this.btnBook.UseVisualStyleBackColor = true;
-            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
-            // 
-            // adapterWasteSheetHeader
-            // 
-            this.adapterWasteSheetHeader.ClearBeforeFill = true;
-            // 
-            // adapterWasteSheetLookups
-            // 
-            this.adapterWasteSheetLookups.ClearBeforeFill = true;
-            // 
-            // adapterInvCountWork
-            // 
-            this.adapterInvCountWork.ClearBeforeFill = true;
             // 
             // WasteSheetHeader
             // 
@@ -287,10 +287,10 @@ namespace RBOS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WasteSheetHeader";
             this.Load += new System.EventHandler(this.WasteSheetHeader_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetLookups)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -146,6 +146,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>3rdParty\Neodynamic.WinControls.BarcodeProfessional.dll</HintPath>
     </Reference>
+    <Reference Include="RBOS, Version=1.0.8840.22131, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -355,6 +356,28 @@
     <None Include="ImportDataSet.xss">
       <DependentUpon>ImportDataSet.xsd</DependentUpon>
     </None>
+    <None Include="ItemDataSet3.xsc">
+      <DependentUpon>ItemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ItemDataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemDataSet31.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ItemDataSet3.xss">
+      <DependentUpon>ItemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ItemDataSet4.xsc">
+      <DependentUpon>ItemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ItemDataSet4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemDataSet4.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ItemDataSet4.xss">
+      <DependentUpon>ItemDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="Payroll.xsc">
       <DependentUpon>Payroll.xsd</DependentUpon>
     </None>
@@ -378,7 +401,7 @@
     <None Include="ItemDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>ItemDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>ItemDataSet2.Designer.cs</LastGenOutput>
     </None>
     <None Include="ItemDataSet.xss">
       <DependentUpon>ItemDataSet.xsd</DependentUpon>
@@ -565,6 +588,26 @@
     </Compile>
     <Compile Include="ImportRHTForm.Designer.cs">
       <DependentUpon>ImportRHTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDataSet3.cs">
+      <DependentUpon>ItemDataSet3.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="ItemDataSet3.Designer.cs">
+      <DependentUpon>ItemDataSet3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDataSet31.Designer.cs">
+      <DependentUpon>ItemDataSet3.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ItemDataSet4.cs">
+      <DependentUpon>ItemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="ItemTransForbrugsvareReport.cs">
       <DependentUpon>ItemTransForbrugsvareReport.rpt</DependentUpon>
@@ -774,6 +817,30 @@
     <Compile Include="WasteRegistrationRBAGetInitials.Designer.cs">
       <DependentUpon>WasteRegistrationRBAGetInitials.cs</DependentUpon>
     </Compile>
+    <Compile Include="WasteSheetDetailsLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WasteSheetDetailsLocal.designer.cs">
+      <DependentUpon>WasteSheetDetailsLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WasteSheetHeaderLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WasteSheetHeaderLocal.designer.cs">
+      <DependentUpon>WasteSheetHeaderLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WasteSheetLocalRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WasteSheetLocalRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WasteSheetLocalRptFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WasteSheetLocalRptFrm.Designer.cs">
+      <DependentUpon>WasteSheetLocalRptFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WasteSheetRptRBA.cs">
       <DependentUpon>WasteSheetRptRBA.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -785,12 +852,6 @@
     </Compile>
     <Compile Include="SearchFormRBA.Designer.cs">
       <DependentUpon>SearchFormRBA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WasteSheetDetailsRBA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WasteSheetDetailsRBA.Designer.cs">
-      <DependentUpon>WasteSheetDetailsRBA.cs</DependentUpon>
     </Compile>
     <Compile Include="ExportFVD.cs" />
     <Compile Include="ExportFVDDetails.cs">
@@ -1953,16 +2014,25 @@
       <SubType>Designer</SubType>
       <DependentUpon>WasteRegistrationRBAGetInitials.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WasteSheetDetailsLocal.resx">
+      <DependentUpon>WasteSheetDetailsLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WasteSheetHeaderLocal.resx">
+      <DependentUpon>WasteSheetHeaderLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WasteSheetLocalRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WasteSheetLocalRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WasteSheetLocalRptFrm.resx">
+      <DependentUpon>WasteSheetLocalRptFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WasteSheetRptRBA.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>WasteSheetRptRBA.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchFormRBA.resx">
       <DependentUpon>SearchFormRBA.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WasteSheetDetailsRBA.resx">
-      <DependentUpon>WasteSheetDetailsRBA.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ExportFVDDetails.resx">

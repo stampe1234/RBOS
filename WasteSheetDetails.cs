@@ -132,6 +132,8 @@ namespace RBOS
                         }
                     }
                 }
+
+              
             }
         }
 
@@ -197,6 +199,41 @@ namespace RBOS
 
         private void bindingWasteSheetDetails_CurrentChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void grid_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == colAntal.Index)
+            {
+                
+                
+                if (bindingWasteSheetDetails.Current == null) return;
+                DataRowView row = (DataRowView)bindingWasteSheetDetails.Current;
+               
+            }
+        }
+
+       private void grid_CellValidating(object sender, DataGridViewCellCancelEventArgs e)
+        {
+
+        }
+
+        private void grid_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
+        {
+
+            if (bindingWasteSheetDetails.Current == null) return;
+            DataRowView row = (DataRowView)bindingWasteSheetDetails.Current;
+
+            // check that needed values have been entered in the row, before validating ok
+
+            // supplier item has been specified, check for quantity
+            //if (row["Antal"] == DBNull.Value)
+                               {
+            //        MessageBox.Show(db.GetLangString("OrderDraftDetailForm.SpecifyQuantityLine"));
+            //        e.Cancel = true;
+                }
+            
 
         }
     }

@@ -60,13 +60,19 @@ namespace RBOS
         {
 
             // create db objects and load data
+            /*
             ItemDataSetTableAdapters.WasteSheetReportTableAdapter adapter =
                 new RBOS.ItemDataSetTableAdapters.WasteSheetReportTableAdapter();
             adapter.Connection = db.Connection;
             ItemDataSet.WasteSheetReportDataTable table =
                 new ItemDataSet.WasteSheetReportDataTable();
+            adapter.Fill(table, HeaderID);           
+            */
+            ItemDataSet4TableAdapters.WSReportTableAdapter adapter = new ItemDataSet4TableAdapters.WSReportTableAdapter();
+            adapter.Connection = db.Connection;
+            ItemDataSet4.WSReportDataTable table = new ItemDataSet4.WSReportDataTable();
             adapter.Fill(table, HeaderID);
-
+            
             // check we have data
             if (table.Rows.Count > 0)
             {

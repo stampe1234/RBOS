@@ -15,8 +15,11 @@ namespace RBOS.EODDataSetTableAdapters
 
     partial class EODReconcileTableAdapter
     {
-    }
+        //20240301
 
+
+      
+    }
     partial class EOD_Debtor_TransReportDetailsTableAdapter
     {
     }
@@ -2252,6 +2255,21 @@ namespace RBOS
                     adapter.Update(row);
                 }
             }
+
+            //20240301
+            public static void UpdateWolt(DateTime BookDate, Double WoltAmount)
+            {
+
+                string sql = @"update EODReconcile set [WoltAmount] = ?  Where BookDate = ? ";
+
+                using (OleDbCommand cmd = new OleDbCommand(sql, db.Connection))
+                {
+                    cmd.Parameters.Add("Amount", OleDbType.Double).Value = WoltAmount;
+                    cmd.Parameters.Add("DatoTid", OleDbType.Date).Value = BookDate;
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
         }
 
         partial class EOD_SalesDataTable

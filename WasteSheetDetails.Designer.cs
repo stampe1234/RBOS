@@ -31,7 +31,6 @@ namespace RBOS
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WasteSheetDetails));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSaveAndClose = new System.Windows.Forms.Button();
@@ -125,6 +124,7 @@ namespace RBOS
             // 
             this.bindingWasteSheetDetails.DataMember = "WasteSheetDetails";
             this.bindingWasteSheetDetails.DataSource = this.dsItem;
+            this.bindingWasteSheetDetails.Sort = "LineNo";
             this.bindingWasteSheetDetails.CurrentChanged += new System.EventHandler(this.bindingWasteSheetDetails_CurrentChanged);
             // 
             // adapterWasteSheetDetails
@@ -195,11 +195,14 @@ namespace RBOS
             this.grid.RowHeadersWidth = 25;
             this.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grid.ShowCellErrors = false;
             this.grid.Size = new System.Drawing.Size(983, 465);
             this.grid.TabIndex = 4;
             this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
+            this.grid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellEndEdit);
             this.grid.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.grid_CellPainting);
             this.grid.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellValueChanged);
+            this.grid.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.grid_RowValidating);
             // 
             // colLookupItemButton
             // 
@@ -283,8 +286,6 @@ namespace RBOS
             // colAntal
             // 
             this.colAntal.DataPropertyName = "Antal";
-            dataGridViewCellStyle3.NullValue = null;
-            this.colAntal.DefaultCellStyle = dataGridViewCellStyle3;
             this.colAntal.HeaderText = "Antal";
             this.colAntal.MinimumWidth = 8;
             this.colAntal.Name = "colAntal";
@@ -311,6 +312,7 @@ namespace RBOS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WasteSheetDetails";
             this.Load += new System.EventHandler(this.WasteSheetDetails_Load);
+            this.Validated += new System.EventHandler(this.bindingWasteSheetDetails_CurrentChanged);
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetHeader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetDetailsLookups)).EndInit();

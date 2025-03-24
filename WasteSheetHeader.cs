@@ -13,8 +13,8 @@ namespace RBOS
     public partial class WasteSheetHeader : Form
     {
         public WasteSheetHeader()
-        {
-            InitializeComponent();
+        {           
+            InitializeComponent();          
 
             // localization
             colName.HeaderText = db.GetLangString("WasteSheetHeader.colName");
@@ -26,11 +26,13 @@ namespace RBOS
         }
 
         private void LoadData()
-        {
-            adapterWasteSheetLookups.Connection = db.Connection;
+        {            
+            adapterWasteSheetLookups.Connection = db.Connection;           
             adapterWasteSheetLookups.Fill(dsItem.WasteSheetHeaderLookups);
             adapterWasteSheetHeader.Connection = db.Connection;
             adapterWasteSheetHeader.Fill(dsItem.WasteSheetHeader);
+            
+
         }
 
         #region OpenDetail
@@ -42,25 +44,17 @@ namespace RBOS
         {
             int ID = 0;
 
-            if (CreateNew)
-            {
-                // create a new waste sheet header and get the ID
-                ID = ItemDataSet.WasteSheetHeaderDataTable.CreateNewRecord();
-
-            }
-            else
-            {
+           
                 // get ID of currently selected waste sheet
                 if (bindingWasteSheetHeader.Current == null) return;
                 DataRowView row = (DataRowView)bindingWasteSheetHeader.Current;
                 ID = tools.object2int(row["ID"]);
-            }
-
+           
             // open details form
             if (ID > 0)
             {
 
-                WasteSheetDetails details = new WasteSheetDetails(ID);
+                WasteSheetDetails details = new WasteSheetDetails(ID);                               
 
                 if (details.ShowDialog(this) == DialogResult.OK)
                 {
@@ -107,6 +101,8 @@ namespace RBOS
 
         private void WasteSheetHeader_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dsItem.WasteSheetHeaderCentralLookups' table. You can move, or remove it, as needed.            
+            //this.adapterWasteSheetLookups.Fill(this.dsItem.WasteSheetHeaderLookups);
             // TODO: This line of code loads data into the 'eODDataSet.EODReconcile' table. You can move, or remove it, as needed.
 
             LoadData();
@@ -776,5 +772,10 @@ namespace RBOS
             adapterInvCountWork.Update(dsItem.InvCountWork);
         }
         #endregion
+
+        private void bindingWasteSheetHeaderCentral_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -116,19 +116,7 @@ namespace RBOS
                 // detect already running application and quit if so
                 Process currProcess = Process.GetCurrentProcess();
                 Process[] allProcesses = Process.GetProcessesByName(currProcess.ProcessName);
-                //foreach (Process prc in allProcesses)
-                //{
-                //    string searchedFilename = tools.StripFilenameFromPath(prc.MainModule.FileName);
-                //    string myFilename = tools.StripFilenameFromPath(currProcess.MainModule.FileName);
-
-                //    if ((prc.Id != currProcess.Id) &&
-                //        (searchedFilename == myFilename))
-                //    {
-                //        log.Write("An instance of the application was already running, quitting.");
-                //        MessageBox.Show("The application is already running.\nExiting now. Please use the running application.");
-                //        return;
-                //    }
-                //}
+              
 
 
                 Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.LicenseOwner = "Dansk Retail-Standard Edition-OEM Developer License";
