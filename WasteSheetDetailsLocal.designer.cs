@@ -50,6 +50,8 @@ namespace RBOS
             this.colPackTypeName = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.colCostPriceLatest = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.colSalesPrice = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.colHeaderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLineNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetHeaderLocal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingWasteSheetDetailsLocal)).BeginInit();
@@ -60,10 +62,9 @@ namespace RBOS
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(601, 426);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(451, 346);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 28);
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 0;
             this.btnCancel.Text = "[Annuller]";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -72,10 +73,9 @@ namespace RBOS
             // btnSaveAndClose
             // 
             this.btnSaveAndClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveAndClose.Location = new System.Drawing.Point(453, 426);
-            this.btnSaveAndClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveAndClose.Location = new System.Drawing.Point(340, 346);
             this.btnSaveAndClose.Name = "btnSaveAndClose";
-            this.btnSaveAndClose.Size = new System.Drawing.Size(140, 28);
+            this.btnSaveAndClose.Size = new System.Drawing.Size(105, 23);
             this.btnSaveAndClose.TabIndex = 1;
             this.btnSaveAndClose.Text = "[Gem og luk]";
             this.btnSaveAndClose.UseVisualStyleBackColor = true;
@@ -84,21 +84,19 @@ namespace RBOS
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(16, 18);
-            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbName.Location = new System.Drawing.Point(12, 15);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(47, 16);
+            this.lbName.Size = new System.Drawing.Size(39, 13);
             this.lbName.TabIndex = 2;
             this.lbName.Text = "[Navn]";
             // 
             // txtName
             // 
             this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingWasteSheetHeaderLocal, "Name", true));
-            this.txtName.Location = new System.Drawing.Point(93, 14);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Location = new System.Drawing.Point(70, 11);
             this.txtName.MaxLength = 20;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(278, 22);
+            this.txtName.Size = new System.Drawing.Size(210, 20);
             this.txtName.TabIndex = 3;
             // 
             // bindingWasteSheetHeaderLocal
@@ -150,20 +148,23 @@ namespace RBOS
             this.colbarcode,
             this.colPackTypeName,
             this.colCostPriceLatest,
-            this.colSalesPrice});
+            this.colSalesPrice,
+            this.colHeaderID,
+            this.colLineNo});
             this.grid.DataSource = this.bindingWasteSheetDetailsLocal;
-            this.grid.Location = new System.Drawing.Point(20, 46);
-            this.grid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grid.Location = new System.Drawing.Point(15, 37);
             this.grid.MultiSelect = false;
             this.grid.Name = "grid";
             this.grid.RowHeadersVisible = false;
             this.grid.RowHeadersWidth = 25;
             this.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid.Size = new System.Drawing.Size(685, 372);
+            this.grid.Size = new System.Drawing.Size(514, 302);
             this.grid.TabIndex = 4;
             this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
             this.grid.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.grid_CellPainting);
+            this.grid.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.grid_UserAddedRow);
+            this.grid.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.grid_UserDeletingRow_1);
             // 
             // colItemName
             // 
@@ -240,11 +241,25 @@ namespace RBOS
             this.colSalesPrice.ValueMember = "Barcode";
             this.colSalesPrice.Width = 70;
             // 
+            // colHeaderID
+            // 
+            this.colHeaderID.DataPropertyName = "HeaderID";
+            this.colHeaderID.HeaderText = "HeaderID";
+            this.colHeaderID.Name = "colHeaderID";
+            this.colHeaderID.Visible = false;
+            // 
+            // colLineNo
+            // 
+            this.colLineNo.DataPropertyName = "LineNo";
+            this.colLineNo.HeaderText = "LineNo";
+            this.colLineNo.Name = "colLineNo";
+            this.colLineNo.Visible = false;
+            // 
             // WasteSheetDetailsLocal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 469);
+            this.ClientSize = new System.Drawing.Size(538, 381);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbName);
@@ -252,7 +267,6 @@ namespace RBOS
             this.Controls.Add(this.btnCancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "WasteSheetDetailsLocal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -288,5 +302,7 @@ namespace RBOS
         private System.Windows.Forms.DataGridViewComboBoxColumn colPackTypeName;
         private System.Windows.Forms.DataGridViewComboBoxColumn colCostPriceLatest;
         private System.Windows.Forms.DataGridViewComboBoxColumn colSalesPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHeaderID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLineNo;
     }
 }
