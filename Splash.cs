@@ -71,9 +71,9 @@ namespace RBOS
             // 
             this.progressBar1.BackColor = System.Drawing.Color.DarkGray;
             this.progressBar1.ForeColor = System.Drawing.Color.Black;
-            this.progressBar1.Location = new System.Drawing.Point(54, 196);
+            this.progressBar1.Location = new System.Drawing.Point(45, 170);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(432, 6);
+            this.progressBar1.Size = new System.Drawing.Size(360, 5);
             this.progressBar1.Step = 1;
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 0;
@@ -81,9 +81,9 @@ namespace RBOS
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 132);
+            this.label1.Location = new System.Drawing.Point(45, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(432, 48);
+            this.label1.Size = new System.Drawing.Size(360, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Retail-BOS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,9 +98,9 @@ namespace RBOS
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(152, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(172, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(118, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -109,9 +109,9 @@ namespace RBOS
             // txtVersion
             // 
             this.txtVersion.AutoSize = true;
-            this.txtVersion.Location = new System.Drawing.Point(282, 222);
+            this.txtVersion.Location = new System.Drawing.Point(235, 192);
             this.txtVersion.Name = "txtVersion";
-            this.txtVersion.Size = new System.Drawing.Size(46, 17);
+            this.txtVersion.Size = new System.Drawing.Size(35, 13);
             this.txtVersion.TabIndex = 10;
             this.txtVersion.Text = "label3";
             // 
@@ -119,15 +119,15 @@ namespace RBOS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(202, 217);
+            this.label2.Location = new System.Drawing.Point(168, 188);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 23);
+            this.label2.Size = new System.Drawing.Size(60, 19);
             this.label2.TabIndex = 9;
             this.label2.Text = "Version";
             // 
             // Splash
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(535, 254);
             this.ControlBox = false;

@@ -17,89 +17,7 @@ namespace RBOS
         /// The main entry point for the application.
         /// </summary>
         [STAThread] 
-        static void MainOld(string[] CmdArgs)
-        {
-            log.NewLog();
-            log.Write("Starting application.");
-
-            // save command line arguments
-            tools.SetCmdArgs(CmdArgs);
-
-            // detect already running application and quit if so
-            //Process currProcess = Process.GetCurrentProcess();
-            //Process[] allProcesses = Process.GetProcessesByName(currProcess.ProcessName);
-            //foreach (Process prc in allProcesses)
-            //{
-            //    string searchedFilename = tools.StripFilenameFromPath(prc.MainModule.FileName);
-            //    string myFilename = tools.StripFilenameFromPath(currProcess.MainModule.FileName);
-
-            //  if ((prc.Id != currProcess.Id) &&
-            //      (searchedFilename == myFilename))
-            //  {
-            //    log.Write("An instance of the application was already running, quitting.");
-            //    MessageBox.Show("The application is already running.\nExiting now. Please use the running application.");
-            //    return;
-            //  }
-            //}
-
-
-
-            // register Neodynamic license
-            Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.LicenseOwner = "Dansk Retail-Standard Edition-OEM Developer License";
-            Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.LicenseKey = "423CRH6L9ME77GDP34QAJUVN5TQB33WD8WSVG9VQM62A63CZHV8Q";
-
-            // set up database so it is ready for use
-            if (!db.Initialize())
-            {
-                MessageBox.Show("Error initializing database, please see log file for details.");
-                return;
-            }
-
-
-            // run version updater
-            // (must be done after initializing db)
-            //if (!Version.VersionUpdater())
-            //{
-            //  // display update error to user
-            //  MessageBox.Show(Version.LastError);
-            //  return;
-            //}
-
-            //// if no new exe is needed, start application
-            //if (!Version.NeedNewExe)
-            //{
-            Application.EnableVisualStyles();
-
-            // load objects while displaying progress
-            Splash s = new Splash();
-            Application.Run(s);
-            s.Dispose(); // must be done, otherwise styles won't work on the next form
-
-            //  // check if we have to display the logon window (is set in database)
-            ////if (!UserLogon.LogonOverridden)
-            ////{
-            // show logon window
-            // LogonForm l = new LogonForm();
-            //  Application.Run(l);
-            //  l.Dispose(); // must be done, otherwise styles won't work on the next form
-            //}
-
-            // start application
-            if (UserLogon.LoggedOn)
-            {
-                Application.Run(new MainForm());
-            }
-            
-                //// shut down database in a good manner
-
-                db.Shutdown();
-
-                log.Write("Application ended normally");
-            
-        
-
-        
-    }
+     
         static void Main(string[] CmdArgs)
         {
 
@@ -199,12 +117,7 @@ namespace RBOS
                         "RBOS er blevet lukket ned automatisk fordi {0} har overtaget databasen og der ikke blevet svaret fra denne installation",
                         UnlockRequestedBy);
                     MessageBox.Show(msg);
-                }
-
-                //if (IdleCheckPrompt.AutoClosingRBOS)
-                //{
-                //    MessageBox.Show("RBOS er blevet lukket ned automatisk fordi der ingen aktivitet var i lang tid.");
-                //}
+                }                
             }
         }
 

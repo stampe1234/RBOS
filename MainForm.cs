@@ -113,7 +113,6 @@ namespace RBOS
             this.menuItem2 = new System.Windows.Forms.MenuItem();
             this.splitterMain = new System.Windows.Forms.Splitter();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.toolStripShortcuts = new System.Windows.Forms.ToolStrip();
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.filesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -133,6 +132,7 @@ namespace RBOS
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripShortcuts = new System.Windows.Forms.ToolStrip();
             this.toolStripDummy = new System.Windows.Forms.ToolStrip();
             this.timerStatusBarMsgClearing = new System.Windows.Forms.Timer(this.components);
             this.panelTreeFav.SuspendLayout();
@@ -170,7 +170,7 @@ namespace RBOS
             this.twMenu.Location = new System.Drawing.Point(0, 0);
             this.twMenu.Name = "twMenu";
             this.twMenu.SelectedImageIndex = 0;
-            this.twMenu.Size = new System.Drawing.Size(268, 351);
+            this.twMenu.Size = new System.Drawing.Size(223, 304);
             this.twMenu.TabIndex = 0;
             this.twMenu.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             this.twMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.twMenu_MouseDown);
@@ -204,9 +204,9 @@ namespace RBOS
             // statusBar1
             // 
             this.statusBar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.statusBar1.Location = new System.Drawing.Point(0, 687);
+            this.statusBar1.Location = new System.Drawing.Point(0, 690);
             this.statusBar1.Name = "statusBar1";
-            this.statusBar1.Size = new System.Drawing.Size(1012, 24);
+            this.statusBar1.Size = new System.Drawing.Size(1012, 21);
             this.statusBar1.TabIndex = 7;
             // 
             // panelTreeFav
@@ -215,18 +215,18 @@ namespace RBOS
             this.panelTreeFav.Controls.Add(this.favorites);
             this.panelTreeFav.Controls.Add(this.twMenu);
             this.panelTreeFav.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelTreeFav.Location = new System.Drawing.Point(0, 59);
+            this.panelTreeFav.Location = new System.Drawing.Point(0, 51);
             this.panelTreeFav.Name = "panelTreeFav";
-            this.panelTreeFav.Size = new System.Drawing.Size(268, 628);
+            this.panelTreeFav.Size = new System.Drawing.Size(223, 639);
             this.panelTreeFav.TabIndex = 9;
             // 
             // splitterTreeFav
             // 
             this.splitterTreeFav.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.splitterTreeFav.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitterTreeFav.Location = new System.Drawing.Point(0, 351);
+            this.splitterTreeFav.Location = new System.Drawing.Point(0, 304);
             this.splitterTreeFav.Name = "splitterTreeFav";
-            this.splitterTreeFav.Size = new System.Drawing.Size(268, 3);
+            this.splitterTreeFav.Size = new System.Drawing.Size(223, 3);
             this.splitterTreeFav.TabIndex = 3;
             this.splitterTreeFav.TabStop = false;
             // 
@@ -236,10 +236,10 @@ namespace RBOS
             this.favorites.Dock = System.Windows.Forms.DockStyle.Fill;
             this.favorites.ImageIndex = 0;
             this.favorites.ImageList = this.treeviewImages;
-            this.favorites.Location = new System.Drawing.Point(0, 351);
+            this.favorites.Location = new System.Drawing.Point(0, 304);
             this.favorites.Name = "favorites";
             this.favorites.SelectedImageIndex = 0;
-            this.favorites.Size = new System.Drawing.Size(268, 277);
+            this.favorites.Size = new System.Drawing.Size(223, 335);
             this.favorites.TabIndex = 2;
             this.favorites.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.favorites_AfterSelect);
             this.favorites.MouseDown += new System.Windows.Forms.MouseEventHandler(this.favorites_MouseDown);
@@ -273,9 +273,9 @@ namespace RBOS
             // splitterMain
             // 
             this.splitterMain.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.splitterMain.Location = new System.Drawing.Point(268, 59);
+            this.splitterMain.Location = new System.Drawing.Point(223, 51);
             this.splitterMain.Name = "splitterMain";
-            this.splitterMain.Size = new System.Drawing.Size(4, 628);
+            this.splitterMain.Size = new System.Drawing.Size(4, 639);
             this.splitterMain.TabIndex = 10;
             this.splitterMain.TabStop = false;
             this.splitterMain.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitterMain_SplitterMoved);
@@ -286,33 +286,21 @@ namespace RBOS
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(843, 0);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1012, 0);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Top;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(1012, 59);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1012, 51);
             this.toolStripContainer1.TabIndex = 16;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
             // toolStripContainer1.TopToolStripPanel
             // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStripShortcuts);
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStripMain);
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStripShortcuts);
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStripDummy);
-            // 
-            // toolStripShortcuts
-            // 
-            this.toolStripShortcuts.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStripShortcuts.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStripShortcuts.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStripShortcuts.Location = new System.Drawing.Point(48, 0);
-            this.toolStripShortcuts.Name = "toolStripShortcuts";
-            this.toolStripShortcuts.Size = new System.Drawing.Size(127, 31);
-            this.toolStripShortcuts.TabIndex = 1;
-            this.toolStripShortcuts.Text = "toolStrip2";
-            this.toolStripShortcuts.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStripShortcuts_ItemClicked);
             // 
             // menuStripMain
             // 
@@ -322,9 +310,9 @@ namespace RBOS
             this.filesToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStripMain.Location = new System.Drawing.Point(0, 31);
+            this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(1012, 30);
+            this.menuStripMain.Size = new System.Drawing.Size(1012, 24);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "menuStrip1";
             // 
@@ -333,13 +321,13 @@ namespace RBOS
             this.filesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.filesToolStripMenuItem.Name = "filesToolStripMenuItem";
-            this.filesToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.filesToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.filesToolStripMenuItem.Text = "[files]";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.exitToolStripMenuItem.Text = "[exit]";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -350,7 +338,7 @@ namespace RBOS
             this.supportMenu,
             this.menuitemSkiftStation});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.toolsToolStripMenuItem.Text = "[tools]";
             // 
             // langToolStripMenuItem
@@ -359,20 +347,20 @@ namespace RBOS
             this.langenToolStripMenuItem,
             this.langdaToolStripMenuItem});
             this.langToolStripMenuItem.Name = "langToolStripMenuItem";
-            this.langToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.langToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.langToolStripMenuItem.Text = "[lang]";
             // 
             // langenToolStripMenuItem
             // 
             this.langenToolStripMenuItem.Name = "langenToolStripMenuItem";
-            this.langenToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.langenToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.langenToolStripMenuItem.Text = "[lang-en]";
             this.langenToolStripMenuItem.Click += new System.EventHandler(this.langenToolStripMenuItem_Click);
             // 
             // langdaToolStripMenuItem
             // 
             this.langdaToolStripMenuItem.Name = "langdaToolStripMenuItem";
-            this.langdaToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.langdaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.langdaToolStripMenuItem.Text = "[lang-da]";
             this.langdaToolStripMenuItem.Click += new System.EventHandler(this.langdaToolStripMenuItem_Click);
             // 
@@ -387,27 +375,27 @@ namespace RBOS
             this.resetbarsToolStripMenuItem,
             this.sætProgrammetTil1024x768ToolStripMenuItem});
             this.supportMenu.Name = "supportMenu";
-            this.supportMenu.Size = new System.Drawing.Size(177, 26);
+            this.supportMenu.Size = new System.Drawing.Size(141, 22);
             this.supportMenu.Text = "[Support]";
             // 
             // payrollModuleConfigurationToolStripMenuItem
             // 
             this.payrollModuleConfigurationToolStripMenuItem.Name = "payrollModuleConfigurationToolStripMenuItem";
-            this.payrollModuleConfigurationToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.payrollModuleConfigurationToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.payrollModuleConfigurationToolStripMenuItem.Text = "Administration";
             this.payrollModuleConfigurationToolStripMenuItem.Click += new System.EventHandler(this.payrollModuleConfigurationToolStripMenuItem_Click);
             // 
             // subCategoryToolStripMenuItem
             // 
             this.subCategoryToolStripMenuItem.Name = "subCategoryToolStripMenuItem";
-            this.subCategoryToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.subCategoryToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.subCategoryToolStripMenuItem.Text = "SubCategory";
             this.subCategoryToolStripMenuItem.Click += new System.EventHandler(this.subCategoryToolStripMenuItem_Click);
             // 
             // rSMMSMImportedToolStripMenuItem
             // 
             this.rSMMSMImportedToolStripMenuItem.Name = "rSMMSMImportedToolStripMenuItem";
-            this.rSMMSMImportedToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.rSMMSMImportedToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.rSMMSMImportedToolStripMenuItem.Text = "RSM_MSM_Imported";
             this.rSMMSMImportedToolStripMenuItem.Click += new System.EventHandler(this.rSMMSMImportedToolStripMenuItem_Click);
             // 
@@ -415,7 +403,7 @@ namespace RBOS
             // 
             this.importEPDataToolStripMenuItem.Enabled = false;
             this.importEPDataToolStripMenuItem.Name = "importEPDataToolStripMenuItem";
-            this.importEPDataToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.importEPDataToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.importEPDataToolStripMenuItem.Text = "Import EP data";
             this.importEPDataToolStripMenuItem.Visible = false;
             this.importEPDataToolStripMenuItem.Click += new System.EventHandler(this.importEPDataToolStripMenuItem_Click);
@@ -423,28 +411,28 @@ namespace RBOS
             // testFormToolStripMenuItem1
             // 
             this.testFormToolStripMenuItem1.Name = "testFormToolStripMenuItem1";
-            this.testFormToolStripMenuItem1.Size = new System.Drawing.Size(230, 26);
+            this.testFormToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
             this.testFormToolStripMenuItem1.Text = "TestForm";
             this.testFormToolStripMenuItem1.Click += new System.EventHandler(this.testFormToolStripMenuItem1_Click);
             // 
             // resetbarsToolStripMenuItem
             // 
             this.resetbarsToolStripMenuItem.Name = "resetbarsToolStripMenuItem";
-            this.resetbarsToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.resetbarsToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.resetbarsToolStripMenuItem.Text = "Reset Bars";
             this.resetbarsToolStripMenuItem.Visible = false;
             // 
             // sætProgrammetTil1024x768ToolStripMenuItem
             // 
             this.sætProgrammetTil1024x768ToolStripMenuItem.Name = "sætProgrammetTil1024x768ToolStripMenuItem";
-            this.sætProgrammetTil1024x768ToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.sætProgrammetTil1024x768ToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.sætProgrammetTil1024x768ToolStripMenuItem.Text = "1024x768";
             this.sætProgrammetTil1024x768ToolStripMenuItem.Visible = false;
             // 
             // menuitemSkiftStation
             // 
             this.menuitemSkiftStation.Name = "menuitemSkiftStation";
-            this.menuitemSkiftStation.Size = new System.Drawing.Size(177, 26);
+            this.menuitemSkiftStation.Size = new System.Drawing.Size(141, 22);
             this.menuitemSkiftStation.Text = "[Skift Station";
             this.menuitemSkiftStation.Click += new System.EventHandler(this.menuitemSkiftStation_Click);
             // 
@@ -454,22 +442,34 @@ namespace RBOS
             this.helpToolStripMenuItem1,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.helpToolStripMenuItem.Text = "[help]";
             // 
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(141, 26);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
             this.helpToolStripMenuItem1.Text = "[help]";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.aboutToolStripMenuItem.Text = "[about]";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // toolStripShortcuts
+            // 
+            this.toolStripShortcuts.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStripShortcuts.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStripShortcuts.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStripShortcuts.Location = new System.Drawing.Point(40, 24);
+            this.toolStripShortcuts.Name = "toolStripShortcuts";
+            this.toolStripShortcuts.Size = new System.Drawing.Size(102, 25);
+            this.toolStripShortcuts.TabIndex = 1;
+            this.toolStripShortcuts.Text = "toolStrip2";
+            this.toolStripShortcuts.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStripShortcuts_ItemClicked);
             // 
             // toolStripDummy
             // 
@@ -477,7 +477,7 @@ namespace RBOS
             this.toolStripDummy.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStripDummy.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripDummy.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStripDummy.Location = new System.Drawing.Point(8, 61);
+            this.toolStripDummy.Location = new System.Drawing.Point(7, 49);
             this.toolStripDummy.Name = "toolStripDummy";
             this.toolStripDummy.Size = new System.Drawing.Size(43, 25);
             this.toolStripDummy.TabIndex = 2;
@@ -489,7 +489,7 @@ namespace RBOS
             // 
             // MainForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1012, 711);
             this.Controls.Add(this.splitterMain);
