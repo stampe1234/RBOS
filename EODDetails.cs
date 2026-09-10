@@ -1,8 +1,10 @@
+using Economic.Api.Client.WebService;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -23,12 +25,6 @@ namespace RBOS
             adapterReconcileSingle.Connection = db.Connection;
             adapterReconcileSingle.Fill(dsEOD.EODReconcileSingle, BookDate);
             txtCustomerCountDO.Text = EODDataSet.EODReconcileExDataTable.GetCustomerCount(BookDate).ToString();
-#if RBA
-            DateTime SalesMaxDate = EODDataSet.EOD_SalesDataTable.GetMaxSalesDate();
-            if (SalesMaxDate != DateTime.MinValue)
-                txtSalesMaxDate.Text = SalesMaxDate.ToString("dd-MM-yyyy");
-#endif
-
             // check if any SafePay data has arrived and import if so
             // then calculate totals for EODReconcile record
             if (db.GetConfigStringAsBool("SafePay.Enabled"))
@@ -46,16 +42,27 @@ namespace RBOS
 
             }
 
-#if DETAIL
-            if (!ImportConcernoPOS.ImportFiles())
-                MessageBox.Show(ImportConcernoPOS.LastError);
-#endif
+
         }
 
         private void SaveData()
         {
+            //EODDataSet.EODReconcileSingleDataTable.UpdateWolt(BookDate, tools.object2double(textBWoltAmount.Text)); //pn20260408
+            //>>PN202608828
+            bool DOSite = db.GetConfigStringAsBool("DOVersion");
+            bool SafePay = db.GetConfigStringAsBool("SafePay.Enabled");
+            if (DOSite && !SafePay)
+            {
+                EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(textBWoltAmount.Text), tools.object2double(txtMobilepay.Text),tools.object2int(textBWoltQty.Text)); //pn20260812
+            }
+            else
+            {
+                EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(txtManCardAmountSP.Text), tools.object2double(txtMobilePay2.Text), tools.object2int(textBWoltQty.Text)); //pn20260812
+            }
+            //<<PN202608828
+
             bindingReconcileSingle.EndEdit();
-            EODDataSet.EODReconcileSingleDataTable.UpdateWolt(BookDate, tools.object2double(txtManCardAmountSP.Text));
+            
             adapterReconcileSingle.Update(dsEOD.EODReconcileSingle);
             EODDataSet.EODReconcileExDataTable.InsertOrUpdateRecord(BookDate, tools.object2int(txtCustomerCountDO.Text));
            
@@ -75,7 +82,7 @@ namespace RBOS
                 MessageBox.Show(db.GetLangString("EODDetails.ApprovedByCannotBeEmpty"), "", MessageBoxButtons.OK);
                 return;
             }
-#if !RBA
+
             // check if it is ok to end with a pos sales of 0
             if (tools.object2double(row["POSSales"]) == 0)
             {
@@ -83,7 +90,7 @@ namespace RBOS
                 if (MessageBox.Show(msg, "", MessageBoxButtons.YesNo) != DialogResult.Yes)
                     return;
             }
-#endif
+
             // check if it is ok to end with a bank deposit of 0
 
             if (!db.GetConfigStringAsBool("SafePay.Enabled"))
@@ -95,7 +102,7 @@ namespace RBOS
                         return;
                 }
             }
-#if !RBA
+
             // check if it is ok to end with shell cards value of 0
             if (tools.object2double(row["TotalShell"]) == 0)
             {
@@ -121,99 +128,39 @@ namespace RBOS
             msg = string.Format(db.GetLangString("EODDetails.WantToApproveEOD"), CashOverUnder.ToString("N2"));
             if (MessageBox.Show(msg, "", MessageBoxButtons.YesNo) != DialogResult.Yes)
                 return;
-#endif
 
-#if RBA
-            //
-            if (db.GetConfigStringAsBool("Readings.StationHasWash") &&
-                db.GetConfigStringAsBool("EOD.CheckForWashCount") &&
-                tools.object2int(row["NumberOfWashSold"]) == 0)
-            {
-                msg = db.GetLangString("EODDetails.NumWashSoldMustBeFilledIn");
-                MessageBox.Show(msg);
-                return;
-            }
 
-            // RBA things to check for, if this is the last day in the month
-            if (tools.IsLastDayInMonth(BookDate.Date))
-            {
-                // verify that a reading has been done for the day,
-                string msgReadings;
-                if (!EODDataSet.ReadingsDataTable.ValidReadingsExist(BookDate.Date, out msgReadings))
-                {
-                    MessageBox.Show(msgReadings);
-                    return;
-                }
 
-                // if the station has wash, verify that ultimo aflæst is positive
-                if (db.GetConfigStringAsBool("Readings.StationHasWash"))
-                {
-                    string ErrorMessage;
-                    if (!EODDataSet.WashDataTable.ValidReadingsExist(BookDate.Date, out ErrorMessage))
-                    {
-                        MessageBox.Show(ErrorMessage);
-                        return;
-                    }
-                }
-            }
-
-            if (db.GetConfigStringAsBool("WasteRBA.Active"))
-            {
-                // check that there are no unbooked waste registrations
-                if (ItemDataSet.WasteRegistrationRBADataTable.CheckIfAnyUnbookedRecords())
-                {
-                    MessageBox.Show(db.GetLangString("EODDetails.UnbookedRBAWasteRegistrations"));
-                    return;
-                }
-                // check if there are ALSO no waste registrations booked at all
-                else if (!ItemDataSet.ItemTransactionRBADataTable.CheckIfAnyTransactionRecords(BookDate))
-                {
-                    if (MessageBox.Show(db.GetLangString("EODDetails.AnyRBATransactions"), "", MessageBoxButtons.YesNo) != DialogResult.Yes)
-                        return;
-                }
-            }
-
-            if (db.GetConfigStringAsBool("SafePay.Enabled"))
-            {
-                // SafePay byttepenge optalt skal være udfyldt, men der skal
-                // enten checkes dagligt eller månedligt den sidste dag i måneden
-                bool SafePayByttepengeDaily = db.GetConfigStringAsBool("SafePay.ByttepengeOptalt.Daily");
-                if (SafePayByttepengeDaily || tools.IsLastDayInMonth(BookDate.Date))
-                {
-                    if (tools.object2double(row["SafePay_ByttepengeOptalt"]) == 0)
-                    {
-                        MessageBox.Show(db.GetLangString("EODDetails.SafePayByttepengeOptaltMissing"));
-                        return;
-                    }
-                }
-
-                /// Der skal tjekks for om der er modtaget SafePay data. Det gør
-                /// vi ved at se om der er kommet data i depot-tabellen, da vi
-                /// antager, at der altid kommer import data til den tabel og bruger
-                /// kan ikke manuelt indtaste data til den tabel.
-                if (EODDataSet.EOD_SafePay_DepotbeholdningDataTable.GetRowCount(BookDate) <= 0)
-                {
-                    MessageBox.Show(db.GetLangString("EODDetails.SafePayMissingImportData"));
-                    return;
-                }
-            }
-
-            // final RBA approve prompt
-            msg = db.GetLangString("EODDetails.FinalRBAApprovePrompt");
-            if (MessageBox.Show(msg, "", MessageBoxButtons.YesNo) != DialogResult.Yes)
-                return;
-#endif
 
             // close (approve) the EOD
             row["Closed"] = 1;
             // row["BookDate"] = "11-09-2018 00:00:00";
-            EODDataSet.EODReconcileSingleDataTable.UpdateWolt(BookDate, tools.object2double(txtManCardAmountSP.Text)); //pn20240403
+            //EODDataSet.EODReconcileSingleDataTable.UpdateWolt(BookDate, tools.object2double(txtManCardAmountSP.Text)); //pn20260408
+            //EODDataSet.EODReconcileSingleDataTable.UpdateWolt(BookDate, tools.object2double(textBWoltAmount.Text)); //pn20260812
+            //>>PN20260828
+            //EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(textBWoltAmount.Text), tools.object2double(txtMobilepay.Text), tools.object2int(textBWoltQty.Text)); //pn20260812
+            bool DOSite = db.GetConfigStringAsBool("DOVersion");
+            bool SafePay = db.GetConfigStringAsBool("SafePay.Enabled");
+            if (DOSite && !SafePay)
+            {
+                EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(textBWoltAmount.Text), tools.object2double(txtMobilepay.Text), tools.object2int(textBWoltQty.Text)); //pn20260812
+            }
+            else
+            {
+                EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(txtManCardAmountSP.Text), tools.object2double(txtMobilePay2.Text), tools.object2int(textBWoltQty.Text)); //pn20260812
+            }
+            //<<PN202608828
+
+
+
+
+
             bindingReconcileSingle.EndEdit();
             adapterReconcileSingle.Update(dsEOD.EODReconcileSingle);
 
             // EOD is close by now. the following generates various output files
             
-#if !RBA
+
             // generate EOD file if applicable
             ExportAccounting.GenerateEODFile(tools.object2datetime(row["BookDate"]));
 
@@ -223,10 +170,7 @@ namespace RBOS
                 ExportVGS vgs = new ExportVGS();
                 vgs.Export(BookDate.Month, BookDate.Year);
             }
-#else
-            // generate EOD file if applicable
-            ExportAccounting.GenerateOPGFile(tools.object2datetime(row["BookDate"]));
-#endif
+
 
             // close window
             Close();
@@ -323,16 +267,56 @@ namespace RBOS
             lbTotalShellSP.Text = lbTotalShell.Text;
             lblManualDepBank.Text = db.GetLangString("EODDetailsForm.lblManualDepBank");
             lbWoltAmount.Text = "Wolt";
+            lblWoltAmount2.Text = "Wolt";
             lbManCardAmount.Text = db.GetLangString("EODDetailsForm.lbManCardAmountSP");
+            //Pn20260828
+            lblReserveTerminal.Text = db.GetLangString("EODDetailsForm.lbManCardAmountSP");
+
             lbDiscountAmount.Visible = false;
             txtDiscountAmount.Visible = false;
             txtDiscountAmountCount.Visible = false;
             btnDiscountAmount.Visible = false;
-           // lOptprepayreserveterminal.Visible = false;
-          //  txtOPTprepayreserveterminal.Visible = false;
+            // lOptprepayreserveterminal.Visible = false;
+            //  txtOPTprepayreserveterminal.Visible = false;
+            
+            //pn20260810
+            bool DOSite = (db.GetConfigStringAsBool("DOVersion"));
+            if (DOSite)
+            {
+                lblMobilePay.Visible = true;
+                txtMobilepay.Visible = true;
+            }
+            else
+            {
+                lblMobilePay.Visible = false;
+                txtMobilepay.Visible = false;
+               
+            }
 
 
-            tabControl1.TabPages.Remove(tabDailyRBA);
+
+            /* PN20260828
+
+            if (db.GetConfigStringAsBool("Wolt.Enabled"))
+            {
+
+                lblWoltAmount2.Visible = true;
+                textBWoltAmount.Visible = true;
+                textBWoltQty.Visible = true;
+
+            }
+            else
+            {
+                lblWoltAmount2.Visible = false;
+                textBWoltAmount.Visible = false;
+                textBWoltQty.Visible = false;
+            }
+
+           // textBWoltAmount.Enabled = DOSite;  //pn20260812
+            textBWoltAmount.ReadOnly = !DOSite; // pn20260812
+            
+           */
+                tabControl1.TabPages.Remove(tabDailyRBA);
             if (!db.GetConfigStringAsBool("SafePay.Enabled"))
             {
                 // SafePay is not enabled
@@ -347,14 +331,7 @@ namespace RBOS
                 tabControl1.TabPages.Remove(tabBankOgShell);
                 EODDataSet.EOD_SafePay_DepotbeholdningDataTable.UpdateDKKAmountOnCurrentOpenDay();
 
-                
-#if RBA
-                // disable some of the other fields
-                btnForeignCurrencyRBA.Enabled = false;
-                btnPayinRBA.Enabled = false;
-                btnPayoutRBA.Enabled = false;
-                btnLocalCreditPayinRBA.Enabled = false;
-#else
+
                 // disable some of the other fields
                 //txtForrCurrency.ReadOnly = true;
                 txtForrCurrency.Visible = false;
@@ -378,7 +355,12 @@ namespace RBOS
                 btnDiscountAmount.Visible = false;
                 //lOptprepayreserveterminal.Visible = false;
                 //txtOPTprepayreserveterminal.Visible = false;
-#endif
+                //PN20260828
+                lblMobilePay2.Visible = DOSite;
+                txtMobilePay2.Visible = DOSite;
+                lblReserveTerminal.Visible = DOSite;
+                txtReserveTerminal.Visible = DOSite;
+
             }
         }
 
@@ -407,9 +389,7 @@ namespace RBOS
         private void txtBankDepAmount_TextChanged(object sender, EventArgs e)
         {
             txtBankDepAmountCount.Text =
-                EODDataSet.EOD_BankDepDataTable.GetBankDepRowCount(BookDate).ToString();
-            //DS.EODDS.EODDS1.DataSet1.EOD_BankDepDataTable.GetBankDepRowCount(BookDate).ToString();
-            
+                EODDataSet.EOD_BankDepDataTable.GetBankDepRowCount(BookDate).ToString();                       
 
         }
 
@@ -798,13 +778,7 @@ namespace RBOS
 
         private void txtBankDepAmountSP_Leave(object sender, EventArgs e)
         {
-            //>>PN20200803
-            //DataRowView row = (DataRowView)bindingReconcileSingle.Current;
-            //txtTotalDepot.Text = EODDataSet.EOD_SafePay_UdbetalingerDataTable.GetTotalAmount(BookDate).ToString();
-            //<<PN20200803
-            //bindingReconcileSingle.EndEdit();
-            //dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate);
-            
+                       
         }
 
         private void txtShellCardAmountCountSP_TextChanged(object sender, EventArgs e)
@@ -818,7 +792,7 @@ namespace RBOS
             EOD_ShellCards shellcards = new EOD_ShellCards(BookDate);
             shellcards.ShowDialog();
         }
-
+        
         private void btnDiscountAmountSP_Click(object sender, EventArgs e)
         {
             EOD_Discounts discounts = new EOD_Discounts(BookDate);
@@ -841,17 +815,40 @@ namespace RBOS
         
         }
 
-        //private void txtDiscountAmountSP_TextChanged(object sender, EventArgs e)
-        //{
-        //    txtDiscountAmountCountSP.Text = EODDataSet.EOD_DiscountsDataTable.GetDiscountsRowCount(BookDate).ToString();
-        //}
+        private void textBWoltAmount_TextChanged(object sender, EventArgs e)
+        {
 
-        
+            // bindingReconcileSingle.EndEdit();//pn20260807
+           // dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate);
 
-        
+        }
 
-        
+        private void txtMobilepay_Leave(object sender, EventArgs e)
+        {
+            EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(textBWoltAmount.Text), tools.object2double(txtMobilepay.Text), tools.object2int(textBWoltQty.Text)); //pn20260812
+            bindingReconcileSingle.EndEdit();//pn20260812
+            dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate); //pn20260812
+        }
 
-       
+        private void textBWoltAmount_Leave(object sender, EventArgs e)
+        {
+            EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(textBWoltAmount.Text), tools.object2double(txtMobilepay.Text), tools.object2int(textBWoltQty.Text)); //pn20260812
+            bindingReconcileSingle.EndEdit();//pn20260812
+            dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate); //pn20260812
+
+        }
+
+        private void txtMobilePay2_Leave(object sender, EventArgs e)
+        {
+            EODDataSet.EODReconcileSingleDataTable.UpdateExtra(BookDate, tools.object2double(textBWoltAmount.Text), tools.object2double(txtMobilePay2.Text), tools.object2int(textBWoltQty.Text)); //pn20260828
+            bindingReconcileSingle.EndEdit();//pn20260828
+            dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate); //pn20260828
+        }
+
+        private void txtReserveTerminal_Leave(object sender, EventArgs e)
+        {
+            bindingReconcileSingle.EndEdit();//pn20260828
+            dsEOD.EODReconcileSingle.CalcTotalsInMemory(BookDate);//pn20260828
+        }
     }
 }

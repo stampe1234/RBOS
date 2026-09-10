@@ -401,7 +401,7 @@
     <None Include="ItemDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>ItemDataSet2.Designer.cs</LastGenOutput>
+      <LastGenOutput>ItemDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="ItemDataSet.xss">
       <DependentUpon>ItemDataSet.xsd</DependentUpon>
@@ -715,6 +715,11 @@
     <Compile Include="StockCountRegistrationRBA_EraseBookedDialog.Designer.cs">
       <DependentUpon>StockCountRegistrationRBA_EraseBookedDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="testdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>testdataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UnlockPrompt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -804,12 +809,6 @@
     </Compile>
     <Compile Include="SearchItemID.Designer.cs">
       <DependentUpon>SearchItemID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WasteRegistrationRBA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WasteRegistrationRBA.Designer.cs">
-      <DependentUpon>WasteRegistrationRBA.cs</DependentUpon>
     </Compile>
     <Compile Include="WasteRegistrationRBAGetInitials.cs">
       <SubType>Form</SubType>
@@ -2006,10 +2005,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>SearchItemID.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WasteRegistrationRBA.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>WasteRegistrationRBA.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="WasteRegistrationRBAGetInitials.resx">
       <SubType>Designer</SubType>
       <DependentUpon>WasteRegistrationRBAGetInitials.cs</DependentUpon>
@@ -2568,6 +2563,17 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>WasteSheetRptRBAWeekdays.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="testdataset.xsc">
+      <DependentUpon>testdataset.xsd</DependentUpon>
+    </None>
+    <None Include="testdataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>testdataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="testdataset.xss">
+      <DependentUpon>testdataset.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />

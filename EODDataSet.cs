@@ -2116,6 +2116,7 @@ namespace RBOS
                         tools.object2double(row["MiscCards"]) +
                         tools.object2double(row["WoltAmount"]) + //20231222
                         tools.object2double(row["ManDankortSumB"]) +
+                        tools.object2double(row["MPAmount"]) + //pn20260812
                         tools.object2double(row["CashDiscount"]);
                 }
                 else
@@ -2127,6 +2128,7 @@ namespace RBOS
                         tools.object2double(row["DiscountAmount"]) +
                         tools.object2double(row["MiscCards"]) +
                         tools.object2double(row["WoltAmount"]) + //20231222
+                        tools.object2double(row["MPAmount"]) + //pn20260812
                         tools.object2double(row["ManDankortSumB"]) +  //peter
                         tools.object2double(row["CashDiscount"]);
                 }
@@ -2201,7 +2203,8 @@ namespace RBOS
                         tools.object2double(row["ShellCardAmount"]) +
                         tools.object2double(row["DiscountAmount"]) +
                         tools.object2double(row["MiscCards"]) +
-                          tools.object2double(row["WoltAmount"]) + //20231222
+                        tools.object2double(row["WoltAmount"]) + //20231222
+                        tools.object2double(row["MPAmount"]) + //pn20260812
                         tools.object2double(row["CashDiscount"]);
 
                     // TotalMisc
@@ -2265,6 +2268,21 @@ namespace RBOS
                 using (OleDbCommand cmd = new OleDbCommand(sql, db.Connection))
                 {
                     cmd.Parameters.Add("Amount", OleDbType.Double).Value = WoltAmount;
+                    cmd.Parameters.Add("DatoTid", OleDbType.Date).Value = BookDate;
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            //20260812
+            public static void UpdateExtra(DateTime BookDate, Double WoltAmount,Double MPAmount,Int32 WoltQty)
+            {
+
+                string sql = @"update EODReconcile set [WoltAmount] = ? , [MPAmount] = ? , [WoltQty] = ? Where BookDate = ? ";
+
+                using (OleDbCommand cmd = new OleDbCommand(sql, db.Connection))
+                {
+                    cmd.Parameters.Add("Amount", OleDbType.Double).Value = WoltAmount;
+                    cmd.Parameters.Add("Amount2", OleDbType.Double).Value = MPAmount;
+                    cmd.Parameters.Add("QTY", OleDbType.SmallInt).Value = WoltQty;
                     cmd.Parameters.Add("DatoTid", OleDbType.Date).Value = BookDate;
                     cmd.ExecuteNonQuery();
                 }
@@ -3215,17 +3233,7 @@ namespace RBOS
                     " set SafePayAmount = {0} " +
                     " where BookDate = '{1}' ",
                     tools.decimalnumber4sql(SafePay + CashBack), BookDate.Date));
-                //<<PN20200814
-                //>>PN20200824
-                //if (!db.GetConfigStringAsBool("SafePay.Enabled"))
-                //{
-                //    db.ExecuteNonQuery(string.Format(
-                //    " update EODReconcile " +
-                //    " set   BankDepAmount = {0} " +
-                //    " where BookDate = '{1}' ",
-                //    tools.decimalnumber4sql(SafePay), BookDate.Date));
-                //}   
-                //<<20200824
+                //<<PN20200814         
 
                 //Import SafePayvaluta value
                 //pn20200730                  

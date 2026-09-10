@@ -11,7 +11,7 @@ namespace RBOS
     class ExportAccounting
     {
         #region GenerateEODFile
-#if !RBA
+
         /// <summary>
         /// Generates the EOD file.
         /// In case of any errors and file was not generated, user is informed and false is returned.
@@ -67,9 +67,10 @@ namespace RBOS
             eodfile.WriteLine("1014" + Encrypt(FormatAmount(rowEODReconcile["ShellCardAmount"]), ++lineno, header));
             eodfile.WriteLine("1015" + Encrypt(FormatAmount(rowEODReconcile["DiscountAmount"]), ++lineno, header));
             eodfile.WriteLine("1016" + Encrypt(FormatAmount(rowEODReconcile["MiscCards"]), ++lineno, header));
-            //eodfile.WriteLine("1018" + Encrypt(FormatAmount(rowEODReconcile["ManDankortSumB"]), ++lineno, header)); 20240404
-            eodfile.WriteLine("1018" + Encrypt(FormatAmount(rowEODReconcile["WoltAmount"]), ++lineno, header));
+            eodfile.WriteLine("1018" + Encrypt(FormatAmount(rowEODReconcile["ManDankortSumB"]), ++lineno, header)); 
+            eodfile.WriteLine("1019" + Encrypt(FormatAmount(rowEODReconcile["WoltAmount"]), ++lineno, header));//20260408 Wolt på nyt ID
             eodfile.WriteLine("1020" + Encrypt(FormatAmount(rowEODReconcile["CashDiscount"]), ++lineno, header));
+            eodfile.WriteLine("1021" + Encrypt(FormatAmount(rowEODReconcile["MPAmount"]), ++lineno, header));//20260812 Mobilepay på nyt ID
             eodfile.WriteLine("1022" + Encrypt(FormatAmount(rowEODReconcile["DriveOffTotal"]), ++lineno, header));
             eodfile.WriteLine("1024" + Encrypt(FormatAmount(rowEODReconcile["LocalCredit"]), ++lineno, header));
             eodfile.WriteLine("1026" + Encrypt(FormatAmount(rowEODReconcile["LocalCreditPayin"]), ++lineno, header));
@@ -202,24 +203,7 @@ namespace RBOS
                     FormatBoolean(row["Employee"]), ++lineno, header));
             }
 
-#if DETAIL
-            // write details for 1030 (DETAIL version has detail data for valuta)
-            table = db.GetDataTable(string.Format(@"
-                select * from EOD_DETAIL_Valuta
-                where BookDate = cdate('{0}')
-                order by LineNo
-                ", BookDate.Date));
-            foreach (DataRow row in table.Rows)
-            {
-                eodfile.Write("2000");
-                eodfile.WriteLine(Encrypt(
-                    "1030" +
-                    FormatValutaISOkode(row["ValutaISOkode"]) +
-                    FormatString(row["Valuta"], 3, Padding.AppendedBlanks) +
-                    FormatAmount(row["Valutabeloeb"]) +
-                    FormatAmount(row["BeloebDKK"]), ++lineno, header));
-            }
-#endif
+
 
             // write details for 1032
             table = db.GetDataTable(string.Format(
@@ -434,7 +418,7 @@ namespace RBOS
             // file was generated
             return true;
         }
-#endif
+
         #endregion
 
         #region GenerateOPTFile

@@ -27699,7 +27699,7 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetDetailsRow AddWasteSheetDetailsRow(int HeaderID, int LineNo, double Barcode, int Antal, System.DateTime DatoTid) {
+            public WasteSheetDetailsRow AddWasteSheetDetailsRow(int HeaderID, int LineNo, double Barcode, decimal Antal, System.DateTime DatoTid) {
                 WasteSheetDetailsRow rowWasteSheetDetailsRow = ((WasteSheetDetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         HeaderID,
@@ -27753,7 +27753,7 @@ namespace RBOS {
                 base.Columns.Add(this.columnLineNo);
                 this.columnBarcode = new global::System.Data.DataColumn("Barcode", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBarcode);
-                this.columnAntal = new global::System.Data.DataColumn("Antal", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnAntal = new global::System.Data.DataColumn("Antal", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAntal);
                 this.columnDatoTid = new global::System.Data.DataColumn("DatoTid", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDatoTid);
@@ -43222,10 +43222,10 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Antal {
+            public decimal Antal {
                 get {
                     try {
-                        return ((int)(this[this.tableWasteSheetDetails.AntalColumn]));
+                        return ((decimal)(this[this.tableWasteSheetDetails.AntalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Antal\' in table \'WasteSheetDetails\' is DBNull.", e);
@@ -60154,8 +60154,8 @@ WHERE     (SubCategoryID = ?)";
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM  WasteSheetDetails \r\nWHERE  (( HeaderID = ?) AND ([LINENO] = ?) AND (" +
-                "(? = 1 AND  Barcode  IS NULL) OR\r\n                  ( Barcode  = ?)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM WasteSheetDetailsLocal \r\nWHERE  (( HeaderID = ?) AND ([LINENO] = ?) A" +
+                "ND ((? = 1 AND  Barcode  IS NULL) OR\r\n                  ( Barcode  = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HeaderID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LineNo", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Original, false, null));
@@ -60174,16 +60174,17 @@ WHERE     (SubCategoryID = ?)";
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ItemName", global::System.Data.OleDb.OleDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ItemName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE WasteSheetDetailsLocal\r\nSET       HeaderID = ?, [LineNo] = ?, Barcode = ?," +
-                " Antal = ?, DatoTid = ?\r\nWHERE (HeaderID = ?) AND ([LineNo] = ?)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE       WasteSheetDetailsLocal\r\nSET                HeaderID = ?, [LineNo] = " +
+                "?, Barcode = ?, Antal = ?, DatoTid = ?\r\nWHERE        (HeaderID = ?) AND ([LineNo" +
+                "] = ?)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LineNo", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Double, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DatoTid", global::System.Data.OleDb.OleDbType.DBTimeStamp, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DatoTid", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LineNo", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LineNo", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DatoTid", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DatoTid", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HeaderID", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LineNo", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

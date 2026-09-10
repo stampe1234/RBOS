@@ -248,14 +248,22 @@ namespace RBOS
                 {
                     PostingDate = tools.object2datetime(detailRow["DatoTid"]);
                 }
-
-                int NumberOf = tools.object2int(detailRow["Antal"]);
-                byte SalesPackType = tools.object2byte(detailRow["PackType"]);
+                //>>PN20260409
+                double NumberOfdec = tools.object2double(detailRow["Antal"]);                
+                int NumberOf =  Math.Max(1, (int)Math.Round(NumberOfdec, MidpointRounding.AwayFromZero));
+                NumberOfdec = NumberOfdec * AdjustFactor;
                 NumberOf = NumberOf * AdjustFactor;
+
+                //int NumberOf = tools.object2int(detailRow["Antal"]);
+                //<<PN20260409
+                byte SalesPackType = tools.object2byte(detailRow["PackType"]);
+               
                 int NoOfSellingUnits = ItemDataSet.LookupPackTypeAmount(SalesPackType) * NumberOf;
                 double Amount = ItemDataSet.SupplierItemDataTable.GetSupplierItemPackageCost(ItemID, SalesPackType);
-                Amount = Amount * NumberOf;
-
+                //<<PN20260409
+                //Amount = Amount * NumberOf;
+                Amount = Amount * NumberOfdec;
+                //>>PN20260409
                 // write item transaction record
                 ItemDataSet.ItemTransactionDataTable.WriteTransactionRecord(
                     ItemID,
@@ -379,7 +387,7 @@ namespace RBOS
 
                 // get CountBHHT as sellingunits
                 int CountBHHT = tools.object2int(rowBHHT["Quantity"]);
-
+                double CountBHHTdec = tools.object2double(rowBHHT["Quantity"]);//>>PN20260409
                 CountBHHT = CountBHHT * ItemDataSet.LookupPackTypeAmount(PackType);
 
                 // calculate start on-hand (lagerbeholdning pr. døgn start, dvs dagen før)

@@ -6,6 +6,7 @@ using System.Data.Sql;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.IO;
+using System.Globalization;
 
 namespace RBOS.ItemDataSetTableAdapters
 {
@@ -783,225 +784,7 @@ namespace RBOS
         }
         #endregion
 
-        #region WasteRegistrationRBADataTable
-        partial class WasteRegistrationRBADataTable
-        {
-            private bool SettingMutualValues_Varenummer_Barcode = false;
-            private bool LookingUpSalgspris = false;
 
-            #region OnMultipleVareFoundByVarenummer
-            // event for letting GUI handle that more than one vare has been found by Varenummer
-            public delegate void MultipleVareFoundByVarenummer(out int LevNr, double Varenummer);
-            public event MultipleVareFoundByVarenummer OnMultipleVareFoundByVarenummer = null;
-            #endregion
-
-            #region OnMultipleVareFoundByBarcode
-            // event for letting GUI handle that more than one vare has been found by Barcode
-            public delegate void MultipleVareFoundByBarcode(out int LevNr, out double Barcou, double Barcode);
-            public event MultipleVareFoundByBarcode OnMultipleVareFoundByBarcode = null;
-            #endregion
-
-            #region OnLookupValuesChanged
-            // event for letting GUI know that lookup values has changed
-            // so GUI needs to update the grid
-            public delegate void LookupValuesChanged();
-            public event LookupValuesChanged OnLookupValuesChanged = null;
-            #endregion
-
-            #region OnColumnChanged
-            protected override void OnColumnChanged(DataColumnChangeEventArgs e)
-            {
-                if (e.Column == VarenummerColumn)
-                {
-                    if (!SettingMutualValues_Varenummer_Barcode)
-                    {
-                        // clear fields
-                        SettingMutualValues_Varenummer_Barcode = true;
-                        e.Row[BarcodeColumn] = DBNull.Value;
-                        SettingMutualValues_Varenummer_Barcode = false;
-                        e.Row[VarenavnColumn] = DBNull.Value;
-                        e.Row[LevNrColumn] = DBNull.Value;
-                        e.Row[VaregruppeColumn] = DBNull.Value;
-                        e.Row[KostprisColumn] = DBNull.Value;
-                        LookingUpSalgspris = true;
-                        e.Row[SalgsprisColumn] = DBNull.Value;
-                        LookingUpSalgspris = false;
-                        e.Row[AntalColumn] = DBNull.Value; // and clear the Antal field
-                        e.Row[ManualInputColumn] = DBNull.Value;
-
-                        // extract just entered Varenummer
-                        double Varenummer = tools.object2double(e.ProposedValue);
-
-                        int LevNr = 0;
-
-                        // attempt to find the vare in the catalog
-                        int num = AfskrProdDataTable.GetNumRecordsByVarenummer(Varenummer);
-                        if (num > 1)
-                        {
-                            // more that one vare found, so user
-                            // has to select the one needed and LevNr will be set,
-                            // so invoke the event handler
-                            if (OnMultipleVareFoundByVarenummer != null)
-                                OnMultipleVareFoundByVarenummer(out LevNr, Varenummer);
-                        }
-                        else if (num == 1)
-                        {
-                            LevNr = AfskrProdDataTable.GetLevNr(Varenummer);
-                        }
-
-                        // if LevNr is greater than 0, one vare record was found,
-                        // and the lookup values can be set
-                        if (LevNr > 0)
-                        {
-                            DataRow row = AfskrProdDataTable.GetRecord(LevNr, Varenummer);
-                            if (row != null)
-                            {
-                                e.Row[LevNrColumn] = row["LevNr"];
-                                e.Row[VarenavnColumn] = row["Beskrivelse"];
-                                e.Row[KostprisColumn] = row["Kostpris"];
-                                LookingUpSalgspris = true;
-                                e.Row[SalgsprisColumn] = row["Salgspris"];
-                                LookingUpSalgspris = false;
-                                e.Row[VaregruppeColumn] = row["Varegruppe"];
-                                SettingMutualValues_Varenummer_Barcode = true;
-                                e.Row[BarcodeColumn] = row["Barcode"];
-                                SettingMutualValues_Varenummer_Barcode = false;
-                                e.Row[ManualInputColumn] = row["GenerelVare"];
-
-                                // let GUI know that it needs to refresh the grid
-                                if (OnLookupValuesChanged != null)
-                                    OnLookupValuesChanged();
-                            }
-                        }
-                    }
-                }
-                else if (e.Column == BarcodeColumn)
-                {
-                    if (!SettingMutualValues_Varenummer_Barcode)
-                    {
-                        // clear fields
-                        SettingMutualValues_Varenummer_Barcode = true;
-                        e.Row[VarenummerColumn] = DBNull.Value;
-                        SettingMutualValues_Varenummer_Barcode = false;
-                        e.Row[VarenavnColumn] = DBNull.Value;
-                        e.Row[LevNrColumn] = DBNull.Value;
-                        e.Row[VaregruppeColumn] = DBNull.Value;
-                        e.Row[KostprisColumn] = DBNull.Value;
-                        LookingUpSalgspris = true;
-                        e.Row[SalgsprisColumn] = DBNull.Value;
-                        LookingUpSalgspris = false;
-                        e.Row[AntalColumn] = DBNull.Value;
-                        e.Row[ManualInputColumn] = DBNull.Value;
-
-                        // extract just entered Barcode
-                        double Barcode = tools.object2double(e.ProposedValue);
-
-                        int LevNr = 0;
-                        double Varenummer = 0;
-
-                        // attempt to find the vare in the catalog
-                        int num = AfskrProdDataTable.GetNumRecordsByBarcode(Barcode);
-                        if (num > 1)
-                        {
-                            // more that one vare found, so user
-                            // has to select the one needed and LevNr will be set,
-                            // so invoke the event handler
-                            if (OnMultipleVareFoundByBarcode != null)
-                                OnMultipleVareFoundByBarcode(out LevNr, out Varenummer, Barcode);
-                        }
-                        else if (num == 1)
-                        {
-                            AfskrProdDataTable.GetPrimaryKey(Barcode, out LevNr, out Varenummer);
-                        }
-
-                        // if LevNr and Varenummer are greater than 0, one vare record was found,
-                        // and the lookup values can be set
-                        if ((LevNr > 0) && (Varenummer > 0))
-                        {
-                            DataRow row = AfskrProdDataTable.GetRecord(LevNr, Varenummer);
-                            if (row != null)
-                            {
-                                e.Row[LevNrColumn] = row["LevNr"];
-                                SettingMutualValues_Varenummer_Barcode = true;
-                                e.Row[VarenummerColumn] = row["Varenummer"];
-                                SettingMutualValues_Varenummer_Barcode = false;
-                                e.Row[VarenavnColumn] = row["Beskrivelse"];
-                                e.Row[KostprisColumn] = row["Kostpris"];
-                                LookingUpSalgspris = true;
-                                e.Row[SalgsprisColumn] = row["Salgspris"];
-                                LookingUpSalgspris = false;
-                                e.Row[VaregruppeColumn] = row["Varegruppe"];
-                                e.Row[ManualInputColumn] = row["GenerelVare"];
-
-                                // let GUI know that it needs to refresh the grid
-                                if (OnLookupValuesChanged != null)
-                                    OnLookupValuesChanged();
-                            }
-                        }
-                    }
-                }
-                else if ((e.Column == SalgsprisColumn) && !LookingUpSalgspris)
-                {
-                    /// If this is a manual edit of Salgspris column,
-                    /// calculate Kostpris using Salgspris and
-                    /// BudgetMargin (dækningsgrad) on the subcategory.
-
-                    double Salgspris = tools.object2double(e.ProposedValue);
-                    string SubCategoryID = tools.object2string(e.Row[VaregruppeColumn]);
-                    double BudgetMargin = SubCategoryDataTable.GetBudgetMargin(SubCategoryID);
-                    e.Row[KostprisColumn] = tools.CalcCostPrice(BudgetMargin, Salgspris);
-
-                    // let GUI know that it needs to refresh the grid
-                    if (OnLookupValuesChanged != null)
-                        OnLookupValuesChanged();
-
-                    // @@@ så var der noget med varer uden moms
-                }
-
-                base.OnColumnChanged(e);
-            }
-            #endregion
-
-            #region Book
-            public bool Book(out string ErrorMessage, string Initials, DateTime OpenDay)
-            {
-                db.StartTransaction();
-                ErrorMessage = "";
-                try
-                {
-                    foreach (WasteRegistrationRBARow row in Rows)
-                    {
-                        if (row.RowState != DataRowState.Deleted &&
-                            row.RowState != DataRowState.Detached)
-                        {
-                            ItemDataSet.ItemTransactionRBADataTable.WriteTransactionRecord(
-                                row.LevNr, row.Varenummer, row.Antal, Initials, OpenDay);
-                        }
-                    }
-                    db.ExecuteNonQuery("delete from WasteRegistrationRBA");
-                    db.CommitTransaction();
-                    Rows.Clear();
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    log.WriteException("Calling WasteRegistrationRBA.Book", ex.Message, ex.StackTrace);
-                    ErrorMessage = db.GetLangString("WasteRegistrationRBA.BookError");
-                    db.RollbackTransaction();
-                    return false;
-                }
-
-            }
-            #endregion
-
-            #region CheckIfAnyUnbookedRecords
-            public static bool CheckIfAnyUnbookedRecords()
-            {
-                return tools.object2int(db.ExecuteScalar("select count (*) from WasteRegistrationRBA")) > 0;
-            }
-            #endregion
-        }
-        #endregion
 
         #region ForbrugsvareDataTable
         partial class ForbrugsvareDataTable
@@ -1634,6 +1417,98 @@ namespace RBOS
         #region PARTIAL CLASS WasteSheetDetailsDataTable
         partial class WasteSheetDetailsDataTable
         {
+
+            //>>pn20260409
+
+            public static bool UpdateRecord(int headerID, int lineNo, decimal antal, DateTime datoTid)
+            {
+                string sql = string.Format(@"
+                UPDATE [dbo].[WasteSheetDetails]
+                SET
+                    [Antal] = {0},
+                    [DatoTid] = {1}
+                WHERE
+                    [HeaderID] = {2}
+                    AND [LineNo] = {3}",
+                                    antal.ToString(CultureInfo.InvariantCulture),
+                                    tools.datetime4sql(datoTid),
+                                    headerID,
+                                    lineNo);
+
+                db.ExecuteNonQuery(sql);
+                return true;
+            }
+            public static bool InsertRecord(int headerID, int lineNo, double barcode, decimal antal, DateTime datoTid)
+            {
+                string sql = string.Format(@"
+                INSERT INTO [dbo].[WasteSheetDetails]
+                    ([HeaderID], [LineNo], [Barcode], [Antal], [DatoTid])
+                VALUES
+                    ({0}, {1}, {2}, {3}, {4})",
+                                    headerID,
+                                    lineNo,
+                                    barcode.ToString(CultureInfo.InvariantCulture),
+                                    antal.ToString(CultureInfo.InvariantCulture),
+                                    tools.datetime4sql(datoTid));
+
+                db.ExecuteNonQuery(sql);
+                return true;
+            }
+
+            public static bool DeleteRecord(int headerID, int lineNo)
+            {
+                string sql = string.Format(@"
+                DELETE FROM [dbo].[WasteSheetDetails]
+                WHERE [HeaderID] = {0}
+                  AND [LineNo] = {1}",
+                                    headerID,
+                                    lineNo);
+
+                db.ExecuteNonQuery(sql);
+                return true;
+            }
+            public static void UpdateAllForHeader(ItemDataSet.WasteSheetDetailsDataTable table, int headerID)
+            {
+                foreach (ItemDataSet.WasteSheetDetailsRow row in table.Rows)
+                {
+                    if (row.RowState == DataRowState.Deleted)
+                    {
+                        int originalHeaderID = (int)row["HeaderID", DataRowVersion.Original];
+                        int originalLineNo = (int)row["LineNo", DataRowVersion.Original];
+
+                        if (originalHeaderID == headerID)
+                            DeleteRecord(originalHeaderID, originalLineNo);
+
+                        continue;
+                    }
+
+                    if (row.HeaderID != headerID)
+                        continue;
+
+                    decimal antal = row.IsAntalNull() ? 0m : row.Antal;
+                    DateTime datoTid = row.IsDatoTidNull() ? DateTime.Now : row.DatoTid;
+
+                    if (row.RowState == DataRowState.Added)
+                    {
+                        InsertRecord(row.HeaderID, row.LineNo, row.Barcode, antal, datoTid);
+                    }
+                    else if (row.RowState == DataRowState.Modified)
+                    {
+                        UpdateRecord(row.HeaderID, row.LineNo, antal, datoTid);
+                    }
+                }
+
+                table.AcceptChanges();
+            }
+
+
+
+
+            //<<pn20260409
+
+
+
+
             #region GetNextLineNo
             /// <summary>
             /// Returns the next lineno for the currently loaded waste sheet.

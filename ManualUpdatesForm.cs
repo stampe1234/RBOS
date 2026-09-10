@@ -337,31 +337,7 @@ namespace RBOS
         }
         #endregion
 
-        #region PrepareEPD (only RBA)
-#if RBA
-        private void PrepareEPD()
-        {
-            string SiteCode = AdminDataSet.SiteInformationDataTable.GetSiteCode();
-            filesEPD = new List<string>(Directory.GetFiles(arriveDir, string.Format("{0}*.epd", SiteCode)));
-            chkEPD.Checked = (filesEPD.Count > 0);
-            chkEPD.Enabled = chkEPD.Checked;
-            if (chkEPD.Checked) manualUpdatesPresent = true;
-        }
-#endif
-        #endregion
-
-        #region PrepareWPF (only RBA)
-        private void PrepareWPF()
-        {
-            if (importWPF == null)
-                importWPF = new ImportWPF();
-            chkWPF.Checked = importWPF.FilesPresent(arriveDir);
-            chkWPF.Enabled = chkWPF.Checked;
-            if (chkWPF.Checked)
-                manualUpdatesPresent = true;
-        }
-        #endregion
-
+    
         #region PrepareDS 
 
         private void PrepareDS()

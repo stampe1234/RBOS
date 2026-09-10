@@ -2,6 +2,7 @@
 using System.Data.OleDb;
 using System;
 using System.Collections.Generic;
+using Borland.Delphi;
 
 namespace RBOS
 {
@@ -58,6 +59,7 @@ namespace RBOS
                     double EODAmount = tools.object2double(db.ExecuteScalar(string.Format(
                     "  (select Sum(Amount) From EOD_Sales " +
                     " where (BookDate = '{0}' " +
+                    " And TransType=1 " + //20260422
                     " And SubCategory = '201110201')) "
                     , loopDate)));
 
@@ -71,6 +73,7 @@ namespace RBOS
                     EODAmount = tools.object2double(db.ExecuteScalar(string.Format(
                     "  (select Sum(Amount) From EOD_Sales " +
                     " where (BookDate = '{0}' " +
+                    " And TransType=1 " + //20260422
                     " And SubCategory = '201110203')) "
                     , loopDate)));
 
@@ -94,6 +97,20 @@ namespace RBOS
                    " set QuickDesk = '{0}' " +
                    " where BookDate = '{1}' ",
                    tools.decimalnumber4sql(EODAmount), loopDate));
+
+                    //>>20260424
+                    db.ExecuteNonQuery(string.Format(
+                        "update Danske_Spil " +
+                        "set QuickTerminal = ISNULL(QuickTerminal, 0) " +
+                        "where BookDate = '{0}'", loopDate));
+                    //<<20260424
+
+                    //>>20260428
+                    db.ExecuteNonQuery(string.Format(
+                        "update Danske_Spil " +
+                        "set OnlinePayoutTerminal = ISNULL(OnlinePayoutTerminal, 0) " +
+                        "where BookDate = '{0}'", loopDate));
+                    //<<20260428
 
                 }
 

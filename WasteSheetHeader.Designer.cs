@@ -37,10 +37,10 @@ namespace RBOS
             this.Waste = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Book = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnBook = new System.Windows.Forms.Button();
             this.bindingWasteSheetLookups = new System.Windows.Forms.BindingSource(this.components);
             this.dsItem = new RBOS.ItemDataSet();
             this.bindingWasteSheetHeader = new System.Windows.Forms.BindingSource(this.components);
-            this.btnBook = new System.Windows.Forms.Button();
             this.adapterWasteSheetHeader = new RBOS.ItemDataSetTableAdapters.WasteSheetHeaderTableAdapter();
             this.adapterWasteSheetLookups = new RBOS.ItemDataSetTableAdapters.WasteSheetHeaderLookupsTableAdapter();
             this.adapterInvCountWork = new RBOS.ItemDataSetTableAdapters.InvCountWorkTableAdapter();
@@ -60,10 +60,10 @@ namespace RBOS
             // btnReport
             // 
             this.btnReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReport.Location = new System.Drawing.Point(366, 400);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReport.Location = new System.Drawing.Point(330, 320);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(112, 35);
+            this.btnReport.Size = new System.Drawing.Size(100, 28);
             this.btnReport.TabIndex = 1;
             this.btnReport.Text = "[Rapport]";
             this.btnReport.UseVisualStyleBackColor = true;
@@ -72,10 +72,10 @@ namespace RBOS
             // btnEdit
             // 
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEdit.Location = new System.Drawing.Point(514, 400);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEdit.Location = new System.Drawing.Point(457, 320);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(112, 35);
+            this.btnEdit.Size = new System.Drawing.Size(100, 28);
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "Registrering";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -84,10 +84,10 @@ namespace RBOS
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Location = new System.Drawing.Point(634, 400);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClose.Location = new System.Drawing.Point(564, 320);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(112, 35);
+            this.btnClose.Size = new System.Drawing.Size(100, 28);
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "[Luk]";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -136,6 +136,16 @@ namespace RBOS
             this.button1.Text = "Bogfør";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // btnBook
+            // 
+            this.btnBook.Location = new System.Drawing.Point(232, 320);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(75, 26);
+            this.btnBook.TabIndex = 7;
+            this.btnBook.Text = "Bogfør";
+            this.btnBook.UseVisualStyleBackColor = true;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
+            // 
             // bindingWasteSheetLookups
             // 
             this.bindingWasteSheetLookups.DataMember = "WasteSheetHeaderLookups";
@@ -150,17 +160,6 @@ namespace RBOS
             // 
             this.bindingWasteSheetHeader.DataMember = "WasteSheetHeader";
             this.bindingWasteSheetHeader.DataSource = this.dsItem;
-            // 
-            // btnBook
-            // 
-            this.btnBook.Location = new System.Drawing.Point(261, 400);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(84, 32);
-            this.btnBook.TabIndex = 7;
-            this.btnBook.Text = "Bogfør";
-            this.btnBook.UseVisualStyleBackColor = true;
-            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // adapterWasteSheetHeader
             // 
@@ -194,8 +193,7 @@ namespace RBOS
             this.dataGridViewCheckBoxColumn2,
             this.dataGridViewTextBoxColumn1});
             this.grid.DataSource = this.bindingWasteSheetHeader;
-            this.grid.Location = new System.Drawing.Point(14, 15);
-            this.grid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grid.Location = new System.Drawing.Point(12, 12);
             this.grid.MultiSelect = false;
             this.grid.Name = "grid";
             this.grid.ReadOnly = true;
@@ -203,7 +201,7 @@ namespace RBOS
             this.grid.RowHeadersWidth = 25;
             this.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid.Size = new System.Drawing.Size(734, 302);
+            this.grid.Size = new System.Drawing.Size(652, 242);
             this.grid.TabIndex = 6;
             this.grid.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentDoubleClick);
             this.grid.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.grid_MouseDoubleClick);
@@ -271,9 +269,9 @@ namespace RBOS
             // 
             // WasteSheetHeader
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 454);
+            this.ClientSize = new System.Drawing.Size(681, 363);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.grid);
             this.Controls.Add(this.btnClose);
@@ -281,7 +279,7 @@ namespace RBOS
             this.Controls.Add(this.btnReport);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "WasteSheetHeader";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

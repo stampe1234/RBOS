@@ -253,7 +253,8 @@ namespace RBOS
                     DateTime CountDate = tools.RadiantXmlDateTime2DateTime(rowHeader["ConfirmedDateTime"].ToString());
                     //laver int ud af yyyymmddhhmmss
                     string DatoTidString = CountDate.ToString("HHmmss");
-                    DateTime StartDate = DateTime.ParseExact("2020-09-01 00:00:00", "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+                    //pn20260806
+                    DateTime StartDate = DateTime.ParseExact("2026-06-01 00:00:00", "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
                     int NoOffDayes =   CountDate.Subtract(StartDate).Days;
                     DatoTidString = NoOffDayes.ToString() + DatoTidString;
                     DateTime BusinessDate = CountDate.Date;
@@ -303,17 +304,24 @@ namespace RBOS
                             // get values from the detail row
                             int ItemID = ItemDataSet.ItemDataTable.GetItemIDFromImportID(tools.object2int(rowDetails["BTItemNo"]));
                             byte PackType = 1;
-                            long Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+                            //>>pn20260807
+                            long Quantity;
+                            string strlentest = rowDetails["Quantity"].ToString();
+                            if (strlentest.Length > 6)
+                            {
+                                Quantity = 999999;
+                            }
+                            else
+                            {
+                                Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+                            }
+                            //<<pn20260807
                             TimeStmp = tools.RadiantXmlDateTime2DateTime(rowDetails["ScanningDateTime"].ToString());
                             string sql;
                             // save detail data
                             if (WorkSheetID != 99)
                             {
-                                //sql = string.Format(
-                                //    " insert into BHHTInvCountDetails " +
-                                //    " (CountID,[LineNo],ItemID,PackType,Quantity,TimeStmp) " +
-                                //    " values ({0},{1},{2},{3},{4},'{5}') ",
-                                //    CountID, LineNo, ItemID, PackType, Quantity, TimeStmp);
+                               
                                 sql = string.Format("if exists(SELECT * from BHHTInvCountDetails where CountID= {0}  and ItemID = {2}) " +
                               "BEGIN  update BHHTInvCountDetails set Quantity = (Quantity + {4}), TimeStmp = '{5}' where CountID= {0}  and ItemID = {2} END" +
                               " else begin insert into BHHTInvCountDetails  " +
@@ -422,7 +430,8 @@ namespace RBOS
 
             //laver int ud af yyyymmddhhmmss
             string DatoTidString = ConfirmDT.ToString("HHmmss");
-            DateTime StartDate = DateTime.ParseExact("2020-09-01 00:00:00", "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+                //pn20260806
+            DateTime StartDate = DateTime.ParseExact("2026-06-01 00:00:00", "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             int NoOffDayes = ConfirmDT.Subtract(StartDate).Days;
             DatoTidString = NoOffDayes.ToString() + DatoTidString;
             int AdjustID = Int32.Parse(DatoTidString);
@@ -447,7 +456,20 @@ namespace RBOS
                         // get values from the detail row
                         int ItemID = ItemDataSet.ItemDataTable.GetItemIDFromImportID(tools.object2int(rowDetails["BTItemNo"]));
                         int LineNo = tools.object2int(rowDetails["PositionNo"]);
-                        long Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+                        //>>pn20260807
+                        //long Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+                        long Quantity;
+                        string strlentest = rowDetails["Quantity"].ToString();
+                        if (strlentest.Length > 6)
+                        {
+                            Quantity = 999999;
+                        }
+                        else
+                        {
+                            Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+                        }
+                        //<<pn20260807
+                      
                         byte PackType = 1;// tools.object2byte(rowDetails["UOMId"]);
 
                         DateTime TimeStmp = tools.RadiantXmlDateTime2DateTime(rowDetails["ScanningDateTime"].ToString());
@@ -484,7 +506,8 @@ namespace RBOS
 
             //laver int ud af yyyymmddhhmmss
             string DatoTidString = ConfirmDT.ToString("HHmmss");
-            DateTime StartDate = DateTime.ParseExact("2020-09-01 00:00:00", "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+            //pn20260806
+            DateTime StartDate = DateTime.ParseExact("2026-06-01 00:00:00", "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             int NoOffDayes = ConfirmDT.Subtract(StartDate).Days;
             DatoTidString = NoOffDayes.ToString() + DatoTidString;
             int AdjustID = Int32.Parse(DatoTidString);
@@ -509,7 +532,20 @@ namespace RBOS
                     // get values from the detail row
                     int ItemID = ItemDataSet.ItemDataTable.GetItemIDFromImportID(tools.object2int(rowDetails["BTItemNo"]));
                     int LineNo = tools.object2int(rowDetails["PositionNo"]);
-                    long Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+
+                    //>>pn20260807
+                    //long Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+                    long Quantity;
+                    string strlentest = rowDetails["Quantity"].ToString();
+                    if (strlentest.Length > 6)
+                    {
+                        Quantity = 999999;
+                    }
+                    else
+                    {
+                        Quantity = (long)tools.object2double(rowDetails["Quantity"]);
+                    }
+                    //<<pn20260807
                     byte PackType = 1;// tools.object2byte(rowDetails["UOMId"]);
 
                     DateTime TimeStmp = tools.RadiantXmlDateTime2DateTime(rowDetails["ScanningDateTime"].ToString());

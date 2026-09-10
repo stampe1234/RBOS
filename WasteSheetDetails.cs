@@ -69,7 +69,8 @@ namespace RBOS
             // updates the detail records
             grid.EndEdit();
             bindingWasteSheetDetails.EndEdit();            
-            adapterWasteSheetDetails.Update(dsItem.WasteSheetDetails);
+            //adapterWasteSheetDetails.Update(dsItem.WasteSheetDetails); //pn20260409
+            ItemDataSet.WasteSheetDetailsDataTable.UpdateAllForHeader(dsItem.WasteSheetDetails,HeaderID);
             ItemDataSet.WasteSheetHeaderDataTable.UpdateWasteSheetHeader(HeaderID);
             
 
@@ -204,6 +205,7 @@ namespace RBOS
 
         private void grid_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
+            
             if (e.ColumnIndex == colAntal.Index)
             {
                 
@@ -212,9 +214,25 @@ namespace RBOS
                 DataRowView row = (DataRowView)bindingWasteSheetDetails.Current;
                
             }
+            /*
+            //>>20260409
+            if (e.ColumnIndex == colAntal.Index && e.RowIndex >= 0)
+            {
+                object cellValue = grid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                MessageBox.Show("Cell value = " + Convert.ToString(cellValue));
+
+                DataRowView row = bindingWasteSheetDetails[e.RowIndex] as DataRowView;
+                if (row != null)
+                {
+                    MessageBox.Show("Row[Antal] = " + Convert.ToString(row["Antal"]));
+                }
+            }
+            */
+            //<<20260409
+
         }
 
-       private void grid_CellValidating(object sender, DataGridViewCellCancelEventArgs e)
+        private void grid_CellValidating(object sender, DataGridViewCellCancelEventArgs e)
         {
 
         }

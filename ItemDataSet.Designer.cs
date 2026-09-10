@@ -142,17 +142,11 @@ namespace RBOS {
         
         private AfskrProdSearchDataTable tableAfskrProdSearch;
         
-        private WasteSheetReportRBADataTable tableWasteSheetReportRBA;
-        
         private ItemTransactionRBADataTable tableItemTransactionRBA;
-        
-        private WasteRegistrationRBADataTable tableWasteRegistrationRBA;
         
         private SalesPackFuturePricesDataTable tableSalesPackFuturePrices;
         
         private SalesPackFuturePricesPromptDataTable tableSalesPackFuturePricesPrompt;
-        
-        private WasteSheetCountReportRBADataTable tableWasteSheetCountReportRBA;
         
         private StockCountRegistrationRBADataTable tableStockCountRegistrationRBA;
         
@@ -407,23 +401,14 @@ namespace RBOS {
                 if ((ds.Tables["AfskrProdSearch"] != null)) {
                     base.Tables.Add(new AfskrProdSearchDataTable(ds.Tables["AfskrProdSearch"]));
                 }
-                if ((ds.Tables["WasteSheetReportRBA"] != null)) {
-                    base.Tables.Add(new WasteSheetReportRBADataTable(ds.Tables["WasteSheetReportRBA"]));
-                }
                 if ((ds.Tables["ItemTransactionRBA"] != null)) {
                     base.Tables.Add(new ItemTransactionRBADataTable(ds.Tables["ItemTransactionRBA"]));
-                }
-                if ((ds.Tables["WasteRegistrationRBA"] != null)) {
-                    base.Tables.Add(new WasteRegistrationRBADataTable(ds.Tables["WasteRegistrationRBA"]));
                 }
                 if ((ds.Tables["SalesPackFuturePrices"] != null)) {
                     base.Tables.Add(new SalesPackFuturePricesDataTable(ds.Tables["SalesPackFuturePrices"]));
                 }
                 if ((ds.Tables["SalesPackFuturePricesPrompt"] != null)) {
                     base.Tables.Add(new SalesPackFuturePricesPromptDataTable(ds.Tables["SalesPackFuturePricesPrompt"]));
-                }
-                if ((ds.Tables["WasteSheetCountReportRBA"] != null)) {
-                    base.Tables.Add(new WasteSheetCountReportRBADataTable(ds.Tables["WasteSheetCountReportRBA"]));
                 }
                 if ((ds.Tables["StockCountRegistrationRBA"] != null)) {
                     base.Tables.Add(new StockCountRegistrationRBADataTable(ds.Tables["StockCountRegistrationRBA"]));
@@ -1074,29 +1059,9 @@ namespace RBOS {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public WasteSheetReportRBADataTable WasteSheetReportRBA {
-            get {
-                return this.tableWasteSheetReportRBA;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public ItemTransactionRBADataTable ItemTransactionRBA {
             get {
                 return this.tableItemTransactionRBA;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public WasteRegistrationRBADataTable WasteRegistrationRBA {
-            get {
-                return this.tableWasteRegistrationRBA;
             }
         }
         
@@ -1117,16 +1082,6 @@ namespace RBOS {
         public SalesPackFuturePricesPromptDataTable SalesPackFuturePricesPrompt {
             get {
                 return this.tableSalesPackFuturePricesPrompt;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public WasteSheetCountReportRBADataTable WasteSheetCountReportRBA {
-            get {
-                return this.tableWasteSheetCountReportRBA;
             }
         }
         
@@ -1495,23 +1450,14 @@ namespace RBOS {
                 if ((ds.Tables["AfskrProdSearch"] != null)) {
                     base.Tables.Add(new AfskrProdSearchDataTable(ds.Tables["AfskrProdSearch"]));
                 }
-                if ((ds.Tables["WasteSheetReportRBA"] != null)) {
-                    base.Tables.Add(new WasteSheetReportRBADataTable(ds.Tables["WasteSheetReportRBA"]));
-                }
                 if ((ds.Tables["ItemTransactionRBA"] != null)) {
                     base.Tables.Add(new ItemTransactionRBADataTable(ds.Tables["ItemTransactionRBA"]));
-                }
-                if ((ds.Tables["WasteRegistrationRBA"] != null)) {
-                    base.Tables.Add(new WasteRegistrationRBADataTable(ds.Tables["WasteRegistrationRBA"]));
                 }
                 if ((ds.Tables["SalesPackFuturePrices"] != null)) {
                     base.Tables.Add(new SalesPackFuturePricesDataTable(ds.Tables["SalesPackFuturePrices"]));
                 }
                 if ((ds.Tables["SalesPackFuturePricesPrompt"] != null)) {
                     base.Tables.Add(new SalesPackFuturePricesPromptDataTable(ds.Tables["SalesPackFuturePricesPrompt"]));
-                }
-                if ((ds.Tables["WasteSheetCountReportRBA"] != null)) {
-                    base.Tables.Add(new WasteSheetCountReportRBADataTable(ds.Tables["WasteSheetCountReportRBA"]));
                 }
                 if ((ds.Tables["StockCountRegistrationRBA"] != null)) {
                     base.Tables.Add(new StockCountRegistrationRBADataTable(ds.Tables["StockCountRegistrationRBA"]));
@@ -1936,22 +1882,10 @@ namespace RBOS {
                     this.tableAfskrProdSearch.InitVars();
                 }
             }
-            this.tableWasteSheetReportRBA = ((WasteSheetReportRBADataTable)(base.Tables["WasteSheetReportRBA"]));
-            if ((initTable == true)) {
-                if ((this.tableWasteSheetReportRBA != null)) {
-                    this.tableWasteSheetReportRBA.InitVars();
-                }
-            }
             this.tableItemTransactionRBA = ((ItemTransactionRBADataTable)(base.Tables["ItemTransactionRBA"]));
             if ((initTable == true)) {
                 if ((this.tableItemTransactionRBA != null)) {
                     this.tableItemTransactionRBA.InitVars();
-                }
-            }
-            this.tableWasteRegistrationRBA = ((WasteRegistrationRBADataTable)(base.Tables["WasteRegistrationRBA"]));
-            if ((initTable == true)) {
-                if ((this.tableWasteRegistrationRBA != null)) {
-                    this.tableWasteRegistrationRBA.InitVars();
                 }
             }
             this.tableSalesPackFuturePrices = ((SalesPackFuturePricesDataTable)(base.Tables["SalesPackFuturePrices"]));
@@ -1964,12 +1898,6 @@ namespace RBOS {
             if ((initTable == true)) {
                 if ((this.tableSalesPackFuturePricesPrompt != null)) {
                     this.tableSalesPackFuturePricesPrompt.InitVars();
-                }
-            }
-            this.tableWasteSheetCountReportRBA = ((WasteSheetCountReportRBADataTable)(base.Tables["WasteSheetCountReportRBA"]));
-            if ((initTable == true)) {
-                if ((this.tableWasteSheetCountReportRBA != null)) {
-                    this.tableWasteSheetCountReportRBA.InitVars();
                 }
             }
             this.tableStockCountRegistrationRBA = ((StockCountRegistrationRBADataTable)(base.Tables["StockCountRegistrationRBA"]));
@@ -2182,18 +2110,12 @@ namespace RBOS {
             base.Tables.Add(this.tableWasteSheetDetailsRBA);
             this.tableAfskrProdSearch = new AfskrProdSearchDataTable();
             base.Tables.Add(this.tableAfskrProdSearch);
-            this.tableWasteSheetReportRBA = new WasteSheetReportRBADataTable();
-            base.Tables.Add(this.tableWasteSheetReportRBA);
             this.tableItemTransactionRBA = new ItemTransactionRBADataTable();
             base.Tables.Add(this.tableItemTransactionRBA);
-            this.tableWasteRegistrationRBA = new WasteRegistrationRBADataTable();
-            base.Tables.Add(this.tableWasteRegistrationRBA);
             this.tableSalesPackFuturePrices = new SalesPackFuturePricesDataTable();
             base.Tables.Add(this.tableSalesPackFuturePrices);
             this.tableSalesPackFuturePricesPrompt = new SalesPackFuturePricesPromptDataTable();
             base.Tables.Add(this.tableSalesPackFuturePricesPrompt);
-            this.tableWasteSheetCountReportRBA = new WasteSheetCountReportRBADataTable();
-            base.Tables.Add(this.tableWasteSheetCountReportRBA);
             this.tableStockCountRegistrationRBA = new StockCountRegistrationRBADataTable();
             base.Tables.Add(this.tableStockCountRegistrationRBA);
             this.tableItemTransactionStockCountRBA = new ItemTransactionStockCountRBADataTable();
@@ -2624,19 +2546,7 @@ namespace RBOS {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeWasteSheetReportRBA() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeItemTransactionRBA() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeWasteRegistrationRBA() {
             return false;
         }
         
@@ -2649,12 +2559,6 @@ namespace RBOS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeSalesPackFuturePricesPrompt() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeWasteSheetCountReportRBA() {
             return false;
         }
         
@@ -2969,22 +2873,13 @@ namespace RBOS {
         public delegate void AfskrProdSearchRowChangeEventHandler(object sender, AfskrProdSearchRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void WasteSheetReportRBARowChangeEventHandler(object sender, WasteSheetReportRBARowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void ItemTransactionRBARowChangeEventHandler(object sender, ItemTransactionRBARowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void WasteRegistrationRBARowChangeEventHandler(object sender, WasteRegistrationRBARowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SalesPackFuturePricesRowChangeEventHandler(object sender, SalesPackFuturePricesRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SalesPackFuturePricesPromptRowChangeEventHandler(object sender, SalesPackFuturePricesPromptRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void WasteSheetCountReportRBARowChangeEventHandler(object sender, WasteSheetCountReportRBARowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void StockCountRegistrationRBARowChangeEventHandler(object sender, StockCountRegistrationRBARowChangeEvent e);
@@ -18454,8 +18349,6 @@ namespace RBOS {
             
             private global::System.Data.DataColumn columnDatoTid;
             
-            private global::System.Data.DataColumn columnAntal;
-            
             private global::System.Data.DataColumn columnItemName;
             
             private global::System.Data.DataColumn columnUdsalgsPris;
@@ -18529,14 +18422,6 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AntalColumn {
-                get {
-                    return this.columnAntal;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn ItemNameColumn {
                 get {
                     return this.columnItemName;
@@ -18596,14 +18481,13 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetDetailsLocalRow AddWasteSheetDetailsLocalRow(int HeaderID, int LineNo, double Barcode, System.DateTime DatoTid, int Antal, string ItemName, double UdsalgsPris, double KostPris) {
+            public WasteSheetDetailsLocalRow AddWasteSheetDetailsLocalRow(int HeaderID, int LineNo, double Barcode, System.DateTime DatoTid, string ItemName, double UdsalgsPris, double KostPris) {
                 WasteSheetDetailsLocalRow rowWasteSheetDetailsLocalRow = ((WasteSheetDetailsLocalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         HeaderID,
                         LineNo,
                         Barcode,
                         DatoTid,
-                        Antal,
                         ItemName,
                         UdsalgsPris,
                         KostPris};
@@ -18641,7 +18525,6 @@ namespace RBOS {
                 this.columnLineNo = base.Columns["LineNo"];
                 this.columnBarcode = base.Columns["Barcode"];
                 this.columnDatoTid = base.Columns["DatoTid"];
-                this.columnAntal = base.Columns["Antal"];
                 this.columnItemName = base.Columns["ItemName"];
                 this.columnUdsalgsPris = base.Columns["UdsalgsPris"];
                 this.columnKostPris = base.Columns["KostPris"];
@@ -18658,8 +18541,6 @@ namespace RBOS {
                 base.Columns.Add(this.columnBarcode);
                 this.columnDatoTid = new global::System.Data.DataColumn("DatoTid", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDatoTid);
-                this.columnAntal = new global::System.Data.DataColumn("Antal", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAntal);
                 this.columnItemName = new global::System.Data.DataColumn("ItemName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnItemName);
                 this.columnUdsalgsPris = new global::System.Data.DataColumn("UdsalgsPris", typeof(double), null, global::System.Data.MappingType.Element);
@@ -18975,6 +18856,7 @@ namespace RBOS {
                 base.Columns.Add(this.columnPackTypeName);
                 this.columnCostPriceLatest = new global::System.Data.DataColumn("CostPriceLatest", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCostPriceLatest);
+                this.columnBarcode.AllowDBNull = false;
                 this.columnItemName.MaxLength = 50;
                 this.columnPackTypeName.MaxLength = 8;
             }
@@ -19388,6 +19270,8 @@ namespace RBOS {
             
             private global::System.Data.DataColumn columnHeaderID;
             
+            private global::System.Data.DataColumn columnLineNo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public WasteSheetReportDataTable() {
@@ -19487,6 +19371,14 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LineNoColumn {
+                get {
+                    return this.columnLineNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -19522,7 +19414,7 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetReportRow AddWasteSheetReportRow(string ItemName, byte[] BarcodeImage, int Antal, string Info, string BestillingsNummer, double KostPris, double UdsalgsPris, int HeaderID) {
+            public WasteSheetReportRow AddWasteSheetReportRow(string ItemName, byte[] BarcodeImage, int Antal, string Info, string BestillingsNummer, double KostPris, double UdsalgsPris, int HeaderID, string LineNo) {
                 WasteSheetReportRow rowWasteSheetReportRow = ((WasteSheetReportRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ItemName,
@@ -19532,7 +19424,8 @@ namespace RBOS {
                         BestillingsNummer,
                         KostPris,
                         UdsalgsPris,
-                        HeaderID};
+                        HeaderID,
+                        LineNo};
                 rowWasteSheetReportRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowWasteSheetReportRow);
                 return rowWasteSheetReportRow;
@@ -19563,6 +19456,7 @@ namespace RBOS {
                 this.columnKostPris = base.Columns["KostPris"];
                 this.columnUdsalgsPris = base.Columns["UdsalgsPris"];
                 this.columnHeaderID = base.Columns["HeaderID"];
+                this.columnLineNo = base.Columns["LineNo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19584,6 +19478,8 @@ namespace RBOS {
                 base.Columns.Add(this.columnUdsalgsPris);
                 this.columnHeaderID = new global::System.Data.DataColumn("HeaderID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHeaderID);
+                this.columnLineNo = new global::System.Data.DataColumn("LineNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLineNo);
                 this.columnItemName.MaxLength = 50;
                 this.columnInfo.MaxLength = 30;
                 this.columnBestillingsNummer.MaxLength = 13;
@@ -23756,297 +23652,6 @@ namespace RBOS {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class WasteSheetReportRBADataTable : global::System.Data.TypedTableBase<WasteSheetReportRBARow> {
-            
-            private global::System.Data.DataColumn columnVarenummer;
-            
-            private global::System.Data.DataColumn columnVarenavn;
-            
-            private global::System.Data.DataColumn columnVarenummerImage;
-            
-            private global::System.Data.DataColumn columnLevKategori;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetReportRBADataTable() {
-                this.TableName = "WasteSheetReportRBA";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal WasteSheetReportRBADataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected WasteSheetReportRBADataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenummerColumn {
-                get {
-                    return this.columnVarenummer;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenavnColumn {
-                get {
-                    return this.columnVarenavn;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenummerImageColumn {
-                get {
-                    return this.columnVarenummerImage;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn LevKategoriColumn {
-                get {
-                    return this.columnLevKategori;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetReportRBARow this[int index] {
-                get {
-                    return ((WasteSheetReportRBARow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetReportRBARowChangeEventHandler WasteSheetReportRBARowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetReportRBARowChangeEventHandler WasteSheetReportRBARowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetReportRBARowChangeEventHandler WasteSheetReportRBARowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetReportRBARowChangeEventHandler WasteSheetReportRBARowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddWasteSheetReportRBARow(WasteSheetReportRBARow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetReportRBARow AddWasteSheetReportRBARow(double Varenummer, string Varenavn, byte[] VarenummerImage, string LevKategori) {
-                WasteSheetReportRBARow rowWasteSheetReportRBARow = ((WasteSheetReportRBARow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        Varenummer,
-                        Varenavn,
-                        VarenummerImage,
-                        LevKategori};
-                rowWasteSheetReportRBARow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowWasteSheetReportRBARow);
-                return rowWasteSheetReportRBARow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                WasteSheetReportRBADataTable cln = ((WasteSheetReportRBADataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new WasteSheetReportRBADataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnVarenummer = base.Columns["Varenummer"];
-                this.columnVarenavn = base.Columns["Varenavn"];
-                this.columnVarenummerImage = base.Columns["VarenummerImage"];
-                this.columnLevKategori = base.Columns["LevKategori"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnVarenummer = new global::System.Data.DataColumn("Varenummer", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenummer);
-                this.columnVarenavn = new global::System.Data.DataColumn("Varenavn", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenavn);
-                this.columnVarenummerImage = new global::System.Data.DataColumn("VarenummerImage", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenummerImage);
-                this.columnLevKategori = new global::System.Data.DataColumn("LevKategori", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLevKategori);
-                this.columnVarenavn.MaxLength = 255;
-                this.columnLevKategori.MaxLength = 30;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetReportRBARow NewWasteSheetReportRBARow() {
-                return ((WasteSheetReportRBARow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new WasteSheetReportRBARow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(WasteSheetReportRBARow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.WasteSheetReportRBARowChanged != null)) {
-                    this.WasteSheetReportRBARowChanged(this, new WasteSheetReportRBARowChangeEvent(((WasteSheetReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.WasteSheetReportRBARowChanging != null)) {
-                    this.WasteSheetReportRBARowChanging(this, new WasteSheetReportRBARowChangeEvent(((WasteSheetReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.WasteSheetReportRBARowDeleted != null)) {
-                    this.WasteSheetReportRBARowDeleted(this, new WasteSheetReportRBARowChangeEvent(((WasteSheetReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.WasteSheetReportRBARowDeleting != null)) {
-                    this.WasteSheetReportRBARowDeleting(this, new WasteSheetReportRBARowChangeEvent(((WasteSheetReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveWasteSheetReportRBARow(WasteSheetReportRBARow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ItemDataSet ds = new ItemDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "WasteSheetReportRBADataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class ItemTransactionRBADataTable : global::System.Data.TypedTableBase<ItemTransactionRBARow> {
             
             private global::System.Data.DataColumn columnTransactionNumber;
@@ -24360,393 +23965,6 @@ namespace RBOS {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "ItemTransactionRBADataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class WasteRegistrationRBADataTable : global::System.Data.TypedTableBase<WasteRegistrationRBARow> {
-            
-            private global::System.Data.DataColumn columnID;
-            
-            private global::System.Data.DataColumn columnLevNr;
-            
-            private global::System.Data.DataColumn columnVarenummer;
-            
-            private global::System.Data.DataColumn columnVarenavn;
-            
-            private global::System.Data.DataColumn columnSalgspris;
-            
-            private global::System.Data.DataColumn columnBarcode;
-            
-            private global::System.Data.DataColumn columnKostpris;
-            
-            private global::System.Data.DataColumn columnVaregruppe;
-            
-            private global::System.Data.DataColumn columnAntal;
-            
-            private global::System.Data.DataColumn columnManualInput;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteRegistrationRBADataTable() {
-                this.TableName = "WasteRegistrationRBA";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal WasteRegistrationRBADataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected WasteRegistrationRBADataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IDColumn {
-                get {
-                    return this.columnID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn LevNrColumn {
-                get {
-                    return this.columnLevNr;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenummerColumn {
-                get {
-                    return this.columnVarenummer;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenavnColumn {
-                get {
-                    return this.columnVarenavn;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SalgsprisColumn {
-                get {
-                    return this.columnSalgspris;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BarcodeColumn {
-                get {
-                    return this.columnBarcode;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn KostprisColumn {
-                get {
-                    return this.columnKostpris;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VaregruppeColumn {
-                get {
-                    return this.columnVaregruppe;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AntalColumn {
-                get {
-                    return this.columnAntal;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ManualInputColumn {
-                get {
-                    return this.columnManualInput;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteRegistrationRBARow this[int index] {
-                get {
-                    return ((WasteRegistrationRBARow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteRegistrationRBARowChangeEventHandler WasteRegistrationRBARowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteRegistrationRBARowChangeEventHandler WasteRegistrationRBARowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteRegistrationRBARowChangeEventHandler WasteRegistrationRBARowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteRegistrationRBARowChangeEventHandler WasteRegistrationRBARowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddWasteRegistrationRBARow(WasteRegistrationRBARow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteRegistrationRBARow AddWasteRegistrationRBARow(int LevNr, double Varenummer, string Varenavn, double Salgspris, double Barcode, double Kostpris, string Varegruppe, int Antal, bool ManualInput) {
-                WasteRegistrationRBARow rowWasteRegistrationRBARow = ((WasteRegistrationRBARow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        null,
-                        LevNr,
-                        Varenummer,
-                        Varenavn,
-                        Salgspris,
-                        Barcode,
-                        Kostpris,
-                        Varegruppe,
-                        Antal,
-                        ManualInput};
-                rowWasteRegistrationRBARow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowWasteRegistrationRBARow);
-                return rowWasteRegistrationRBARow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteRegistrationRBARow FindByID(int ID) {
-                return ((WasteRegistrationRBARow)(this.Rows.Find(new object[] {
-                            ID})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                WasteRegistrationRBADataTable cln = ((WasteRegistrationRBADataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new WasteRegistrationRBADataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnID = base.Columns["ID"];
-                this.columnLevNr = base.Columns["LevNr"];
-                this.columnVarenummer = base.Columns["Varenummer"];
-                this.columnVarenavn = base.Columns["Varenavn"];
-                this.columnSalgspris = base.Columns["Salgspris"];
-                this.columnBarcode = base.Columns["Barcode"];
-                this.columnKostpris = base.Columns["Kostpris"];
-                this.columnVaregruppe = base.Columns["Varegruppe"];
-                this.columnAntal = base.Columns["Antal"];
-                this.columnManualInput = base.Columns["ManualInput"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID);
-                this.columnLevNr = new global::System.Data.DataColumn("LevNr", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLevNr);
-                this.columnVarenummer = new global::System.Data.DataColumn("Varenummer", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenummer);
-                this.columnVarenavn = new global::System.Data.DataColumn("Varenavn", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenavn);
-                this.columnSalgspris = new global::System.Data.DataColumn("Salgspris", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSalgspris);
-                this.columnBarcode = new global::System.Data.DataColumn("Barcode", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBarcode);
-                this.columnKostpris = new global::System.Data.DataColumn("Kostpris", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnKostpris);
-                this.columnVaregruppe = new global::System.Data.DataColumn("Varegruppe", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVaregruppe);
-                this.columnAntal = new global::System.Data.DataColumn("Antal", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAntal);
-                this.columnManualInput = new global::System.Data.DataColumn("ManualInput", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnManualInput);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID}, true));
-                this.columnID.AutoIncrement = true;
-                this.columnID.AllowDBNull = false;
-                this.columnID.Unique = true;
-                this.columnVarenavn.MaxLength = 255;
-                this.columnVaregruppe.MaxLength = 20;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteRegistrationRBARow NewWasteRegistrationRBARow() {
-                return ((WasteRegistrationRBARow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new WasteRegistrationRBARow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(WasteRegistrationRBARow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.WasteRegistrationRBARowChanged != null)) {
-                    this.WasteRegistrationRBARowChanged(this, new WasteRegistrationRBARowChangeEvent(((WasteRegistrationRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.WasteRegistrationRBARowChanging != null)) {
-                    this.WasteRegistrationRBARowChanging(this, new WasteRegistrationRBARowChangeEvent(((WasteRegistrationRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.WasteRegistrationRBARowDeleted != null)) {
-                    this.WasteRegistrationRBARowDeleted(this, new WasteRegistrationRBARowChangeEvent(((WasteRegistrationRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.WasteRegistrationRBARowDeleting != null)) {
-                    this.WasteRegistrationRBARowDeleting(this, new WasteRegistrationRBARowChangeEvent(((WasteRegistrationRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveWasteRegistrationRBARow(WasteRegistrationRBARow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ItemDataSet ds = new ItemDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "WasteRegistrationRBADataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -25489,326 +24707,6 @@ namespace RBOS {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "SalesPackFuturePricesPromptDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class WasteSheetCountReportRBADataTable : global::System.Data.TypedTableBase<WasteSheetCountReportRBARow> {
-            
-            private global::System.Data.DataColumn columnVarenummer;
-            
-            private global::System.Data.DataColumn columnVarenavn;
-            
-            private global::System.Data.DataColumn columnVarenummerImage;
-            
-            private global::System.Data.DataColumn columnVaregruppe;
-            
-            private global::System.Data.DataColumn columnKostpris;
-            
-            private global::System.Data.DataColumn columnSubCategoryID;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetCountReportRBADataTable() {
-                this.TableName = "WasteSheetCountReportRBA";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal WasteSheetCountReportRBADataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected WasteSheetCountReportRBADataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenummerColumn {
-                get {
-                    return this.columnVarenummer;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenavnColumn {
-                get {
-                    return this.columnVarenavn;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VarenummerImageColumn {
-                get {
-                    return this.columnVarenummerImage;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VaregruppeColumn {
-                get {
-                    return this.columnVaregruppe;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn KostprisColumn {
-                get {
-                    return this.columnKostpris;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SubCategoryIDColumn {
-                get {
-                    return this.columnSubCategoryID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetCountReportRBARow this[int index] {
-                get {
-                    return ((WasteSheetCountReportRBARow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetCountReportRBARowChangeEventHandler WasteSheetCountReportRBARowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetCountReportRBARowChangeEventHandler WasteSheetCountReportRBARowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetCountReportRBARowChangeEventHandler WasteSheetCountReportRBARowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event WasteSheetCountReportRBARowChangeEventHandler WasteSheetCountReportRBARowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddWasteSheetCountReportRBARow(WasteSheetCountReportRBARow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetCountReportRBARow AddWasteSheetCountReportRBARow(double Varenummer, string Varenavn, byte[] VarenummerImage, string Varegruppe, double Kostpris, string SubCategoryID) {
-                WasteSheetCountReportRBARow rowWasteSheetCountReportRBARow = ((WasteSheetCountReportRBARow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        Varenummer,
-                        Varenavn,
-                        VarenummerImage,
-                        Varegruppe,
-                        Kostpris,
-                        SubCategoryID};
-                rowWasteSheetCountReportRBARow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowWasteSheetCountReportRBARow);
-                return rowWasteSheetCountReportRBARow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                WasteSheetCountReportRBADataTable cln = ((WasteSheetCountReportRBADataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new WasteSheetCountReportRBADataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnVarenummer = base.Columns["Varenummer"];
-                this.columnVarenavn = base.Columns["Varenavn"];
-                this.columnVarenummerImage = base.Columns["VarenummerImage"];
-                this.columnVaregruppe = base.Columns["Varegruppe"];
-                this.columnKostpris = base.Columns["Kostpris"];
-                this.columnSubCategoryID = base.Columns["SubCategoryID"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnVarenummer = new global::System.Data.DataColumn("Varenummer", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenummer);
-                this.columnVarenavn = new global::System.Data.DataColumn("Varenavn", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenavn);
-                this.columnVarenummerImage = new global::System.Data.DataColumn("VarenummerImage", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVarenummerImage);
-                this.columnVaregruppe = new global::System.Data.DataColumn("Varegruppe", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVaregruppe);
-                this.columnKostpris = new global::System.Data.DataColumn("Kostpris", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnKostpris);
-                this.columnSubCategoryID = new global::System.Data.DataColumn("SubCategoryID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSubCategoryID);
-                this.columnVarenavn.MaxLength = 255;
-                this.columnVaregruppe.MaxLength = 50;
-                this.columnSubCategoryID.MaxLength = 20;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetCountReportRBARow NewWasteSheetCountReportRBARow() {
-                return ((WasteSheetCountReportRBARow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new WasteSheetCountReportRBARow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(WasteSheetCountReportRBARow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.WasteSheetCountReportRBARowChanged != null)) {
-                    this.WasteSheetCountReportRBARowChanged(this, new WasteSheetCountReportRBARowChangeEvent(((WasteSheetCountReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.WasteSheetCountReportRBARowChanging != null)) {
-                    this.WasteSheetCountReportRBARowChanging(this, new WasteSheetCountReportRBARowChangeEvent(((WasteSheetCountReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.WasteSheetCountReportRBARowDeleted != null)) {
-                    this.WasteSheetCountReportRBARowDeleted(this, new WasteSheetCountReportRBARowChangeEvent(((WasteSheetCountReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.WasteSheetCountReportRBARowDeleting != null)) {
-                    this.WasteSheetCountReportRBARowDeleting(this, new WasteSheetCountReportRBARowChangeEvent(((WasteSheetCountReportRBARow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveWasteSheetCountReportRBARow(WasteSheetCountReportRBARow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ItemDataSet ds = new ItemDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "WasteSheetCountReportRBADataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -28801,7 +27699,7 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetDetailsRow AddWasteSheetDetailsRow(int HeaderID, int LineNo, double Barcode, int Antal, System.DateTime DatoTid) {
+            public WasteSheetDetailsRow AddWasteSheetDetailsRow(int HeaderID, int LineNo, double Barcode, decimal Antal, System.DateTime DatoTid) {
                 WasteSheetDetailsRow rowWasteSheetDetailsRow = ((WasteSheetDetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         HeaderID,
@@ -28855,7 +27753,7 @@ namespace RBOS {
                 base.Columns.Add(this.columnLineNo);
                 this.columnBarcode = new global::System.Data.DataColumn("Barcode", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBarcode);
-                this.columnAntal = new global::System.Data.DataColumn("Antal", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnAntal = new global::System.Data.DataColumn("Antal", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAntal);
                 this.columnDatoTid = new global::System.Data.DataColumn("DatoTid", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDatoTid);
@@ -38776,22 +37674,6 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Antal {
-                get {
-                    try {
-                        return ((int)(this[this.tableWasteSheetDetailsLocal.AntalColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Antal\' in table \'WasteSheetDetailsLocal\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetDetailsLocal.AntalColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string ItemName {
                 get {
                     try {
@@ -38864,18 +37746,6 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsAntalNull() {
-                return this.IsNull(this.tableWasteSheetDetailsLocal.AntalColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetAntalNull() {
-                this[this.tableWasteSheetDetailsLocal.AntalColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsItemNameNull() {
                 return this.IsNull(this.tableWasteSheetDetailsLocal.ItemNameColumn);
             }
@@ -38929,12 +37799,7 @@ namespace RBOS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public double Barcode {
                 get {
-                    try {
-                        return ((double)(this[this.tableWasteSheetDetailsLookups.BarcodeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Barcode\' in table \'WasteSheetDetailsLookups\' is DBNull.", e);
-                    }
+                    return ((double)(this[this.tableWasteSheetDetailsLookups.BarcodeColumn]));
                 }
                 set {
                     this[this.tableWasteSheetDetailsLookups.BarcodeColumn] = value;
@@ -39005,18 +37870,6 @@ namespace RBOS {
                 set {
                     this[this.tableWasteSheetDetailsLookups.CostPriceLatestColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBarcodeNull() {
-                return this.IsNull(this.tableWasteSheetDetailsLookups.BarcodeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBarcodeNull() {
-                this[this.tableWasteSheetDetailsLookups.BarcodeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -39262,6 +38115,22 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string LineNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableWasteSheetReport.LineNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'LineNo\' in table \'WasteSheetReport\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableWasteSheetReport.LineNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsItemNameNull() {
                 return this.IsNull(this.tableWasteSheetReport.ItemNameColumn);
             }
@@ -39342,6 +38211,18 @@ namespace RBOS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetUdsalgsPrisNull() {
                 this[this.tableWasteSheetReport.UdsalgsPrisColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsLineNoNull() {
+                return this.IsNull(this.tableWasteSheetReport.LineNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetLineNoNull() {
+                this[this.tableWasteSheetReport.LineNoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -41983,133 +40864,6 @@ namespace RBOS {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class WasteSheetReportRBARow : global::System.Data.DataRow {
-            
-            private WasteSheetReportRBADataTable tableWasteSheetReportRBA;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal WasteSheetReportRBARow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableWasteSheetReportRBA = ((WasteSheetReportRBADataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Varenummer {
-                get {
-                    try {
-                        return ((double)(this[this.tableWasteSheetReportRBA.VarenummerColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varenummer\' in table \'WasteSheetReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetReportRBA.VarenummerColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Varenavn {
-                get {
-                    try {
-                        return ((string)(this[this.tableWasteSheetReportRBA.VarenavnColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varenavn\' in table \'WasteSheetReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetReportRBA.VarenavnColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public byte[] VarenummerImage {
-                get {
-                    try {
-                        return ((byte[])(this[this.tableWasteSheetReportRBA.VarenummerImageColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'VarenummerImage\' in table \'WasteSheetReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetReportRBA.VarenummerImageColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string LevKategori {
-                get {
-                    try {
-                        return ((string)(this[this.tableWasteSheetReportRBA.LevKategoriColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LevKategori\' in table \'WasteSheetReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetReportRBA.LevKategoriColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenummerNull() {
-                return this.IsNull(this.tableWasteSheetReportRBA.VarenummerColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenummerNull() {
-                this[this.tableWasteSheetReportRBA.VarenummerColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenavnNull() {
-                return this.IsNull(this.tableWasteSheetReportRBA.VarenavnColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenavnNull() {
-                this[this.tableWasteSheetReportRBA.VarenavnColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenummerImageNull() {
-                return this.IsNull(this.tableWasteSheetReportRBA.VarenummerImageColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenummerImageNull() {
-                this[this.tableWasteSheetReportRBA.VarenummerImageColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsLevKategoriNull() {
-                return this.IsNull(this.tableWasteSheetReportRBA.LevKategoriColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetLevKategoriNull() {
-                this[this.tableWasteSheetReportRBA.LevKategoriColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
         public partial class ItemTransactionRBARow : global::System.Data.DataRow {
             
             private ItemTransactionRBADataTable tableItemTransactionRBA;
@@ -42326,284 +41080,6 @@ namespace RBOS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetInitialsNull() {
                 this[this.tableItemTransactionRBA.InitialsColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class WasteRegistrationRBARow : global::System.Data.DataRow {
-            
-            private WasteRegistrationRBADataTable tableWasteRegistrationRBA;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal WasteRegistrationRBARow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableWasteRegistrationRBA = ((WasteRegistrationRBADataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ID {
-                get {
-                    return ((int)(this[this.tableWasteRegistrationRBA.IDColumn]));
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.IDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int LevNr {
-                get {
-                    try {
-                        return ((int)(this[this.tableWasteRegistrationRBA.LevNrColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LevNr\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.LevNrColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Varenummer {
-                get {
-                    try {
-                        return ((double)(this[this.tableWasteRegistrationRBA.VarenummerColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varenummer\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.VarenummerColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Varenavn {
-                get {
-                    try {
-                        return ((string)(this[this.tableWasteRegistrationRBA.VarenavnColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varenavn\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.VarenavnColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Salgspris {
-                get {
-                    try {
-                        return ((double)(this[this.tableWasteRegistrationRBA.SalgsprisColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Salgspris\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.SalgsprisColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Barcode {
-                get {
-                    try {
-                        return ((double)(this[this.tableWasteRegistrationRBA.BarcodeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Barcode\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.BarcodeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Kostpris {
-                get {
-                    try {
-                        return ((double)(this[this.tableWasteRegistrationRBA.KostprisColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Kostpris\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.KostprisColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Varegruppe {
-                get {
-                    try {
-                        return ((string)(this[this.tableWasteRegistrationRBA.VaregruppeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varegruppe\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.VaregruppeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Antal {
-                get {
-                    try {
-                        return ((int)(this[this.tableWasteRegistrationRBA.AntalColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Antal\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.AntalColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool ManualInput {
-                get {
-                    try {
-                        return ((bool)(this[this.tableWasteRegistrationRBA.ManualInputColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ManualInput\' in table \'WasteRegistrationRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteRegistrationRBA.ManualInputColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsLevNrNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.LevNrColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetLevNrNull() {
-                this[this.tableWasteRegistrationRBA.LevNrColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenummerNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.VarenummerColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenummerNull() {
-                this[this.tableWasteRegistrationRBA.VarenummerColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenavnNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.VarenavnColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenavnNull() {
-                this[this.tableWasteRegistrationRBA.VarenavnColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSalgsprisNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.SalgsprisColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSalgsprisNull() {
-                this[this.tableWasteRegistrationRBA.SalgsprisColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBarcodeNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.BarcodeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBarcodeNull() {
-                this[this.tableWasteRegistrationRBA.BarcodeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsKostprisNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.KostprisColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetKostprisNull() {
-                this[this.tableWasteRegistrationRBA.KostprisColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVaregruppeNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.VaregruppeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVaregruppeNull() {
-                this[this.tableWasteRegistrationRBA.VaregruppeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsAntalNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.AntalColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetAntalNull() {
-                this[this.tableWasteRegistrationRBA.AntalColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsManualInputNull() {
-                return this.IsNull(this.tableWasteRegistrationRBA.ManualInputColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetManualInputNull() {
-                this[this.tableWasteRegistrationRBA.ManualInputColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -43052,191 +41528,6 @@ namespace RBOS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetPerformNull() {
                 this[this.tableSalesPackFuturePricesPrompt.PerformColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class WasteSheetCountReportRBARow : global::System.Data.DataRow {
-            
-            private WasteSheetCountReportRBADataTable tableWasteSheetCountReportRBA;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal WasteSheetCountReportRBARow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableWasteSheetCountReportRBA = ((WasteSheetCountReportRBADataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Varenummer {
-                get {
-                    try {
-                        return ((double)(this[this.tableWasteSheetCountReportRBA.VarenummerColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varenummer\' in table \'WasteSheetCountReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetCountReportRBA.VarenummerColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Varenavn {
-                get {
-                    try {
-                        return ((string)(this[this.tableWasteSheetCountReportRBA.VarenavnColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varenavn\' in table \'WasteSheetCountReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetCountReportRBA.VarenavnColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public byte[] VarenummerImage {
-                get {
-                    try {
-                        return ((byte[])(this[this.tableWasteSheetCountReportRBA.VarenummerImageColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'VarenummerImage\' in table \'WasteSheetCountReportRBA\' is DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetCountReportRBA.VarenummerImageColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Varegruppe {
-                get {
-                    try {
-                        return ((string)(this[this.tableWasteSheetCountReportRBA.VaregruppeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Varegruppe\' in table \'WasteSheetCountReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetCountReportRBA.VaregruppeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double Kostpris {
-                get {
-                    try {
-                        return ((double)(this[this.tableWasteSheetCountReportRBA.KostprisColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Kostpris\' in table \'WasteSheetCountReportRBA\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetCountReportRBA.KostprisColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string SubCategoryID {
-                get {
-                    try {
-                        return ((string)(this[this.tableWasteSheetCountReportRBA.SubCategoryIDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SubCategoryID\' in table \'WasteSheetCountReportRBA\' is DBNul" +
-                                "l.", e);
-                    }
-                }
-                set {
-                    this[this.tableWasteSheetCountReportRBA.SubCategoryIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenummerNull() {
-                return this.IsNull(this.tableWasteSheetCountReportRBA.VarenummerColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenummerNull() {
-                this[this.tableWasteSheetCountReportRBA.VarenummerColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenavnNull() {
-                return this.IsNull(this.tableWasteSheetCountReportRBA.VarenavnColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenavnNull() {
-                this[this.tableWasteSheetCountReportRBA.VarenavnColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVarenummerImageNull() {
-                return this.IsNull(this.tableWasteSheetCountReportRBA.VarenummerImageColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVarenummerImageNull() {
-                this[this.tableWasteSheetCountReportRBA.VarenummerImageColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVaregruppeNull() {
-                return this.IsNull(this.tableWasteSheetCountReportRBA.VaregruppeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVaregruppeNull() {
-                this[this.tableWasteSheetCountReportRBA.VaregruppeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsKostprisNull() {
-                return this.IsNull(this.tableWasteSheetCountReportRBA.KostprisColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetKostprisNull() {
-                this[this.tableWasteSheetCountReportRBA.KostprisColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSubCategoryIDNull() {
-                return this.IsNull(this.tableWasteSheetCountReportRBA.SubCategoryIDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSubCategoryIDNull() {
-                this[this.tableWasteSheetCountReportRBA.SubCategoryIDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -44931,10 +43222,10 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Antal {
+            public decimal Antal {
                 get {
                     try {
-                        return ((int)(this[this.tableWasteSheetDetails.AntalColumn]));
+                        return ((decimal)(this[this.tableWasteSheetDetails.AntalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Antal\' in table \'WasteSheetDetails\' is DBNull.", e);
@@ -47416,40 +45707,6 @@ namespace RBOS {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class WasteSheetReportRBARowChangeEvent : global::System.EventArgs {
-            
-            private WasteSheetReportRBARow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetReportRBARowChangeEvent(WasteSheetReportRBARow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetReportRBARow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public class ItemTransactionRBARowChangeEvent : global::System.EventArgs {
             
             private ItemTransactionRBARow eventRow;
@@ -47466,40 +45723,6 @@ namespace RBOS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ItemTransactionRBARow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class WasteRegistrationRBARowChangeEvent : global::System.EventArgs {
-            
-            private WasteRegistrationRBARow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteRegistrationRBARowChangeEvent(WasteRegistrationRBARow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteRegistrationRBARow Row {
                 get {
                     return this.eventRow;
                 }
@@ -47568,40 +45791,6 @@ namespace RBOS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SalesPackFuturePricesPromptRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class WasteSheetCountReportRBARowChangeEvent : global::System.EventArgs {
-            
-            private WasteSheetCountReportRBARow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetCountReportRBARowChangeEvent(WasteSheetCountReportRBARow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public WasteSheetCountReportRBARow Row {
                 get {
                     return this.eventRow;
                 }
@@ -61959,15 +60148,14 @@ WHERE     (SubCategoryID = ?)";
             tableMapping.ColumnMappings.Add("LineNo", "LineNo");
             tableMapping.ColumnMappings.Add("Barcode", "Barcode");
             tableMapping.ColumnMappings.Add("DatoTid", "DatoTid");
-            tableMapping.ColumnMappings.Add("Antal", "Antal");
             tableMapping.ColumnMappings.Add("ItemName", "ItemName");
             tableMapping.ColumnMappings.Add("UdsalgsPris", "UdsalgsPris");
             tableMapping.ColumnMappings.Add("KostPris", "KostPris");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM  WasteSheetDetails \r\nWHERE  (( HeaderID = ?) AND ([LINENO] = ?) AND (" +
-                "(? = 1 AND  Barcode  IS NULL) OR\r\n                  ( Barcode  = ?)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM WasteSheetDetailsLocal \r\nWHERE  (( HeaderID = ?) AND ([LINENO] = ?) A" +
+                "ND ((? = 1 AND  Barcode  IS NULL) OR\r\n                  ( Barcode  = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HeaderID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LineNo", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Original, false, null));
@@ -61975,25 +60163,28 @@ WHERE     (SubCategoryID = ?)";
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Barcode", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO WasteSheetDetailsLocal\r\n             (HeaderID, [LineNo], Barcode, An" +
-                "tal)\r\nVALUES (?,?,?,?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO WasteSheetDetailsLocal\r\n             (HeaderID, [LineNo], Barcode, Ko" +
+                "stPris, UdsalgsPris, ItemName)\r\nVALUES (?,?,?,,,)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 4, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LineNo", global::System.Data.OleDb.OleDbType.Integer, 4, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Double, 8, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Integer, 4, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("KostPris", global::System.Data.OleDb.OleDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "KostPris", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("UdsalgsPris", global::System.Data.OleDb.OleDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UdsalgsPris", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ItemName", global::System.Data.OleDb.OleDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ItemName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE WasteSheetDetailsLocal\r\nSET       HeaderID = ?, [LineNo] = ?, Barcode = ?," +
-                " Antal = ?, DatoTid = ?\r\nWHERE (HeaderID = ?) AND ([LineNo] = ?)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE       WasteSheetDetailsLocal\r\nSET                HeaderID = ?, [LineNo] = " +
+                "?, Barcode = ?, Antal = ?, DatoTid = ?\r\nWHERE        (HeaderID = ?) AND ([LineNo" +
+                "] = ?)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LineNo", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Double, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DatoTid", global::System.Data.OleDb.OleDbType.DBTimeStamp, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DatoTid", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LineNo", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LineNo", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DatoTid", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DatoTid", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HeaderID", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LineNo", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -62009,8 +60200,8 @@ WHERE     (SubCategoryID = ?)";
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT HeaderID, [LineNo], Barcode, NULLIF (Antal, 0) AS Antal, DatoTid, ItemName" +
-                ", UdsalgsPris, KostPris\r\nFROM   WasteSheetDetailsLocal\r\nWHERE (HeaderID = ?)";
+            this._commandCollection[0].CommandText = "SELECT HeaderID, [LineNo], Barcode, DatoTid, ItemName, UdsalgsPris, KostPris\r\nFRO" +
+                "M   WasteSheetDetailsLocal\r\nWHERE (HeaderID = ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 4, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
         }
@@ -62185,11 +60376,11 @@ WHERE     (SubCategoryID = ?)";
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT     Barcode.Barcode, SalesPack.SalesPrice, Item.ItemName, LookupPackSize.PackTypeName, Item.CostPriceLatest
-FROM         (((Barcode INNER JOIN
-                      SalesPack ON Barcode.ItemID = SalesPack.ItemID AND Barcode.PackType = SalesPack.PackType) INNER JOIN
-                      Item ON Barcode.ItemID = Item.ItemID) INNER JOIN
-                      LookupPackSize ON Barcode.PackType = LookupPackSize.PackType)";
+            this._commandCollection[0].CommandText = @"SELECT Barcode.Barcode, SalesPack.SalesPrice, Item.ItemName, LookupPackSize.PackTypeName, Item.CostPriceLatest
+FROM   Barcode INNER JOIN
+             SalesPack ON Barcode.ItemID = SalesPack.ItemID AND Barcode.PackType = SalesPack.PackType INNER JOIN
+             Item ON Barcode.ItemID = Item.ItemID INNER JOIN
+             LookupPackSize ON Barcode.PackType = LookupPackSize.PackType";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -62326,17 +60517,12 @@ FROM         (((Barcode INNER JOIN
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT HeaderID, COUNT([LineNo]) AS NumDetailRecords\r\nFROM   WasteSheetDetailsLoc" +
                 "al\r\nGROUP BY HeaderID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT     HeaderID, COUNT(*) AS NumDetailRecords\r\nFROM         WasteSheetDetails" +
-                "RBA\r\nGROUP BY HeaderID";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -62358,30 +60544,6 @@ FROM         (((Barcode INNER JOIN
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual ItemDataSet.WasteSheetHeaderLocalLookupsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ItemDataSet.WasteSheetHeaderLocalLookupsDataTable dataTable = new ItemDataSet.WasteSheetHeaderLocalLookupsDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillRBA(ItemDataSet.WasteSheetHeaderLocalLookupsDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual ItemDataSet.WasteSheetHeaderLocalLookupsDataTable GetDataRBA() {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
             ItemDataSet.WasteSheetHeaderLocalLookupsDataTable dataTable = new ItemDataSet.WasteSheetHeaderLocalLookupsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -62505,9 +60667,10 @@ FROM         (((Barcode INNER JOIN
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT WasteSheetDetails.Antal, WasteSheetDetails.Info, WasteSheetDetails.BestillingsNummer, WasteSheetDetails.KostPris, WasteSheetDetails.UdsalgsPris, WasteSheetDetails.ItemName, WasteSheetDetails.HeaderID
-FROM     WasteSheetDetails INNER JOIN
-                  WasteSheetHeader ON WasteSheetDetails.HeaderID = WasteSheetHeader.ID
-WHERE  (WasteSheetHeader.ID = ?)";
+FROM   WasteSheetDetails INNER JOIN
+             WasteSheetHeader ON WasteSheetDetails.HeaderID = WasteSheetHeader.ID
+WHERE (WasteSheetHeader.ID = ?)
+ORDER BY WasteSheetDetails.[LineNo]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ID", global::System.Data.OleDb.OleDbType.Integer, 4, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Current, false, null));
         }
@@ -67355,161 +65518,6 @@ WHERE    ((@IncludeInactive = yes) OR (AfskrProd.Inactive <> yes))";
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class WasteSheetReportRBATableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.OleDb.OleDbDataAdapter _adapter;
-        
-        private global::System.Data.OleDb.OleDbConnection _connection;
-        
-        private global::System.Data.OleDb.OleDbCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public WasteSheetReportRBATableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private global::System.Data.OleDb.OleDbDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.OleDb.OleDbConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.OleDb.OleDbCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.OleDb.OleDbCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "WasteSheetReportRBA";
-            tableMapping.ColumnMappings.Add("Varenummer", "Varenummer");
-            tableMapping.ColumnMappings.Add("Varenavn", "Varenavn");
-            tableMapping.ColumnMappings.Add("LevKategori", "LevKategori");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::RBOS.Properties.Settings.Default.RBOS20ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
-            this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT AfskrProd.Varenummer, AfskrProd.Beskrivelse AS Varenavn, AfskrProd.LevKategori FROM (AfskrProd INNER JOIN WasteSheetDetailsRBA ON AfskrProd.LevNr = WasteSheetDetailsRBA.LevNr AND AfskrProd.Varenummer = WasteSheetDetailsRBA.Varenummer) WHERE (WasteSheetDetailsRBA.HeaderID = ?)
-order by WasteSheetDetailsRBA.LineNo";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ItemDataSet.WasteSheetReportRBADataTable dataTable, global::System.Nullable<int> HeaderID) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((HeaderID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(HeaderID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ItemDataSet.WasteSheetReportRBADataTable GetData(global::System.Nullable<int> HeaderID) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((HeaderID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(HeaderID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            ItemDataSet.WasteSheetReportRBADataTable dataTable = new ItemDataSet.WasteSheetReportRBADataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class ItemTransactionRBATableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.OleDb.OleDbDataAdapter _adapter;
@@ -67867,568 +65875,6 @@ order by WasteSheetDetailsRBA.LineNo";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(global::System.Nullable<global::System.DateTime> PostingDate, global::System.Nullable<int> LevNr, global::System.Nullable<decimal> Varenummer, string Varenavn, global::System.Nullable<int> NumberOf, global::System.Nullable<decimal> Amount, string Initials, int Original_TransactionNumber) {
             return this.Update(Original_TransactionNumber, PostingDate, LevNr, Varenummer, Varenavn, NumberOf, Amount, Initials, Original_TransactionNumber);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class WasteRegistrationRBATableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.OleDb.OleDbDataAdapter _adapter;
-        
-        private global::System.Data.OleDb.OleDbConnection _connection;
-        
-        private global::System.Data.OleDb.OleDbCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public WasteRegistrationRBATableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private global::System.Data.OleDb.OleDbDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.OleDb.OleDbConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.OleDb.OleDbCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.OleDb.OleDbCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "WasteRegistrationRBA";
-            tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("LevNr", "LevNr");
-            tableMapping.ColumnMappings.Add("Varenummer", "Varenummer");
-            tableMapping.ColumnMappings.Add("Varenavn", "Varenavn");
-            tableMapping.ColumnMappings.Add("Salgspris", "Salgspris");
-            tableMapping.ColumnMappings.Add("Barcode", "Barcode");
-            tableMapping.ColumnMappings.Add("Kostpris", "Kostpris");
-            tableMapping.ColumnMappings.Add("Varegruppe", "Varegruppe");
-            tableMapping.ColumnMappings.Add("Antal", "Antal");
-            tableMapping.ColumnMappings.Add("ManualInput", "ManualInput");
-            this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `WasteRegistrationRBA` WHERE ((`ID` = ?) AND ((? = 1 AND `LevNr` IS NULL) OR (`LevNr` = ?)) AND ((? = 1 AND `Varenummer` IS NULL) OR (`Varenummer` = ?)) AND ((? = 1 AND `Varenavn` IS NULL) OR (`Varenavn` = ?)) AND ((? = 1 AND `Salgspris` IS NULL) OR (`Salgspris` = ?)) AND ((? = 1 AND `Barcode` IS NULL) OR (`Barcode` = ?)) AND ((? = 1 AND `Kostpris` IS NULL) OR (`Kostpris` = ?)) AND ((? = 1 AND `Varegruppe` IS NULL) OR (`Varegruppe` = ?)) AND ((? = 1 AND `Antal` IS NULL) OR (`Antal` = ?)) AND ((? = 1 AND `ManualInput` IS NULL) OR (`ManualInput` = ?)))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_LevNr", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LevNr", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LevNr", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LevNr", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Varenummer", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenummer", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Varenummer", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenummer", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Varenavn", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenavn", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Varenavn", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenavn", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Salgspris", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salgspris", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Salgspris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salgspris", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Barcode", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Barcode", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Kostpris", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kostpris", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Kostpris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kostpris", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Varegruppe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varegruppe", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Varegruppe", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varegruppe", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Antal", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Antal", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ManualInput", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ManualInput", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ManualInput", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ManualInput", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `WasteRegistrationRBA` (`LevNr`, `Varenummer`, `Varenavn`, `Salgspris" +
-                "`, `Barcode`, `Kostpris`, `Varegruppe`, `Antal`, `ManualInput`) VALUES (?, ?, ?," +
-                " ?, ?, ?, ?, ?, ?)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LevNr", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LevNr", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Varenummer", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenummer", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Varenavn", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenavn", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Salgspris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salgspris", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Kostpris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kostpris", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Varegruppe", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varegruppe", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ManualInput", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ManualInput", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `WasteRegistrationRBA` SET `LevNr` = ?, `Varenummer` = ?, `Varenavn` = ?, `Salgspris` = ?, `Barcode` = ?, `Kostpris` = ?, `Varegruppe` = ?, `Antal` = ?, `ManualInput` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `LevNr` IS NULL) OR (`LevNr` = ?)) AND ((? = 1 AND `Varenummer` IS NULL) OR (`Varenummer` = ?)) AND ((? = 1 AND `Varenavn` IS NULL) OR (`Varenavn` = ?)) AND ((? = 1 AND `Salgspris` IS NULL) OR (`Salgspris` = ?)) AND ((? = 1 AND `Barcode` IS NULL) OR (`Barcode` = ?)) AND ((? = 1 AND `Kostpris` IS NULL) OR (`Kostpris` = ?)) AND ((? = 1 AND `Varegruppe` IS NULL) OR (`Varegruppe` = ?)) AND ((? = 1 AND `Antal` IS NULL) OR (`Antal` = ?)) AND ((? = 1 AND `ManualInput` IS NULL) OR (`ManualInput` = ?)))";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LevNr", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LevNr", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Varenummer", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenummer", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Varenavn", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenavn", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Salgspris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salgspris", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Kostpris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kostpris", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Varegruppe", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varegruppe", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ManualInput", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ManualInput", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_LevNr", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LevNr", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LevNr", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LevNr", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Varenummer", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenummer", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Varenummer", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenummer", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Varenavn", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenavn", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Varenavn", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varenavn", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Salgspris", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salgspris", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Salgspris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Salgspris", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Barcode", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Barcode", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Kostpris", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kostpris", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Kostpris", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Kostpris", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Varegruppe", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varegruppe", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Varegruppe", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Varegruppe", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Antal", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Antal", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ManualInput", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ManualInput", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ManualInput", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ManualInput", global::System.Data.DataRowVersion.Original, false, null));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::RBOS.Properties.Settings.Default.RBOS20ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
-            this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT     ID, LevNr, Varenummer, Varenavn, Salgspris, Barcode, Kostpris, Varegru" +
-                "ppe, Antal, ManualInput\r\nFROM         WasteRegistrationRBA";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ItemDataSet.WasteRegistrationRBADataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ItemDataSet.WasteRegistrationRBADataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            ItemDataSet.WasteRegistrationRBADataTable dataTable = new ItemDataSet.WasteRegistrationRBADataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ItemDataSet.WasteRegistrationRBADataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ItemDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "WasteRegistrationRBA");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, global::System.Nullable<int> Original_LevNr, global::System.Nullable<double> Original_Varenummer, string Original_Varenavn, global::System.Nullable<double> Original_Salgspris, global::System.Nullable<double> Original_Barcode, global::System.Nullable<double> Original_Kostpris, string Original_Varegruppe, global::System.Nullable<int> Original_Antal, bool Original_ManualInput) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            if ((Original_LevNr.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_LevNr.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Varenummer.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((double)(Original_Varenummer.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Varenavn == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Varenavn));
-            }
-            if ((Original_Salgspris.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((double)(Original_Salgspris.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Barcode.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((double)(Original_Barcode.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Kostpris.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((double)(Original_Kostpris.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Varegruppe == null)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_Varegruppe));
-            }
-            if ((Original_Antal.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((int)(Original_Antal.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[18].Value = ((bool)(Original_ManualInput));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> LevNr, global::System.Nullable<double> Varenummer, string Varenavn, global::System.Nullable<double> Salgspris, global::System.Nullable<double> Barcode, global::System.Nullable<double> Kostpris, string Varegruppe, global::System.Nullable<int> Antal, bool ManualInput) {
-            if ((LevNr.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(LevNr.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((Varenummer.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((double)(Varenummer.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((Varenavn == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Varenavn));
-            }
-            if ((Salgspris.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((double)(Salgspris.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((Barcode.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((double)(Barcode.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Kostpris.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((double)(Kostpris.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((Varegruppe == null)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Varegruppe));
-            }
-            if ((Antal.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(Antal.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.InsertCommand.Parameters[8].Value = ((bool)(ManualInput));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    global::System.Nullable<int> LevNr, 
-                    global::System.Nullable<double> Varenummer, 
-                    string Varenavn, 
-                    global::System.Nullable<double> Salgspris, 
-                    global::System.Nullable<double> Barcode, 
-                    global::System.Nullable<double> Kostpris, 
-                    string Varegruppe, 
-                    global::System.Nullable<int> Antal, 
-                    bool ManualInput, 
-                    int Original_ID, 
-                    global::System.Nullable<int> Original_LevNr, 
-                    global::System.Nullable<double> Original_Varenummer, 
-                    string Original_Varenavn, 
-                    global::System.Nullable<double> Original_Salgspris, 
-                    global::System.Nullable<double> Original_Barcode, 
-                    global::System.Nullable<double> Original_Kostpris, 
-                    string Original_Varegruppe, 
-                    global::System.Nullable<int> Original_Antal, 
-                    bool Original_ManualInput) {
-            if ((LevNr.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(LevNr.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((Varenummer.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((double)(Varenummer.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((Varenavn == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Varenavn));
-            }
-            if ((Salgspris.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((double)(Salgspris.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((Barcode.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(Barcode.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Kostpris.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((double)(Kostpris.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((Varegruppe == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Varegruppe));
-            }
-            if ((Antal.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Antal.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((bool)(ManualInput));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_ID));
-            if ((Original_LevNr.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_LevNr.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Varenummer.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((double)(Original_Varenummer.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Varenavn == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Varenavn));
-            }
-            if ((Original_Salgspris.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((double)(Original_Salgspris.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Barcode.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((double)(Original_Barcode.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Kostpris.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((double)(Original_Kostpris.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Varegruppe == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Varegruppe));
-            }
-            if ((Original_Antal.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((int)(Original_Antal.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[27].Value = ((bool)(Original_ManualInput));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
         }
     }
     
@@ -68886,169 +66332,6 @@ ORDER BY SalesPackFuturePrices.ActivationDate";
                 }
             }
             return returnValue;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class WasteSheetCountReportRBATableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.OleDb.OleDbDataAdapter _adapter;
-        
-        private global::System.Data.OleDb.OleDbConnection _connection;
-        
-        private global::System.Data.OleDb.OleDbCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public WasteSheetCountReportRBATableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private global::System.Data.OleDb.OleDbDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.OleDb.OleDbConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.OleDb.OleDbCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.OleDb.OleDbCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "WasteSheetCountReportRBA";
-            tableMapping.ColumnMappings.Add("Varenummer", "Varenummer");
-            tableMapping.ColumnMappings.Add("Varenavn", "Varenavn");
-            tableMapping.ColumnMappings.Add("Varegruppe", "Varegruppe");
-            tableMapping.ColumnMappings.Add("Kostpris", "Kostpris");
-            tableMapping.ColumnMappings.Add("SubCategoryID", "SubCategoryID");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::RBOS.Properties.Settings.Default.RBOS20ConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
-            this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT     AfskrProd.Varenummer, AfskrProd.Beskrivelse AS Varenavn, SubCategory.Description AS Varegruppe, AfskrProd.Kostpris, 
-                      SubCategory.SubCategoryID
-FROM         ((AfskrProd INNER JOIN
-                      WasteSheetDetailsRBA ON AfskrProd.LevNr = WasteSheetDetailsRBA.LevNr AND AfskrProd.Varenummer = WasteSheetDetailsRBA.Varenummer) 
-                      INNER JOIN
-                      SubCategory ON AfskrProd.Varegruppe = SubCategory.SubCategoryID)
-WHERE     (WasteSheetDetailsRBA.HeaderID = ?)
-ORDER BY WasteSheetDetailsRBA.LineNo";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ItemDataSet.WasteSheetCountReportRBADataTable dataTable, global::System.Nullable<int> HeaderID) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((HeaderID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(HeaderID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ItemDataSet.WasteSheetCountReportRBADataTable GetData(global::System.Nullable<int> HeaderID) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((HeaderID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(HeaderID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            ItemDataSet.WasteSheetCountReportRBADataTable dataTable = new ItemDataSet.WasteSheetCountReportRBADataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
         }
     }
     
@@ -72636,27 +69919,6 @@ SELECT ItemID, ActiveFromDate, SupplierNo, OrderingNumber, PackageCost, ClosedDa
             tableMapping.ColumnMappings.Add("Antal", "Antal");
             tableMapping.ColumnMappings.Add("DatoTid", "DatoTid");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO WasteSheetDetails\r\n             (HeaderID, [LineNo], Barcode, Antal)\r" +
-                "\nVALUES (?,?,?,?)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LineNo", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE WasteSheetDetails\r\nSET       HeaderID = ?, [LineNo] = ?, Barcode = ?, Anta" +
-                "l = ?, DatoTid = ?\r\nWHERE (HeaderID = ?) AND ([LineNo] = ?)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LineNo", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Barcode", global::System.Data.OleDb.OleDbType.Double, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Barcode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Antal", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Antal", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DatoTid", global::System.Data.OleDb.OleDbType.DBTimeStamp, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DatoTid", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LineNo", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LineNo", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -72669,13 +69931,19 @@ SELECT ItemID, ActiveFromDate, SupplierNo, OrderingNumber, PackageCost, ClosedDa
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT HeaderID, [LineNo], Barcode, NULLIF (Antal, 0) AS Antal, DatoTid\r\nFROM   W" +
-                "asteSheetDetails\r\nWHERE (HeaderID = ?)";
+                "asteSheetDetails\r\nWHERE (HeaderID = ?)\r\nORDER BY [LineNo]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 4, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT HeaderID, [LineNo], Barcode, NULLIF (Antal, 0) AS Antal, DatoTid\r\nFROM   W" +
+                "asteSheetDetails\r\nWHERE (HeaderID = ?)\r\nORDER BY [LineNo]";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("HeaderID", global::System.Data.OleDb.OleDbType.Integer, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "HeaderID", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -72707,30 +69975,27 @@ SELECT ItemID, ActiveFromDate, SupplierNo, OrderingNumber, PackageCost, ClosedDa
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ItemDataSet.WasteSheetDetailsDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(ItemDataSet.WasteSheetDetailsDataTable dataTable, int HeaderID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(HeaderID));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ItemDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "WasteSheetDetails");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ItemDataSet.WasteSheetDetailsDataTable GetDataBy(int HeaderID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(HeaderID));
+            ItemDataSet.WasteSheetDetailsDataTable dataTable = new ItemDataSet.WasteSheetDetailsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
         }
     }
     
@@ -72986,7 +70251,7 @@ SELECT ItemID, ActiveFromDate, SupplierNo, OrderingNumber, PackageCost, ClosedDa
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT Barcode.Barcode, SalesPack.SalesPrice, Item.ItemName, LookupPackSize.PackTypeName, Item.CostPriceLatest
@@ -72995,6 +70260,14 @@ FROM   Barcode INNER JOIN
              Item ON Barcode.ItemID = Item.ItemID INNER JOIN
              LookupPackSize ON Barcode.PackType = LookupPackSize.PackType";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT Barcode.Barcode, SalesPack.SalesPrice, Item.ItemName, LookupPackSize.PackTypeName, Item.CostPriceLatest
+FROM   Barcode INNER JOIN
+             SalesPack ON Barcode.ItemID = SalesPack.ItemID AND Barcode.PackType = SalesPack.PackType INNER JOIN
+             Item ON Barcode.ItemID = Item.ItemID INNER JOIN
+             LookupPackSize ON Barcode.PackType = LookupPackSize.PackType";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -73019,6 +70292,19 @@ FROM   Barcode INNER JOIN
             ItemDataSet.WasteSheetDetailsLocalLookupsDataTable dataTable = new ItemDataSet.WasteSheetDetailsLocalLookupsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(ItemDataSet.WasteSheetDetailsLocalLookupsDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
     }
 }

@@ -3326,6 +3326,8 @@ namespace RBOS {
             
             private global::System.Data.DataColumn columnWoltQTY;
             
+            private global::System.Data.DataColumn columnMPAmount;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public EODReconcileSingleDataTable() {
@@ -3785,6 +3787,14 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MPAmountColumn {
+                get {
+                    return this.columnMPAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3873,7 +3883,8 @@ namespace RBOS {
                         string TmpAmt3Descr, 
                         string TmpAmt4Descr, 
                         double WoltAmount, 
-                        int WoltQTY) {
+                        int WoltQTY, 
+                        double MPAmount) {
                 EODReconcileSingleRow rowEODReconcileSingleRow = ((EODReconcileSingleRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         BookDate,
@@ -3928,7 +3939,8 @@ namespace RBOS {
                         TmpAmt3Descr,
                         TmpAmt4Descr,
                         WoltAmount,
-                        WoltQTY};
+                        WoltQTY,
+                        MPAmount};
                 rowEODReconcileSingleRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEODReconcileSingleRow);
                 return rowEODReconcileSingleRow;
@@ -4011,6 +4023,7 @@ namespace RBOS {
                 this.columnTmpAmt4Descr = base.Columns["TmpAmt4Descr"];
                 this.columnWoltAmount = base.Columns["WoltAmount"];
                 this.columnWoltQTY = base.Columns["WoltQTY"];
+                this.columnMPAmount = base.Columns["MPAmount"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4122,6 +4135,8 @@ namespace RBOS {
                 base.Columns.Add(this.columnWoltAmount);
                 this.columnWoltQTY = new global::System.Data.DataColumn("WoltQTY", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWoltQTY);
+                this.columnMPAmount = new global::System.Data.DataColumn("MPAmount", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMPAmount);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnBookDate}, true));
                 this.columnBookDate.AllowDBNull = false;
@@ -20449,6 +20464,22 @@ namespace RBOS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double MPAmount {
+                get {
+                    try {
+                        return ((double)(this[this.tableEODReconcileSingle.MPAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MPAmount\' in table \'EODReconcileSingle\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEODReconcileSingle.MPAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsClosedNull() {
                 return this.IsNull(this.tableEODReconcileSingle.ClosedColumn);
             }
@@ -21069,6 +21100,18 @@ namespace RBOS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetWoltQTYNull() {
                 this[this.tableEODReconcileSingle.WoltQTYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMPAmountNull() {
+                return this.IsNull(this.tableEODReconcileSingle.MPAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMPAmountNull() {
+                this[this.tableEODReconcileSingle.MPAmountColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -31219,6 +31262,7 @@ WHERE        (( BookDate  = ?) AND ( [LINENO] = ?) AND ((? = 1 AND  MOPCode  IS 
             tableMapping.ColumnMappings.Add("TmpAmt4Descr", "TmpAmt4Descr");
             tableMapping.ColumnMappings.Add("WoltAmount", "WoltAmount");
             tableMapping.ColumnMappings.Add("WoltQTY", "WoltQTY");
+            tableMapping.ColumnMappings.Add("MPAmount", "MPAmount");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -31661,12 +31705,13 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT BookDate, Closed, RSMDataImported, BankDepAmount, BankCardAmount, ShellCardAmount, DiscountAmount, MiscCards, ManDankortSumB, CashDiscount, DriveOffTotal, LocalCredit, LocalCreditPayin, ForeignCurrency, POSSales, 
-                  ManualSales, Payin, Payout, CashOverUnder, ApprovedBy, TotalBank, TotalShell, TotalMisc, TotalSales, TotalABC, TotalD, NumberOfWashSold, ReserveTerminal, SafePay_OverfoerselTilSP, SafePay_Udbetalinger, SafePay_Indbetalinger, 
-                  SafePay_ByttepengeOptalt, SafePay_TilfoertByttepengeFraLomis, SafePay_BeloebTilfoertDobbelt, SafePay_Depotbeholdning, MoentDaglig, MoentBank, SafePayAmountCurr, SafePayAmount, TotalSafePay, ManBankDep, 
-                  OPTPrepayAmount, TmpAmt1, TmpAmt2, TmpAmt3, TmpAmt4, TmpAmtTotal, TmpAmt1Descr, TmpAmt2Descr, TmpAmt3Descr, TmpAmt4Descr, WoltAmount, WoltQTY
-FROM     EODReconcile
-WHERE  (BookDate = ?)";
+            this._commandCollection[0].CommandText = @"SELECT   BookDate, Closed, RSMDataImported, BankDepAmount, BankCardAmount, ShellCardAmount, DiscountAmount, MiscCards, ManDankortSumB, CashDiscount, DriveOffTotal, LocalCredit, 
+                         LocalCreditPayin, ForeignCurrency, POSSales, ManualSales, Payin, Payout, CashOverUnder, ApprovedBy, TotalBank, TotalShell, TotalMisc, TotalSales, TotalABC, TotalD, 
+                         NumberOfWashSold, ReserveTerminal, SafePay_OverfoerselTilSP, SafePay_Udbetalinger, SafePay_Indbetalinger, SafePay_ByttepengeOptalt, SafePay_TilfoertByttepengeFraLomis, 
+                         SafePay_BeloebTilfoertDobbelt, SafePay_Depotbeholdning, MoentDaglig, MoentBank, SafePayAmountCurr, SafePayAmount, TotalSafePay, ManBankDep, OPTPrepayAmount, TmpAmt1, 
+                         TmpAmt2, TmpAmt3, TmpAmt4, TmpAmtTotal, TmpAmt1Descr, TmpAmt2Descr, TmpAmt3Descr, TmpAmt4Descr, WoltAmount, WoltQTY, MPAmount
+FROM         EODReconcile
+WHERE     (BookDate = ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("BookDate", global::System.Data.OleDb.OleDbType.DBTimeStamp, 8, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "BookDate", global::System.Data.DataRowVersion.Current, false, null));
         }
